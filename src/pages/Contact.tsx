@@ -25,7 +25,8 @@ const Contact = () => {
         </div>
       </motion.section>
 
-      {/* Contact Form Section */}
+
+      {/* Contact Information Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -40,48 +41,45 @@ const Contact = () => {
               <div>
                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
                 <p className="text-gray-600 mb-8">
-                  We're here to help and answer any questions you might have. We
-                  look forward to hearing from you.
+                  We're here to help and answer any questions you might have.
+                  We look forward to hearing from you.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
+                  <Mail className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-600">info@denimexports.com</p>
+                    <p className="text-gray-600">sales@denimloom.com</p>
                   </div>
                 </div>
-
                 <div className="flex items-center space-x-4">
+                  <Phone className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+92 344 0854334</p>
                   </div>
                 </div>
-
                 <div className="flex items-center space-x-4">
+                  <MapPin className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Address</h3>
-                    <p className="text-gray-600">
-                      123 Denim Street, Fashion District
-                      <br />
-                      New York, NY 10001
-                    </p>
+                    <p className="text-gray-600">149 Block E, Nawab Town, Lahore</p>
                   </div>
                 </div>
-
                 <div className="flex items-center space-x-4">
+                  <Clock className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Business Hours</h3>
                     <p className="text-gray-600">
-                      Monday - Friday: 9:00 AM - 6:00 PM
+                      Monday - Saturday: 9:00 AM - 6:00 PM (EST)
                     </p>
                   </div>
                 </div>
               </div>
             </motion.div>
-
+            
             {/* Google Forms Embed */}
             <motion.div
               initial={{ x: 50, opacity: 0 }}
