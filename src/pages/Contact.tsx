@@ -1,51 +1,6 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
-import { useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const [status, setStatus] = useState(null);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const formUrl =
-      "https://docs.google.com/forms/d/e/1FAIpQLSdQlE5-rSHvL6IxXfiH0QyBySSPoKAzyxpAC92abbMFB80HUg/formResponse";
-
-    const formBody = new URLSearchParams({
-      "entry.1674610490": formData.name, // Field ID for Name
-      "entry.652864529": formData.email, // Field ID for Email
-      "entry.1793664908": formData.subject, // Field ID for Subject
-      "entry.672518416": formData.message, // Field ID for Message
-    });
-
-    try {
-      await fetch(formUrl, {
-        method: "POST",
-        body: formBody,
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-      });
-
-      setStatus("Your message has been sent successfully!");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
-      setStatus("There was an error sending your message. Please try again.");
-    }
-  };
-
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -92,7 +47,6 @@ const Contact = () => {
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <Mail className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
                     <p className="text-gray-600">info@denimexports.com</p>
@@ -100,7 +54,6 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <Phone className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
                     <p className="text-gray-600">+1 (555) 123-4567</p>
@@ -108,7 +61,6 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <MapPin className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="text-gray-600">
@@ -120,7 +72,6 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <Clock className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Business Hours</h3>
                     <p className="text-gray-600">
@@ -131,94 +82,25 @@ const Contact = () => {
               </div>
             </motion.div>
 
-            {/* Contact Form */}
+            {/* Google Forms Embed */}
             <motion.div
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              className="w-full"
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="subject"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                    required
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-200"
-                >
-                  Send Message
-                </button>
-              </form>
-              {status && <p className="mt-4 text-sm text-gray-600">{status}</p>}
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdQlE5-rSHvL6IxXfiH0QyBySSPoKAzyxpAC92abbMFB80HUg/viewform?embedded=true"
+                width="100%"
+                height="600"
+                frameBorder="0"
+                marginHeight="0"
+                marginWidth="0"
+                className="rounded-lg border border-gray-300"
+              >
+                Loading…
+              </iframe>
             </motion.div>
           </div>
         </div>
