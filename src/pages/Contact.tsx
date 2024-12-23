@@ -2,11 +2,6 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-  };
-
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -91,7 +86,12 @@ const Contact = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLScgMi9-inHmMrGxyFvs35U1XEQYNkL5it_KeR3uadh9Qat52Q/formResponse"
+                method="POST"
+                target="_blank"
+                className="space-y-6"
+              >
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                     Name
@@ -99,7 +99,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="name"
-                    name="name"
+                    name="entry.XXXXX" // Replace XXXXX with the actual field ID for Name
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
@@ -112,7 +112,7 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
-                    name="email"
+                    name="entry.YYYYY" // Replace YYYYY with the actual field ID for Email
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
@@ -125,7 +125,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="subject"
-                    name="subject"
+                    name="entry.ZZZZZ" // Replace ZZZZZ with the actual field ID for Subject
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
@@ -137,7 +137,7 @@ const Contact = () => {
                   </label>
                   <textarea
                     id="message"
-                    name="message"
+                    name="entry.AAAAA" // Replace AAAAA with the actual field ID for Message
                     rows={4}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
