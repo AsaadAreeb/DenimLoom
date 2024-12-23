@@ -87,7 +87,6 @@ const Contact = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSdQlE5-rSHvL6IxXfiH0QyBySSPoKAzyxpAC92abbMFB80HUg/viewform?embedded=true"
                 width="100%"
