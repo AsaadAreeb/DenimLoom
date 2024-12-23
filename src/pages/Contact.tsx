@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { Phone, MapPin, Clock, Mail } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
@@ -24,7 +25,6 @@ const Contact = () => {
           </motion.div>
         </div>
       </motion.section>
-
 
       {/* Contact Information Section */}
       <section className="py-20 bg-white">
@@ -79,15 +79,15 @@ const Contact = () => {
                 </div>
               </div>
             </motion.div>
-            
-            {/* Google Forms Embed */}
+
+            {/* Embedded Google Form */}
             <motion.div
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="w-full"
             >
+              <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSdQlE5-rSHvL6IxXfiH0QyBySSPoKAzyxpAC92abbMFB80HUg/viewform?embedded=true"
                 width="100%"
@@ -95,7 +95,8 @@ const Contact = () => {
                 frameBorder="0"
                 marginHeight="0"
                 marginWidth="0"
-                className="rounded-lg border border-gray-300"
+                className="rounded-md border border-gray-300"
+                title="Contact Form"
               >
                 Loading…
               </iframe>
