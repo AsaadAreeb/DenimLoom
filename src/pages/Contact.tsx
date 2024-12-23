@@ -1,7 +1,51 @@
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState(null);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formUrl =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdQlE5-rSHvL6IxXfiH0QyBySSPoKAzyxpAC92abbMFB80HUg/formResponse";
+
+    const formBody = new URLSearchParams({
+      "entry.1674610490": formData.name, // Field ID for Name
+      "entry.652864529": formData.email, // Field ID for Email
+      "entry.1793664908": formData.subject, // Field ID for Subject
+      "entry.672518416": formData.message, // Field ID for Message
+    });
+
+    try {
+      await fetch(formUrl, {
+        method: "POST",
+        body: formBody,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      });
+
+      setStatus("Your message has been sent successfully!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      setStatus("There was an error sending your message. Please try again.");
+    }
+  };
+
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -19,7 +63,8 @@ const Contact = () => {
           >
             <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl max-w-2xl">
-              Get in touch with our team for inquiries about our products and services.
+              Get in touch with our team for inquiries about our products and
+              services.
             </p>
           </motion.div>
         </div>
@@ -40,7 +85,8 @@ const Contact = () => {
               <div>
                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
                 <p className="text-gray-600 mb-8">
-                  We're here to help and answer any questions you might have. We look forward to hearing from you.
+                  We're here to help and answer any questions you might have. We
+                  look forward to hearing from you.
                 </p>
               </div>
 
@@ -65,7 +111,11 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Address</h3>
-                    <p className="text-gray-600">123 Denim Street, Fashion District<br />New York, NY 10001</p>
+                    <p className="text-gray-600">
+                      123 Denim Street, Fashion District
+                      <br />
+                      New York, NY 10001
+                    </p>
                   </div>
                 </div>
 
@@ -73,7 +123,9 @@ const Contact = () => {
                   <Clock className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600">
+                      Monday - Friday: 9:00 AM - 6:00 PM
+                    </p>
                   </div>
                 </div>
               </div>
@@ -86,58 +138,73 @@ const Contact = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <form
-                action="https://docs.google.com/forms/d/e/1FAIpQLSdQlE5-rSHvL6IxXfiH0QyBySSPoKAzyxpAC92abbMFB80HUg/formResponse"
-                method="POST"
-                target="_blank"
-                className="space-y-6"
-              >
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Name
                   </label>
                   <input
                     type="text"
                     id="name"
-                    name="entry.1674610490" // Field ID for Name
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
-                    name="entry.652864529" // Field ID for Email
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Subject
                   </label>
                   <input
                     type="text"
                     id="subject"
-                    name="entry.1793664908" // Field ID for Subject
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Message
                   </label>
                   <textarea
                     id="message"
-                    name="entry.672518416" // Field ID for Message
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     rows={4}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
@@ -151,6 +218,7 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
+              {status && <p className="mt-4 text-sm text-gray-600">{status}</p>}
             </motion.div>
           </div>
         </div>
