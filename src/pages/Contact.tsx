@@ -87,7 +87,7 @@ const Contact = () => {
               viewport={{ once: true }}
             >
               <form
-                action="https://docs.google.com/forms/d/e/1FAIpQLScgMi9-inHmMrGxyFvs35U1XEQYNkL5it_KeR3uadh9Qat52Q/formResponse"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdQlE5-rSHvL6IxXfiH0QyBySSPoKAzyxpAC92abbMFB80HUg/formResponse"
                 method="POST"
                 target="_blank"
                 className="space-y-6"
@@ -99,7 +99,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="name"
-                    name="entry.XXXXX" // Replace XXXXX with the actual field ID for Name
+                    name="entry.1674610490" // Field ID for Name
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
@@ -112,7 +112,7 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
-                    name="entry.YYYYY" // Replace YYYYY with the actual field ID for Email
+                    name="entry.652864529" // Field ID for Email
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
@@ -125,7 +125,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="subject"
-                    name="entry.ZZZZZ" // Replace ZZZZZ with the actual field ID for Subject
+                    name="entry.1793664908" // Field ID for Subject
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
@@ -137,7 +137,7 @@ const Contact = () => {
                   </label>
                   <textarea
                     id="message"
-                    name="entry.AAAAA" // Replace AAAAA with the actual field ID for Message
+                    name="entry.672518416" // Field ID for Message
                     rows={4}
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                     required
