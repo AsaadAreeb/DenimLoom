@@ -1,10 +1,18 @@
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
+  const [status, setStatus] = useState<string | null>(null); // Allow null or string for the status message
+
+  const handleSuccess = () => {
+    setStatus("Your message has been sent successfully!");
+    setTimeout(() => setStatus(null), 5000); // Clear message after 5 seconds
+  };
+
+  const handleError = () => {
+    setStatus("There was an error sending your message. Please try again.");
+    setTimeout(() => setStatus(null), 5000); // Clear message after 5 seconds
   };
 
   return (
@@ -24,7 +32,8 @@ const Contact = () => {
           >
             <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl max-w-2xl">
-              Get in touch with our team for inquiries about our products and services.
+              Get in touch with our team for inquiries about our products and
+              services.
             </p>
           </motion.div>
         </div>
@@ -45,7 +54,8 @@ const Contact = () => {
               <div>
                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
                 <p className="text-gray-600 mb-8">
-                  We're here to help and answer any questions you might have. We look forward to hearing from you.
+                  We're here to help and answer any questions you might have. We
+                  look forward to hearing from you.
                 </p>
               </div>
 
@@ -54,7 +64,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-600">info@denimexports.com</p>
+                    <p className="text-gray-600">sales@denimloom.com</p>
                   </div>
                 </div>
 
@@ -62,7 +72,7 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+92 344 0854334</p>
                   </div>
                 </div>
 
@@ -70,7 +80,11 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Address</h3>
-                    <p className="text-gray-600">123 Denim Street, Fashion District<br />New York, NY 10001</p>
+                    <p className="text-gray-600">
+                      149 Block E, First Floor
+                      <br />
+                      Nawab Town, Lahore.
+                    </p>
                   </div>
                 </div>
 
@@ -78,7 +92,9 @@ const Contact = () => {
                   <Clock className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600">
+                      Monday - Saturday: 9:00 AM - 6:00 PM. (EST)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -91,9 +107,20 @@ const Contact = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                action="https://formsubmit.co/el/miyafe"
+                method="POST"
+                className="space-y-6"
+                onSubmit={handleSuccess}
+                onError={handleError}
+              >
+                <input type="hidden" name="_subject" value="New Contact Form Submission!" />
+
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Name
                   </label>
                   <input
@@ -106,7 +133,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Email
                   </label>
                   <input
@@ -119,7 +149,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Subject
                   </label>
                   <input
@@ -132,7 +165,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Message
                   </label>
                   <textarea
@@ -151,6 +187,7 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
+              {status && <p className="mt-4 text-sm text-gray-600">{status}</p>}
             </motion.div>
           </div>
         </div>

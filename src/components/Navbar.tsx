@@ -26,7 +26,10 @@ const Navbar = () => {
 
 
 
-          <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-[75%] h-[2px] bg-black shadow-md"></div>
+<div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-full h-[1px] bg-slate-900 shadow-[0_-40px_80px_rgba(255,255,255,0.5)]"></div>
+
+
+
 
 
         

@@ -80,15 +80,25 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Journey</h2>
               <div className="space-y-4 text-gray-600">
-                <p>
-                  Starting as a small denim manufacturer, we've grown into a global export leader through dedication to quality and innovation.
-                </p>
-                <p>
-                  Our commitment to sustainable practices and ethical manufacturing has earned us recognition worldwide.
-                </p>
-                <p>
-                  Today, we continue to push boundaries in denim production while maintaining our core values of quality, sustainability, and customer satisfaction.
-                </p>
+              <p>
+  Starting as a small denim manufacturer, we've grown into a global export leader through dedication to quality and innovation.
+</p>
+<p>
+  Our commitment to sustainable practices and ethical manufacturing has earned us recognition worldwide.
+</p>
+<p>
+  Today, we continue to push boundaries in denim production while maintaining our core values of quality, sustainability, and customer satisfaction.
+</p>
+<p>
+  Our journey in the textile industry has been defined by an unwavering dedication to excellence, innovation, and precision. Working closely with esteemed clients like Quiksilver, Roxy, Fat Face, and C&A, we have consistently delivered exceptional results by upholding the highest standards across every stage of production.
+</p>
+<p>
+  From meticulous knitting and dyeing to cutting, stitching, and rigorous quality control, every process is handled with care and expertise. Our ability to seamlessly manage timelines while maintaining superior craftsmanship has solidified trust and fostered lasting partnerships.
+</p>
+<p>
+  We take pride in transforming ideas into reality, ensuring that each product reflects the quality and creativity our clients expect.
+</p>
+
               </div>
             </div>
           </motion.div>
