@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { Users, Target, History } from 'lucide-react';
 
@@ -80,30 +81,100 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Journey</h2>
               <div className="space-y-4 text-gray-600">
-              <p>
-  Starting as a small denim manufacturer, we've grown into a global export leader through dedication to quality and innovation.
-</p>
-<p>
-  Our commitment to sustainable practices and ethical manufacturing has earned us recognition worldwide.
-</p>
-<p>
-  Today, we continue to push boundaries in denim production while maintaining our core values of quality, sustainability, and customer satisfaction.
-</p>
-<p>
-  Our journey in the textile industry has been defined by an unwavering dedication to excellence, innovation, and precision. Working closely with esteemed clients like Quiksilver, Roxy, Fat Face, and C&A, we have consistently delivered exceptional results by upholding the highest standards across every stage of production.
-</p>
-<p>
-  From meticulous knitting and dyeing to cutting, stitching, and rigorous quality control, every process is handled with care and expertise. Our ability to seamlessly manage timelines while maintaining superior craftsmanship has solidified trust and fostered lasting partnerships.
-</p>
-<p>
-  We take pride in transforming ideas into reality, ensuring that each product reflects the quality and creativity our clients expect.
-</p>
-
+                <p>
+                  Starting as a small denim manufacturer, we've grown into a global export leader through dedication to quality and innovation.
+                </p>
+                <p>
+                  Our commitment to sustainable practices and ethical manufacturing has earned us recognition worldwide.
+                </p>
+                <p>
+                  Today, we continue to push boundaries in denim production while maintaining our core values of quality, sustainability, and customer satisfaction.
+                </p>
+                <p>
+                  Our journey in the textile industry has been defined by an unwavering dedication to excellence, innovation, and precision. Working closely with esteemed clients like Quiksilver, Roxy, Fat Face, and C&A, we have consistently delivered exceptional results by upholding the highest standards across every stage of production.
+                </p>
+                <p>
+                  From meticulous knitting and dyeing to cutting, stitching, and rigorous quality control, every process is handled with care and expertise. Our ability to seamlessly manage timelines while maintaining superior craftsmanship has solidified trust and fostered lasting partnerships.
+                </p>
+                <p>
+                  We take pride in transforming ideas into reality, ensuring that each product reflects the quality and creativity our clients expect.
+                </p>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
+
+      {/* Reviews Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-100 to-indigo-100">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+    <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">What Our Clients Say</h2>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+    >
+      {/* Client Review 1 */}
+      <motion.div
+  initial={{ y: 50, opacity: 0 }} // Starting position and opacity
+  whileInView={{ y: 0, opacity: 1 }} // End position and opacity when the element is in view
+  transition={{ duration: 0.8 }} // Duration of the animation
+  viewport={{ once: true }} // Make the animation run only once when it first enters the viewport
+  className="bg-white shadow-lg rounded-lg p-6 text-center transition-all duration-300 hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl"
+>
+        <p className="text-gray-600 italic mb-4">
+          "Their commitment to quality and innovation has been unparalleled. Always a pleasure to work with."
+        </p>
+        <h3 className="text-lg font-bold text-gray-800">- Quiksilver</h3>
+      </motion.div>
+
+      {/* Client Review 2 */}
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+       className="bg-white shadow-lg rounded-lg p-6 text-center transition-all duration-300 hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl"
+      >
+        <p className="text-gray-600 italic mb-4">
+          "Exceptional craftsmanship and timely delivery. They set a benchmark for quality."
+        </p>
+        <h3 className="text-lg font-bold text-gray-800">- Roxy</h3>
+      </motion.div>
+
+      {/* Client Review 3 */}
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-white shadow-lg rounded-lg p-6 text-center transition-all duration-300 hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl"
+      >
+        <p className="text-gray-600 italic mb-4">
+          "Their dedication to sustainable practices aligns perfectly with our values. Highly recommended!"
+        </p>
+        <h3 className="text-lg font-bold text-gray-800">- Fat Face</h3>
+      </motion.div>
+
+      {/* Client Review 4 */}
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+       className="bg-white shadow-lg rounded-lg p-6 text-center transition-all duration-300 hover:scale-105 hover:translate-y-[-10px] hover:shadow-2xl"
+      >
+        <p className="text-gray-600 italic mb-4">
+          "Consistently delivering high-quality denim products that exceed expectations."
+        </p>
+        <h3 className="text-lg font-bold text-gray-800">- C&A</h3>
+      </motion.div>
+    </motion.div>
+  </div>
+</section>
+
+
     </div>
   );
 };

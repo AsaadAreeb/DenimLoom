@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+// import logo from '../svg/Capture-removebg-preview.png'; // Importing the logo image
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,24 @@ const Navbar = () => {
   <span className="bg-gradient-to-r from-purple-700 to-pink-500 text-transparent bg-clip-text shadow-lg ">Denim</span>
   <span className="bg-gradient-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text shadow-lg">Loom</span>
 </Link>
+
+
+{/* 
+         <Link to="/" className="flex items-center">
+
+  <img
+    src={logo} // Make sure the image file has a transparent background
+    alt="Denim Loom Logo"
+    className="h-24 w-auto bg-transparent shadow-lg"
+    style={{
+      WebkitMaskImage: 'linear-gradient(to right, #7b3fe4, #f75c8e)', // Gradient mask for the image
+      maskImage: 'linear-gradient(to right, #7b3fe4, #f75c8e)', // Same for non-webkit browsers
+      WebkitMaskSize: '100% 100%',
+      maskSize: '100% 100%',
+    }}
+  />
+</Link> */}
+
 
 
 
