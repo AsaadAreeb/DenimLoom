@@ -91,7 +91,7 @@
 //               viewport={{ once: true }}
 //             >
 //               <form
-//                 action="https://formsubmit.co/admin@denimloom.com" // FormSubmit endpoint
+//                 action="https://formsubmit.co/9802c5cca9f1fe0369d306af3a9c8ce6" // FormSubmit endpoint
 //                 method="POST"
 //                 className="space-y-6"
 //               >
