@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Mail } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Mail, LinkedinIcon } from 'lucide-react';
 import { FaXTwitter } from "react-icons/fa6"
 
 const Footer = () => {
@@ -24,18 +24,21 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-indigo-200 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61571102117679" className="hover:text-indigo-200 transition-colors">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="hover:text-indigo-200 transition-colors">
-              <FaXTwitter size={24} /> {/* X logo for Twitter */}
+              <a href="https://www.linkedin.com/company/denim-loom/about/" className="hover:text-indigo-200 transition-colors">
+              <LinkedinIcon size={24} /> {/* X logo for Twitter */}
               </a>
-              <a href="#" className="hover:text-indigo-200 transition-colors">
+              <a href="https://www.instagram.com/denim_loom/" className="hover:text-indigo-200 transition-colors">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="hover:text-indigo-200 transition-colors">
-                <Mail size={24} />
-              </a>
+              <a
+  href="mailto:sales@denimloom.com"
+  className="hover:text-indigo-200 transition-colors"
+>
+  <Mail size={24} />
+</a>
             </div>
           </div>
         </div>
