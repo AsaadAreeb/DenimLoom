@@ -1,47 +1,30 @@
-import { motion } from 'framer-motion';
-import { Product } from '../../types/product';
+import React from 'react';
+
+interface Product {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+}
 
 interface ProductCardProps {
   product: Product;
-  index: number;
-  onViewDetails: (product: Product) => void;
 }
 
-const ProductCard = ({ product, index, onViewDetails }: ProductCardProps) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
-    >
-      <div className="relative h-64">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-full object-cover"
-        />
-        {product.isNew && (
-          <span className="absolute top-4 right-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-            New
-          </span>
-        )}
+    <div className="card" style={{ width: '18rem', margin: '1rem' }}>
+      <div className="card-body">
+        <h5 className="card-title">{product.name}</h5>
+        <p className="card-text">{product.description}</p>
+        <p className="card-text">
+          <strong>${product.price}</strong>
+        </p>
       </div>
-      <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-        <p className="text-gray-600 mb-4">{product.description}</p>
-        <div className="flex justify-between items-center">
-          {/* <span className="text-2xl font-bold text-indigo-600">{product.price}</span> */}
-          <button 
-            onClick={() => onViewDetails(product)}
-            className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-          >
-            View Details
-          </button>
-        </div>
-      </div>
-    </motion.div>
+    </div>
   );
 };
 
 export default ProductCard;
+
+

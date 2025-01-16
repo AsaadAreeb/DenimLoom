@@ -1,0 +1,34 @@
+# Allow search engines to crawl
+User-agent: *
+Allow: /
+
+# Block access to specific paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /static/js/
+Disallow: /static/css/
+Disallow: /static/media/
+
+# Allow main product pages
+Allow: /products/apparel
+Allow: /products/accessories
+Allow: /products/footwear
+Allow: /products/home-and-lifestyle
+Allow: /products/custom-and-sustainable
+
+# Allow main navigation pages
+Allow: /about
+Allow: /products
+Allow: /services
+Allow: /contact
+
+# Add crawl delay
+Crawl-delay: 5
+
+# Reference to sitemap
+Sitemap: https://www.denimloom.com/sitemap.xml
