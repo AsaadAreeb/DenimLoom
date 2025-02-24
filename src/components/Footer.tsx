@@ -1,5 +1,4 @@
-import { Facebook, Twitter, Instagram, Mail, LinkedinIcon } from 'lucide-react';
-import { FaXTwitter } from "react-icons/fa6"
+import { Facebook, Instagram, Mail, LinkedinIcon } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,8 +8,9 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">DenimLoom</h3>
             <p className="text-indigo-200">
-              Quality denim exports worldwide. Your trusted partner in premium jeans manufacturing.
+              Elevating denim craftsmanship worldwide—your trusted partner in premium jeans manufacturing and exports.
             </p>
+
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
@@ -28,22 +28,23 @@ const Footer = () => {
                 <Facebook size={24} />
               </a>
               <a href="https://www.linkedin.com/company/denim-loom/about/" className="hover:text-indigo-200 transition-colors">
-              <LinkedinIcon size={24} /> {/* X logo for Twitter */}
+                <LinkedinIcon size={24} /> {/* X logo for Twitter */}
               </a>
               <a href="https://www.instagram.com/denim_loom/" className="hover:text-indigo-200 transition-colors">
                 <Instagram size={24} />
               </a>
               <a
-  href="mailto:sales@denimloom.com"
-  className="hover:text-indigo-200 transition-colors"
->
-  <Mail size={24} />
-</a>
+                href="mailto:sales@denimloom.com"
+                className="hover:text-indigo-200 transition-colors"
+              >
+                <Mail size={24} />
+              </a>
             </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-indigo-800 text-center text-indigo-200">
-          <p>&copy; {new Date().getFullYear()} DenimLoom. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} DenimLoom. All rights reserved.</p>
+
         </div>
       </div>
     </footer>

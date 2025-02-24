@@ -20,7 +20,8 @@ const About = () => {
           >
             <h1 className="text-4xl font-bold mb-6">Our Story</h1>
             <p className="text-xl max-w-2xl">
-              Leading the denim industry with innovation, quality, and sustainable practices since our establishment.
+            Pioneering the denim industry with innovation, craftsmanship, and sustainability.
+Delivering premium quality denim, crafted with passion and built to last.
             </p>
           </motion.div>
         </div>

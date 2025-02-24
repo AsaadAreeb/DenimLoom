@@ -30,7 +30,8 @@ const Home = () => {
               Premium Denim Exports Worldwide
             </h1>
             <p className="text-xl mb-8 max-w-2xl">
-              Your trusted partner in high-quality jeans manufacturing and global distribution.
+            Crafting premium jeans with precision, style, and unmatched quality.
+            Your trusted partner in denim manufacturing and worldwide distribution!
             </p>
             <a
               href="/contact"

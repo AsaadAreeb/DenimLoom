@@ -2,8 +2,9 @@ export interface Service {
   id: string;
   title: string;
   description: string;
-  fullDescription: string;
+  detailedDescription: string;
   features: string[];
   benefits: string[];
   processSteps?: string[];
 }
+

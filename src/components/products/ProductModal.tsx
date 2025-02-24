@@ -5,7 +5,8 @@ interface Product {
   id: string;
   name: string;
   description: string;
-  price: number;
+  detailedDescription: string;
+
   image: string;
   images: string[];
   isNew?: boolean;
@@ -20,17 +21,17 @@ interface ProductModalProps {
 
 const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   const productImages = product?.images || [product?.image || ''];
 
   const nextImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === productImages.length - 1 ? 0 : prev + 1
     );
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === 0 ? productImages.length - 1 : prev - 1
     );
   };
@@ -40,17 +41,18 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       {/* Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-black bg-opacity-50"
         onClick={onClose}
       />
-      
+
       {/* Modal */}
       <div className="relative bg-white rounded-lg w-full max-w-4xl mx-4 p-6">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 p-2 hover:bg-gray-100 rounded-full"
+          className="fixed md:absolute right-4 top-4 p-2 hover:bg-gray-100 rounded-full z-50 bg-white shadow-lg"
+          aria-label="Close modal"
         >
           <X className="h-6 w-6" />
         </button>
@@ -65,7 +67,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
                 className="w-full h-full object-cover"
               />
             </div>
-            
+
             {/* Carousel controls */}
             {productImages.length > 1 && (
               <>
@@ -91,9 +93,8 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
                   <button
                     key={index}
                     onClick={() => setCurrentImageIndex(index)}
-                    className={`w-2 h-2 rounded-full ${
-                      currentImageIndex === index ? 'bg-indigo-600' : 'bg-gray-300'
-                    }`}
+                    className={`w-2 h-2 rounded-full ${currentImageIndex === index ? 'bg-indigo-600' : 'bg-gray-300'
+                      }`}
                   />
                 ))}
               </div>
@@ -104,27 +105,30 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
           <div className="flex flex-col">
             <h2 className="text-2xl font-bold mb-4">{product.name}</h2>
             <p>
-                <strong>Category:</strong> {product.category}
-              </p>
-                
-              <p>
-                <strong>SKU:</strong> {product.id}
-              </p>
-            <p className="text-gray-600 mb-4">{product.description}</p>
+              <strong>Category:</strong> {product.category}
+            </p><br />
+
+            {/* Render detailedDescription as HTML */}
+            <div
+              className="text-gray-600 mb-4"
+              dangerouslySetInnerHTML={{ __html: product.detailedDescription }}
+            />
+
+            {/* <p className="text-gray-600 mb-4">{product.description}</p> */}
             <div className="flex items-center mb-6">
-              <span className="text-2xl font-bold text-indigo-600">
+              {/* <span className="text-2xl font-bold text-indigo-600">
                 ${product.price}
-              </span>
+              </span> */}
               {product.isNew && (
                 <span className="ml-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm">
                   New
                 </span>
               )}
             </div>
-            
+
             {/* Additional product details */}
             <div className="space-y-4 text-gray-600">
-           
+
               {/* <p className="text-sm">
                 Free shipping on orders over $50
               </p> */}
