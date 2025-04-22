@@ -87,7 +87,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6 text-indigo-600" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-600">sales@denimloom.com</p>
+                    <p className="text-gray-600">admin@denimloom.com</p>
                   </div>
                 </div>
 
