@@ -34,7 +34,7 @@ const Home = () => {
             Your trusted partner in denim manufacturing and worldwide distribution!
             </p>
             <a
-              href="/contact"
+              href="/products"
               className="inline-flex items-center px-6 py-3 bg-white text-indigo-900 rounded-lg font-semibold hover:bg-indigo-100 transition-colors duration-200"
             >
               Get Started <ArrowRight className="ml-2" />
