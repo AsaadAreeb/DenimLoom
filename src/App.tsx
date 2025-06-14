@@ -5,7 +5,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
-import Products from './pages/Products'
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Products from './pages/Products';
 import ProductCategory from './components/products/ProductCategory';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/products/:category" element={<ProductCategory />} />
         </Routes>
       </main>

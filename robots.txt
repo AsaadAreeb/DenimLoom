@@ -26,6 +26,7 @@ Allow: /about
 Allow: /products
 Allow: /services
 Allow: /contact
+Allow: /privacypolicy
 
 # Add crawl delay
 Crawl-delay: 5
