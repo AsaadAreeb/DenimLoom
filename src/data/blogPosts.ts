@@ -540,7 +540,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Remember, the perfect fit is personal and may take some experimentation. Don't be afraid to try different brands, cuts, and sizes to find what works best for your body and lifestyle. Quality denim is an investment that, when properly fitted, will serve you well for years to come.</p>
     `,
-    author: 'Emma Rodriguez',
+    author: 'DenimLoom Team',
     publishDate: '2024-11-20',
     readTime: '9 min read',
     tags: ['Fit Guide', 'Style Tips', 'Shopping Guide'],
