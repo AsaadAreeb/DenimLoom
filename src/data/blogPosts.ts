@@ -127,7 +127,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>The shift towards sustainable denim isn't just an environmental necessity—it's becoming a competitive advantage for forward-thinking manufacturers and a key consideration for conscious consumers.</p>
     `,
-    author: 'Sarah Johnson',
+    author: 'DenimLoom Team',
     publishDate: '2024-12-10',
     readTime: '7 min read',
     tags: ['Sustainability', 'Manufacturing', 'Environment'],
@@ -229,7 +229,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>2025 promises to be an exciting year for denim enthusiasts, with options that cater to every style preference while pushing the boundaries of traditional denim design.</p>
     `,
-    author: 'Michael Chen',
+    author: 'DenimLoom Team',
     publishDate: '2024-12-05',
     readTime: '6 min read',
     tags: ['Fashion Trends', 'Style Guide', '2025 Fashion'],
@@ -546,5 +546,154 @@ export const blogPosts: BlogPost[] = [
     tags: ['Fit Guide', 'Style Tips', 'Shopping Guide'],
     image: 'https://images.unsplash.com/photo-1582418702059-97ebafb35d09?auto=format&fit=crop&q=80',
     slug: 'finding-perfect-denim-fit'
+  },
+
+  {
+    id: '6',
+    title: 'The Evolution of Denim: Understanding Raw, Selvedge, and Stretch Fabrics',
+    excerpt: 'Explore the history and unique qualities of raw, selvedge, and stretch denim fabrics.',
+    content: `
+      <h2>Introduction</h2>
+      <p>Denim is one of the most iconic fabrics in the world, known for its durability, versatility, and timeless appeal. Over the centuries, denim has evolved from a fabric used for workwear to a staple in fashion. However, not all denim is created equal. From raw to selvedge to stretch denim, each fabric type brings its own unique qualities to the table. Let’s take a journey through the history and characteristics of these popular denim fabrics.</p>
+
+      <h3>1. Raw Denim: The Undisturbed Classic</h3>
+      <p>Raw denim is the most traditional form of denim, made from unwashed fabric. This type of denim is known for its stiffness and deep indigo color, which fades uniquely over time. Initially used in the 19th century for durable workwear, raw denim was designed to endure harsh conditions. It wasn’t until the 1950s that raw denim started to gain traction in fashion, as its unique fading process and rugged aesthetic began to capture the attention of denim enthusiasts.</p>
+      <p><strong>Fashion Trend:</strong> Raw denim is often associated with a more authentic, vintage look. Whether it’s paired with a classic jacket or slim-fit jeans, raw denim is all about patience, as it requires time to mold to the wearer’s body.</p>
+
+      <h3>2. Selvedge Denim: The Premium Choice</h3>
+      <p>Selvedge denim, also known as "self-edge" denim, refers to denim woven on traditional shuttle looms, which create a tightly woven edge that prevents fraying. The name "selvedge" comes from the term "self-edge," indicating that the fabric doesn’t require additional stitching on the sides. This method of weaving, developed in the 19th century, creates a higher-quality denim fabric with a more distinct texture and finish.</p>
+      <p><strong>Fashion Trend:</strong> Selvedge denim has long been associated with premium, high-end jeans. It’s favored by those who appreciate the craftsmanship and authentic qualities of the fabric.</p>
+
+      <h3>3. Stretch Denim: Comfort Meets Versatility</h3>
+      <p>Stretch denim is created by blending cotton with elastic fibers like spandex or elastane to offer greater mobility. This fabric first became popular in the 2000s and is now widely used in various styles, from skinny jeans to casual jackets.</p>
+      <p><strong>Fashion Trend:</strong> Stretch denim has revolutionized how denim can be worn. It combines comfort with style, making it ideal for active lifestyles while still providing a sharp, modern look.</p>
+
+      <h3>Which Denim Should You Choose?</h3>
+      <p>Choosing the right type of denim depends on your personal style, comfort preferences, and fashion needs. Raw denim offers a classic, rugged appeal, while selvedge denim is perfect for those who appreciate premium craftsmanship. On the other hand, stretch denim offers flexibility and comfort, making it an excellent choice for day-to-day wear. Whatever your preference, each fabric type brings something special to your wardrobe.</p>
+    `,
+    author: 'DenimLoom Team',
+    publishDate: '2025-06-17',
+    readTime: '5 min read',
+    tags: [
+      'raw denim',
+      'selvedge denim',
+      'stretch denim',
+      'denim fabric types',
+      'denim quality'
+    ],
+    image: '/blogs/evolution-of-denim.jpg',
+    slug: 'evolution-of-denim'
+  },
+
+  // New Blog 7
+  {
+    id: '7',
+    title: 'Sustainable Denim: Embracing Eco-Friendly Fabrics in Fashion',
+    excerpt: 'Discover how organic cotton, recycled denim, and other eco-friendly fabrics are shaping the future of denim fashion.',
+    content: `
+      <h2>Introduction</h2>
+      <p>As the fashion industry increasingly looks for ways to reduce its environmental impact, sustainable denim has become a crucial focus. Today, eco-conscious consumers are looking for alternatives that not only look good but also feel good to wear. From organic cotton to recycled denim, sustainable fabrics are redefining fashion’s future.</p>
+
+      <h3>1. Organic Cotton Denim: The Sustainable Classic</h3>
+      <p>Organic cotton is grown without the use of synthetic pesticides or fertilizers. This makes it a cleaner alternative to conventional cotton, which can be harmful to the environment. Denim made from organic cotton is softer, more breathable, and less damaging to the planet.</p>
+      <p><strong>Fashion Trend:</strong> Organic cotton denim has become the go-to for eco-conscious brands, offering a durable yet sustainable option that feels as good as it looks.</p>
+
+      <h3>2. Recycled Denim: Turning Waste into Fashion</h3>
+      <p>Recycled denim is made from old denim garments that are deconstructed and re-spun into new yarn. This process reduces the need for virgin materials, making it an incredibly eco-friendly choice. By recycling denim, we can reduce waste and cut down on the energy and water used in production.</p>
+      <p><strong>Fashion Trend:</strong> Recycled denim is gaining popularity as more brands look for sustainable options. Whether used for outerwear, jeans, or accessories, recycled denim allows consumers to wear eco-friendly fashion without sacrificing quality or style.</p>
+
+      <h3>3. Denim’s Environmental Impact: The Role of Eco-Friendly Fabrics</h3>
+      <p>The traditional denim manufacturing process is notoriously resource-heavy, requiring large amounts of water and chemicals. However, with the rise of sustainable fabrics, there are now more eco-friendly options than ever before. Denim brands are focusing on reducing their environmental footprint by using cleaner production methods, such as waterless dyeing and energy-efficient manufacturing processes.</p>
+      <p><strong>Fashion Trend:</strong> As more consumers demand eco-friendly options, sustainable denim has moved from niche to mainstream, with big brands and independent labels alike embracing the change.</p>
+
+      <h3>The Future of Denim</h3>
+      <p>Sustainable denim is more than just a trend—it’s a movement that’s changing the way we think about fashion. By choosing fabrics like organic cotton and recycled denim, we can reduce our impact on the planet while still enjoying the quality and style that denim offers. As we move forward, the future of denim looks greener, cleaner, and more fashion-forward than ever.</p>
+    `,
+    author: 'DenimLoom Team',
+    publishDate: '2025-06-17',
+    readTime: '6 min read',
+    tags: [
+      'sustainable denim',
+      'eco-friendly fabrics',
+      'organic cotton',
+      'recycled denim',
+      'fashion sustainability'
+    ],
+    image: '/blogs/sustainable-denim.jpg',
+    slug: 'sustainable-denim-eco-friendly-fabrics'
+  },
+
+  // New Blog 8
+  {
+    id: '8',
+    title: 'Understanding Denim Weaves: The Key to Comfort and Durability',
+    excerpt: 'Learn about different denim weaves—twill, plain weave—and how they affect comfort, durability, and style.',
+    content: `
+      <h2>Introduction</h2>
+      <p>The magic behind denim lies not just in its fabric, but in the intricate weave that makes it so durable, comfortable, and stylish. Denim’s characteristic texture is created through a weaving process, and understanding the different types of denim weaves can help you choose the best fabric for your wardrobe.</p>
+
+      <h3>1. Twill Weave: The Classic Denim Structure</h3>
+      <p>The most common weave used for denim is the twill weave, which gives the fabric its diagonal pattern. This structure makes denim both durable and comfortable, as it allows the fabric to breathe and stretch with the wearer.</p>
+      <p><strong>Fashion Trend:</strong> Twill weave is used in most denim products, from classic jeans to jackets. It’s known for its durability and classic look, making it a timeless fabric choice.</p>
+
+      <h3>2. Plain Weave: Simplicity Meets Durability</h3>
+      <p>Plain weave denim is the simplest of all the weaves. It’s created by alternating the weft and warp threads in a basic crisscross pattern, which results in a fabric that’s lightweight and breathable. While it’s not as durable as twill weave, it’s ideal for lighter denim garments.</p>
+      <p><strong>Fashion Trend:</strong> Plain weave denim is perfect for warmer climates or for those who prefer lighter denim pieces such as shirts or dresses.</p>
+
+      <h3>3. The Importance of Weave in Denim Comfort</h3>
+      <p>The weave of denim plays a crucial role in how the fabric feels against the skin. Twill weaving provides a soft, comfortable texture, while plain weave denim is ideal for warmer weather. Different weaves also affect how denim breaks overtime, contributing to the fading and distressing process that many denim enthusiasts love.</p>
+
+      <h3>The Perfect Weave for You</h3>
+      <p>Whether you’re looking for durability, comfort, or breathability, understanding denim weaves will help you make an informed choice. Twill weave is perfect for heavy-duty denim, while plain weave offers a lighter, breezier alternative. Whatever your preference, the right weave can make all the difference in your denim experience.</p>
+    `,
+    author: 'DenimLoom Team',
+    publishDate: '2025-06-17',
+    readTime: '4 min read',
+    tags: [
+      'denim weave',
+      'twill weave',
+      'plain weave',
+      'denim durability',
+      'fabric comfort'
+    ],
+    image: '/blogs/denim-weaves.webp',
+    slug: 'understanding-denim-weaves'
+  },
+
+  // New Blog 9
+  {
+    id: '9',
+    title: 'Denim’s Role in Workwear: How Heavyweight and Utility Fabrics Shape the Look',
+    excerpt: 'Explore how heavyweight and utility denim fabrics influence modern workwear-inspired fashion trends.',
+    content: `
+      <h2>Introduction</h2>
+      <p>Denim has long been a fabric associated with hard work. From miners to cowboys, denim’s strength and resilience made it the fabric of choice for those in tough jobs. Today, denim’s role in workwear is more stylish than ever, with heavyweight and utility denim fabrics shaping the modern workwear trend.</p>
+
+      <h3>1. Heavyweight Denim: Built for Durability</h3>
+      <p>Heavyweight denim is thicker and more durable than your standard denim fabric, making it perfect for workwear and utility clothing. Historically, this type of denim was used for jeans and jackets worn by workers in the 19th century. It’s designed to withstand harsh conditions and provide long-lasting protection.</p>
+      <p><strong>Fashion Trend:</strong> Heavyweight denim has made a comeback in high-end fashion, with designers incorporating it into outerwear, pants, and accessories. Its durability and unique texture make it a favorite among those who appreciate rugged style.</p>
+
+      <h3>2. Utility Denim: Function Meets Fashion</h3>
+      <p>Utility denim, often made from thicker, more durable fabric, is designed with function in mind. It features multiple pockets, reinforced stitching, and a loose, comfortable fit that allows for maximum movement.</p>
+      <p><strong>Fashion Trend:</strong> The utility trend is all about practicality without sacrificing style. Denim overalls, work pants, and jackets are now seen as trendy pieces that combine fashion with functionality.</p>
+
+      <h3>3. The Impact of Workwear on Modern Denim Fashion</h3>
+      <p>Workwear denim has influenced contemporary denim styles, with brands incorporating elements of utility and durability into their collections. Whether it’s a heavy-duty denim jacket or a pair of utilitarian jeans, denim’s workwear roots continue to inspire designers today.</p>
+
+      <h3>Workwear Denim for the Modern Fashionista</h3>
+      <p>Heavyweight and utility denim offer the perfect balance of durability and style. These fabrics are ideal for those who appreciate the rugged history of denim while still wanting to look fashionable. Whether you're wearing it for work or play, workwear denim brings a practical and fashionable edge to your wardrobe.</p>
+    `,
+    author: 'DenimLoom Team',
+    publishDate: '2025-06-17',
+    readTime: '5 min read',
+    tags: [
+      'heavyweight denim',
+      'utility denim',
+      'workwear denim',
+      'durable denim fabrics',
+      'fashion trends'
+    ],
+    image: '/blogs/workwear-denim.jpg',
+    slug: 'denims-role-in-workwear'
   }
 ];

@@ -7,9 +7,9 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Products from './pages/Products';
+import ProductCategory from './components/products/ProductCategory';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
-import ProductCategory from './components/products/ProductCategory';
 
 function App() {
   return (
