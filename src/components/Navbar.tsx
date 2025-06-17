@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-// import logo from '../svg/Capture-removebg-preview.png'; // Importing the logo image
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +11,7 @@ const Navbar = () => {
     { path: '/about', label: 'About' },
     { path: '/products', label: 'Products' },
     { path: '/services', label: 'Services' },
+    { path: '/blog', label: 'Blog' },
     { path: '/contact', label: 'Contact' },
     { path: '/privacypolicy', label: 'Privacy Policy'},
   ];
@@ -25,10 +25,7 @@ const Navbar = () => {
             <span className="bg-gradient-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text shadow-lg">Loom</span>
           </Link>
 
-
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-full h-[1px] bg-slate-900 shadow-[0_-40px_80px_rgba(255,255,255,0.5)]"></div>
-
-
 
           <div className="hidden md:flex space-x-6">
             {navLinks.map(({ path, label }) => (

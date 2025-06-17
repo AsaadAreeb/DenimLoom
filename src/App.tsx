@@ -7,6 +7,8 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Products from './pages/Products';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import ProductCategory from './components/products/ProductCategory';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/products/:category" element={<ProductCategory />} />
         </Routes>

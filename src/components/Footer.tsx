@@ -10,14 +10,15 @@ const Footer = () => {
             <p className="text-indigo-200">
               Elevating denim craftsmanship worldwide—your trusted partner in premium jeans manufacturing and exports.
             </p>
-
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-indigo-200">
               <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
               <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
+              <li><a href="/products" className="hover:text-white transition-colors">Products</a></li>
               <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
+              <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
               <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
               <li><a href="/privacypolicy" className="hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
@@ -29,7 +30,7 @@ const Footer = () => {
                 <Facebook size={24} />
               </a>
               <a href="https://www.linkedin.com/company/denim-loom/about/" className="hover:text-indigo-200 transition-colors">
-                <LinkedinIcon size={24} /> {/* X logo for Twitter */}
+                <LinkedinIcon size={24} />
               </a>
               <a href="https://www.instagram.com/denim_loom/" className="hover:text-indigo-200 transition-colors">
                 <Instagram size={24} />
@@ -45,7 +46,6 @@ const Footer = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-indigo-800 text-center text-indigo-200">
         <p>&copy; {new Date().getFullYear()} DenimLoom. All rights reserved.</p>
-
         </div>
       </div>
     </footer>
