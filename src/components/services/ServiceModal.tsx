@@ -29,7 +29,7 @@ const ServiceModal = ({ service, onClose }: ServiceModalProps) => {
           <div className="p-4">
             <h2 className="text-xl font-bold mb-3">{service.title}</h2>
             <div className="prose prose-indigo max-w-none text-sm">
-              <p className="text-gray-600 mb-4">{service.fullDescription}</p>
+              <p className="text-gray-600 mb-4">{service.detailedDescription}</p>
 
               <h3 className="text-base font-semibold mb-2">Key Features:</h3>
               <ul className="space-y-1 mb-4">

@@ -118,7 +118,8 @@ const BlogPost = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {blogPosts
                 .filter(p => p.id !== post.id)
-                .slice(0, 2)
+                .sort(() => 0.5 - Math.random()) // Shuffle the array
+                .slice(0, 2) // Take first two from the shuffled list
                 .map((relatedPost) => (
                   <Link
                     key={relatedPost.id}

@@ -6,7 +6,7 @@ export const services: Service[] = [
     title: 'Custom Jeans Manufacturing',
     description:
       'State-of-the-art manufacturing facilities producing premium jeans and denim jackets tailored to your needs.',
-    fullDescription:
+    detailedDescription:
       'Our custom jeans manufacturing service combines cutting-edge technology with traditional craftsmanship to produce high-quality denim products, including Slim Fit Jeans, Straight Fit Jeans, Baggy Jeans, and Denim Jackets. We ensure precision in every stitch, meeting your exact specifications with exceptional attention to detail and quality control.',
     features: [
       'Advanced machinery for precise stitching',
@@ -36,7 +36,7 @@ export const services: Service[] = [
     title: 'Global Export Services',
     description:
       'Efficient export logistics ensuring timely delivery of jeans and denim products worldwide.',
-    fullDescription:
+    detailedDescription:
       'Our global export service provides seamless logistics solutions for delivering premium jeans and denim jackets anywhere in the world. From documentation to customs clearance, we ensure smooth and timely delivery to meet your business needs.',
     features: [
       'Extensive worldwide shipping network',
@@ -66,7 +66,7 @@ export const services: Service[] = [
     title: 'Quality Assurance',
     description:
       'Rigorous quality control ensuring premium standards for jeans and denim jackets.',
-    fullDescription:
+    detailedDescription:
       'Our quality assurance service guarantees that every pair of jeans and denim jacket meets the highest industry standards. Through multi-level inspections and advanced testing, we ensure durability, comfort, and style in every product.',
     features: [
       'Comprehensive inspection processes',
@@ -88,7 +88,7 @@ export const services: Service[] = [
     title: 'Custom Packaging Solutions',
     description:
       'Tailored packaging that enhances brand visibility and protects denim products during transit.',
-    fullDescription:
+    detailedDescription:
       'Our custom packaging service provides innovative and protective solutions for your jeans and denim jackets. From eco-friendly materials to branded designs, we help showcase your products while ensuring their safe delivery.',
     features: [
       'Variety of packaging options',
@@ -110,7 +110,7 @@ export const services: Service[] = [
     title: 'Sustainable Manufacturing Practices',
     description:
       'Eco-friendly denim production processes and sustainable material sourcing.',
-    fullDescription:
+    detailedDescription:
       'Our sustainability initiatives focus on reducing environmental impact throughout the production of jeans and denim jackets. We prioritize eco-friendly materials and green technologies to support sustainable fashion.',
     features: [
       'Recycled and organic material options',
@@ -132,7 +132,7 @@ export const services: Service[] = [
     title: 'Market Intelligence for Denim Products',
     description:
       'Comprehensive market insights to optimize your jeans and denim business strategy.',
-    fullDescription:
+    detailedDescription:
       'Our market intelligence service provides deep insights into denim industry trends, consumer preferences, and competitor analysis. Use our expertise to make data-driven decisions that position your jeans and denim jackets for success.',
     features: [
       'Trend analysis for jeans and denim styles',
