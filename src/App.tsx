@@ -10,6 +10,7 @@ import Products from './pages/Products';
 import ProductCategory from './components/products/ProductCategory';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/products/:category" element={<ProductCategory />} />
+          <Route path="/category/:category/product/:productId" element={<ProductDetail />} />
         </Routes>
       </main>
       <Footer />
