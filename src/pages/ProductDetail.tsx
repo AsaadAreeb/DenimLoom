@@ -132,10 +132,16 @@ const ProductDetail = () => {
               </div>
 
               <div className="space-y-4 mb-8">
-                <button className="w-full bg-indigo-600 text-white py-4 rounded-lg hover:bg-indigo-700 font-semibold text-lg">
+                <a
+                  href={`https://wa.me/923440854334?text=${encodeURIComponent(
+                    `Hello, I'm interested in your product: ${product.name}`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center bg-indigo-600 text-white py-4 rounded-lg hover:bg-indigo-700 font-semibold text-lg">
                   Contact for Quote
-                </button>
-                {/* <button className="w-full border-2 border-indigo-600 text-indigo-600 py-4 rounded-lg hover:bg-indigo-50 font-semibold text-lg">
+                </a>
+                  {/* <button className="w-full border-2 border-indigo-600 text-indigo-600 py-4 rounded-lg hover:bg-indigo-50 font-semibold text-lg">
                   Add to Wishlist
                 </button> */}
               </div>

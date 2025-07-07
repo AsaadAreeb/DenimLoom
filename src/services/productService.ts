@@ -4,7 +4,7 @@ const allProducts: Record<string, Product[]> = {
   'apparel': [
 
     {
-      id: '3',
+      id: '1',
       name: 'Skinny Jeans',
       description: 'Sleek, form-fitting denim that hugs your legs perfectly.',
       detailedDescription: `
@@ -17,16 +17,21 @@ const allProducts: Record<string, Product[]> = {
     Whether you're pairing them with heels for a chic look or sneakers for casual vibes,<br>
     they keep you comfortable and fashionable all day long.
   `,
-      image: '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 1.png',
+      image: '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 1.jpeg',
       images: [
-        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 1.png',
-        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 2.png',
-        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 3.png'
+        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 1.jpeg',
+        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 2.jpeg',
+        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 3.jpeg',
+        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 4.jpeg',
+        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 5.jpeg',
+        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 6.jpeg',
+        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 7.jpeg',
+        '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 8.jpeg',
       ],
       category: 'apparel'
     },
     {
-      id: '4',
+      id: '2',
       name: 'Straight Leg Jeans',
       description: 'Classic, timeless fit with a straight cut from hip to hem.',
       detailedDescription: `
@@ -36,16 +41,20 @@ const allProducts: Record<string, Product[]> = {
       Classic never goes out of style! These straight-leg jeans bring the perfect mix of comfort and cool, making them your go-to denim for any occasion. Dress them up or down—you can’t go wrong!
     `,
 
-      image: '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 1.png',
+      image: '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 1.jpeg',
       images: [
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 1.png',
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 2.png',
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 3.png'
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 1.jpeg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 2.jpeg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 3.jpeg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 4.jpeg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 5.jpeg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 6.jpeg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 7.jpeg',
       ],
       category: 'apparel'
     },
     {
-      id: '5',
+      id: '3',
       name: 'Bootcut Jeans',
       description: 'Slightly flared at the hem, perfect for boots and comfort.',
       detailedDescription: `
@@ -55,16 +64,19 @@ const allProducts: Record<string, Product[]> = {
       Give your outfit that effortlessly cool vibe with these bootcut jeans! The subtle flare adds just the right amount of drama, making them perfect for strutting in style—whether at a party or on a casual day out.
     `,
 
-      image: '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 1.png',
+      image: '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 4.jpeg',
       images: [
-        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 1.png',
-        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 2.png',
-        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 3.png'
+        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 1.jpeg',
+        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 2.jpeg',
+        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 3.jpeg',
+        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 4.jpeg',
+        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 5.jpeg',
+        '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 6.jpeg',
       ],
       category: 'apparel'
     },
     {
-      id: '6',
+      id: '4',
       name: 'Relaxed Fit Jeans',
       description: 'Loose and comfortable, offering a laid-back and easy feel.',
       detailedDescription: `
@@ -74,16 +86,20 @@ const allProducts: Record<string, Product[]> = {
       When comfort meets effortless style, you get these relaxed-fit jeans! Whether you’re chilling at home or out exploring the city, they let you move freely while keeping you looking effortlessly cool.
     `,
 
-      image: '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 1.png',
+      image: '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 1.jpeg',
       images: [
-        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 1.png',
-        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 2.png',
-        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 3.png'
+        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 1.jpeg',
+        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 2.jpeg',
+        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 3.jpeg',
+        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 4.jpeg',
+        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 5.jpeg',
+        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 6.jpeg',
+        '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 7.jpeg',
       ],
       category: 'apparel'
     },
     {
-      id: '7',
+      id: '5',
       name: 'Classic Denim Jackets',
       description: 'Timeless denim staple for effortless style and versatility.',
       detailedDescription: `
@@ -103,7 +119,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'apparel'
     },
     {
-      id: '8',
+      id: '6',
       name: 'Denim Bomber Jackets',
       description: 'Sporty meets denim in this cool, modern statement piece.',
       detailedDescription: `
@@ -123,7 +139,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'apparel'
     },
     {
-      id: '81',
+      id: '7',
       name: 'Oversized Denim Jackets',
       description: 'Relaxed, trendy fit for a bold and effortless look.',
       detailedDescription: `
@@ -143,7 +159,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'apparel'
     },
     {
-      id: '82',
+      id: '8',
       name: 'Trucker Jackets',
       description: 'Iconic rugged denim jacket with a structured, vintage appeal.',
       detailedDescription: `
@@ -178,7 +194,9 @@ const allProducts: Record<string, Product[]> = {
         '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 1.jpeg',
         '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 2.jpeg',
         '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 3.jpeg',
-        '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 4.jpeg'
+        '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 4.jpeg',
+        '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 5.jpeg',
+        '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 6.jpeg',
       ],
       category: 'apparel'
     },
@@ -193,7 +211,7 @@ const allProducts: Record<string, Product[]> = {
       A softer, more laid-back take on denim! This chambray shirt is lightweight and versatile, making it the ideal piece for warm weather or easy layering in cooler months.
     `,
 
-      image: '/Apparel/Denim Shirts/Chambray Shirts/Chambray Shirts 1.jpeg',
+      image: '/Apparel/Denim Shirts/Chambray Shirts/Chambray Shirts 2.jpeg',
       images: [
         '/Apparel/Denim Shirts/Chambray Shirts/Chambray Shirts 1.jpeg',
         '/Apparel/Denim Shirts/Chambray Shirts/Chambray Shirts 2.jpeg',
@@ -204,7 +222,7 @@ const allProducts: Record<string, Product[]> = {
     },
 
     {
-      id: '12',
+      id: '11',
       name: 'A-line Skirts',
       description: "A must-have for effortless elegance!",
       detailedDescription: `
@@ -214,7 +232,7 @@ const allProducts: Record<string, Product[]> = {
         A must-have for effortless elegance! Whether you're dressing it up with heels or keeping it casual with sneakers, this A-line denim skirt brings timeless charm and all-day comfort.
       `,
 
-      image: '/Apparel/Denim Skirts/A-line Skirt/A-line Skirts 1.jpeg',
+      image: '/Apparel/Denim Skirts/A-line Skirt/A-line Skirts 4.jpeg',
       images: [
         '/Apparel/Denim Skirts/A-line Skirt/A-line Skirts 1.jpeg',
         '/Apparel/Denim Skirts/A-line Skirt/A-line Skirts 2.jpeg',
@@ -224,7 +242,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'apparel'
     },
     {
-      id: '13',
+      id: '12',
       name: 'Denim Maxi Skirts',
       description: "Dress it up or keep it casual—either way, you're bound to steal the spotlight!",
       detailedDescription: `
@@ -244,7 +262,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'apparel'
     },
     {
-      id: '14',
+      id: '13',
       name: 'Denim Midi Skirts',
       description: "For when you want a little more coverage without sacrificing style!",
       detailedDescription: `
@@ -254,7 +272,7 @@ const allProducts: Record<string, Product[]> = {
       For when you want a little more coverage without sacrificing style! The denim midi skirt is effortlessly chic, pairing well with anything from sneakers to ankle boots.
     `,
 
-      image: '/Apparel/Denim Skirts/Denim Midi Skirts/Denim Midi Skirts 1.jpeg',
+      image: '/Apparel/Denim Skirts/Denim Midi Skirts/Denim Midi Skirts 4.jpeg',
       images: [
         '/Apparel/Denim Skirts/Denim Midi Skirts/Denim Midi Skirts 1.jpeg',
         '/Apparel/Denim Skirts/Denim Midi Skirts/Denim Midi Skirts 2.jpeg',
@@ -264,7 +282,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'apparel'
     },
     {
-      id: '15',
+      id: '14',
       name: 'Denim Mini Skirts',
       description: "Flirty and fun, this denim mini skirt is a wardrobe essential!",
       detailedDescription: `
@@ -274,7 +292,7 @@ const allProducts: Record<string, Product[]> = {
       Flirty and fun, this denim mini skirt is a wardrobe essential! Throw on a crop top, an oversized sweater, or a graphic tee, and you’re ready to turn heads.
     `,
 
-      image: '/Apparel/Denim Skirts/Denim Mini Skirts/Denim Mini Skirts 2.jpeg',
+      image: '/Apparel/Denim Skirts/Denim Mini Skirts/Denim Mini Skirts 1.jpeg',
       images: [
         '/Apparel/Denim Skirts/Denim Mini Skirts/Denim Mini Skirts 1.jpeg',
         '/Apparel/Denim Skirts/Denim Mini Skirts/Denim Mini Skirts 2.jpeg',
@@ -284,7 +302,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'apparel'
     },
     {
-      id: '16',
+      id: '15',
       name: 'Overalls and Dungarees',
       description: "A denim classic that never fades!",
       detailedDescription: `
@@ -294,34 +312,40 @@ const allProducts: Record<string, Product[]> = {
       A denim classic that never fades! Whether you go for a laid-back vibe with sneakers or dress it up with heels, these overalls are your go-to for effortless cool.
     `,
 
-      image: '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 3.jpeg',
+      image: '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 5.jpeg',
       images: [
+        '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 6.jpeg',
+        '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 7.jpeg',
+        '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 8.jpeg',
+        '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 9.jpeg',
+        '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 5.jpeg',
         '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 1.jpeg',
         '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 2.jpeg',
         '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 3.jpeg',
-        '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 4.jpeg'
+        '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 4.jpeg',
+        '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 1.jpeg',
+        '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 2.jpeg',
       ],
       category: 'apparel'
     },
-    {
-      id: '161',
-      name: 'Overalls and Dungarees',
-      description: "Easy, stylish, and full of personality!",
-      detailedDescription: `
-      ✔ A fun, stylish twist on traditional overalls.<br>
-      ✔ Fitted, oversized, and wide-leg options available.<br>
-      ✔ Perfect for layering over tees, turtlenecks, or crop tops.<br><br>
-      Easy, stylish, and full of personality! Denim dungarees bring that playful, street-style energy that works all year round. Just throw them on and rock your unique look!
-    `,
+    // {
+    //   id: '16',
+    //   name: 'Overalls and Dungarees',
+    //   description: "Easy, stylish, and full of personality!",
+    //   detailedDescription: `
+    //   ✔ A fun, stylish twist on traditional overalls.<br>
+    //   ✔ Fitted, oversized, and wide-leg options available.<br>
+    //   ✔ Perfect for layering over tees, turtlenecks, or crop tops.<br><br>
+    //   Easy, stylish, and full of personality! Denim dungarees bring that playful, street-style energy that works all year round. Just throw them on and rock your unique look!
+    // `,
 
-      image: '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 1.png',
-      images: [
-        '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 1.png',
-        '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 2.png',
-        '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 3.png'
-      ],
-      category: 'apparel'
-    },
+    //   image: '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 1.jpeg',
+    //   images: [
+    //     '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 1.jpeg',
+    //     '/Apparel/Overalls and Dungarees/Dungarees/Dungarees 2.jpeg',
+    //   ],
+    //   category: 'apparel'
+    // },
     {
       id: '17',
       name: 'Shirt Dresses',
@@ -392,11 +416,12 @@ const allProducts: Record<string, Product[]> = {
     `,
 
 
-      image: '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda Shorts 1.png',
+      image: '/Apparel/Denim Shorts/Bermuda Shorts/Bremuda shorts 4.jpeg',
       images: [
-        '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda Shorts 1.png',
-        '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda Shorts 2.png',
-        '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda Shorts 3.png'
+        '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda shorts 1.jpeg',
+        '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda shorts 2.jpeg',
+        '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda shorts 3.jpeg',
+        '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda shorts 4.jpeg',
       ],
       category: 'apparel'
     },
@@ -411,11 +436,14 @@ const allProducts: Record<string, Product[]> = {
       Function meets fashion! These denim cargo shorts are perfect for those who love a laid-back, edgy style with extra storage space for all your essentials.
     `,
 
-      image: '/Apparel/Denim Shorts/Cargo Shorts/Cargo Shorts 1.png',
+      image: '/Apparel/Denim Shorts/Cargo Shorts/Cargo Short 1.jpeg',
       images: [
-        '/Apparel/Denim Shorts/Cargo Shorts/Cargo Shorts 1.png',
-        '/Apparel/Denim Shorts/Cargo Shorts/Cargo Shorts 2.png',
-        '/Apparel/Denim Shorts/Cargo Shorts/Cargo Shorts 3.png',],
+        '/Apparel/Denim Shorts/Cargo Shorts/Cargo Short 1.jpeg',
+        '/Apparel/Denim Shorts/Cargo Shorts/Cargo Short 2.jpeg',
+        '/Apparel/Denim Shorts/Cargo Shorts/Cargo Short 3.jpeg',
+        '/Apparel/Denim Shorts/Cargo Shorts/Cargo Short 4.jpeg',
+        '/Apparel/Denim Shorts/Cargo Shorts/Cargo Short 5.jpeg',
+      ],
 
       category: 'apparel'
     },
@@ -430,11 +458,18 @@ const allProducts: Record<string, Product[]> = {
       Nothing says carefree like a pair of cutoff denim shorts! Pair them with a tank top or an oversized button-down for the ultimate casual-chic outfit.
     `,
 
-      image: '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 1.png',
+      image: '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 6.jpeg',
       images: [
-        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 1.png',
-        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 2.png',
-        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 3.png',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 1.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 2.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 3.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 4.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 5.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 6.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 7.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 8.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 9.jpeg',
+        '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 10.jpeg',
       ],
       category: 'apparel'
     },
@@ -449,11 +484,17 @@ const allProducts: Record<string, Product[]> = {
       Retro charm meets modern style! These high-waisted denim shorts are perfect for creating that effortlessly put-together look while staying super comfy.
     `,
 
-      image: '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 1.png',
+      image: '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 4.jpeg',
       images: [
-        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 1.png',
-        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 2.png',
-        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 3.png',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 1.jpeg',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 2.jpeg',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 3.jpeg',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 4.jpeg',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 5.jpeg',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 6.jpeg',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 7.jpeg',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 8.jpeg',
+        '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 9.jpeg',
       ],
       category: 'apparel'
     }
@@ -464,7 +505,7 @@ const allProducts: Record<string, Product[]> = {
 
 
     {
-      id: '26',
+      id: '24',
       name: 'Denim Tote Bags',
       description: "Spacious, stylish, and versatile—your perfect everyday denim tote bag!",
       detailedDescription: `
@@ -484,7 +525,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'accessories'
     },
     {
-      id: '261',
+      id: '25',
       name: 'Overnight Totes',
       description: "Travel in style with a spacious, trendy, and durable denim tote!",
       detailedDescription: `
@@ -504,7 +545,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'accessories'
     },
     {
-      id: '27',
+      id: '26',
       name: 'Denim Backpacks',
       description: "Trendy, functional, and spacious—your go-to denim backpack for everyday!",
       detailedDescription: `
@@ -524,7 +565,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'accessories'
     },
     {
-      id: '28',
+      id: '27',
       name: 'Hats and Caps',
       description: "Cool, comfy, and stylish—denim hats to complete any outfit!",
       detailedDescription: `
@@ -544,7 +585,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'accessories'
     },
     {
-      id: '29',
+      id: '28',
       name: 'Denim Belts',
       description: "Chic denim belts to add an effortless edge to any outfit!",
       detailedDescription: `
@@ -564,7 +605,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'accessories'
     },
     {
-      id: '30',
+      id: '29',
       name: 'Wallets and Pouches',
       description: "Compact, trendy, and durable—denim wallets and pouches for every occasion!",
       detailedDescription: `
@@ -585,7 +626,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'accessories'
     },
     {
-      id: '301',
+      id: '30',
       name: 'Denim Headbands',
       description: "Effortless style meets everyday comfort—Denim headbands for a chic upgrade!",
       detailedDescription: `
@@ -608,7 +649,7 @@ const allProducts: Record<string, Product[]> = {
   'footwear': [
 
     {
-      id: '311',
+      id: '31',
       name: 'High-top Sneakers',
       description: "Classic denim high-tops for effortless street style and all-day comfort!",
       detailedDescription: `
@@ -628,7 +669,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'footwear'
     },
     {
-      id: '312',
+      id: '32',
       name: 'Low-top Sneakers',
       description: "Sleek denim low-tops that blend casual comfort with everyday versatility!",
       detailedDescription: `
@@ -649,7 +690,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'footwear'
     },
     {
-      id: '313',
+      id: '33',
       name: 'Running Sneakers',
       description: "Stylish denim-inspired running shoes built for speed, comfort, and performance!",
       detailedDescription: `
@@ -669,7 +710,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'footwear'
     },
     {
-      id: '32',
+      id: '34',
       name: 'Ankle Boots',
       description: "Trendy denim ankle boots that redefine cool with effortless versatility!",
       detailedDescription: `
@@ -690,7 +731,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'footwear'
     },
     {
-      id: '321',
+      id: '35',
       name: 'Knee-high Boots',
       description: "Bold denim knee-high boots for a striking, fashion-forward statement!",
       detailedDescription: `
@@ -713,7 +754,7 @@ const allProducts: Record<string, Product[]> = {
   ],
   'home-and-lifestyle': [
     {
-      id: '34',
+      id: '36',
       name: 'Denim Cushion Covers',
       description: "Soft, stylish, and timeless—denim cushions for a cozy, chic space!",
       detailedDescription: `
@@ -732,7 +773,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'home-and-lifestyle'
     },
     {
-      id: '35',
+      id: '37',
       name: 'Denim Table Runners',
       description: "Rustic charm meets modern style—denim table runners for every occasion!",
       detailedDescription: `
@@ -752,7 +793,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'home-and-lifestyle'
     },
     {
-      id: '36',
+      id: '38',
       name: 'Denim Aprons',
       description: "Cook, craft, and create in style with durable denim aprons!",
       detailedDescription: `
@@ -772,7 +813,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'home-and-lifestyle'
     },
     {
-      id: '37',
+      id: '39',
       name: 'Upcycled Denim Rugs',
       description: "Sustainable, stylish, and handcrafted—upcycled denim rugs with a story to tell!",
       detailedDescription: `
@@ -795,7 +836,7 @@ const allProducts: Record<string, Product[]> = {
 
   'Denim Premium Raw Cloth': [
     {
-      id: '38',
+      id: '40',
       name: 'Premium Organic Raw Cotton',
       description: "Soft, breathable, and eco-friendly—experience the luxury of organic cotton!",
       detailedDescription: `
@@ -813,7 +854,7 @@ const allProducts: Record<string, Product[]> = {
       category: 'Denim Premium Raw Cloth'
     },
     {
-      id: '39',
+      id: '41',
       name: 'Premium Raw Denim',
       description: "Authentic, rugged, and built to last—raw denim for true denim lovers!",
       detailedDescription: `
