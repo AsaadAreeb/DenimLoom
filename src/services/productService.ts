@@ -387,7 +387,7 @@ const allProducts: Record<string, Product[]> = {
     },
     {
       id: '19',
-      name: 'Sundresses Dresses',
+      name: 'Sundresses',
       description: "Sunny days call for the perfect denim sundress!",
       detailedDescription: `
       ✔ Breezy denim design for warm-weather perfection.<br>
@@ -416,7 +416,7 @@ const allProducts: Record<string, Product[]> = {
     `,
 
 
-      image: '/Apparel/Denim Shorts/Bermuda Shorts/Bremuda shorts 4.jpeg',
+      image: '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda shorts 4.jpeg',
       images: [
         '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda shorts 1.jpeg',
         '/Apparel/Denim Shorts/Bermuda Shorts/Bermuda shorts 2.jpeg',
