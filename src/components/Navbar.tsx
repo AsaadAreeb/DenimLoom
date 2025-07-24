@@ -65,7 +65,7 @@ const Navbar = () => {
                 <Link
                   key={path}
                   to={path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:bg-indigo-800 ${location.pathname === path ? 'bg-indigo-800' : ''
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] ${location.pathname === path ? 'shadow-[0_0_10px_rgba(255,255,255,0.1)]' : ''
                     }`}
                   onClick={() => setIsOpen(false)}
                 >
