@@ -17,12 +17,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="relative bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white shadow-lg ">
+    // <nav className="relative bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white shadow-lg ">
+    <nav className="relative bg-denim-gradient text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="text-3xl font-bold">
-            <span className="bg-gradient-to-r from-purple-700 to-pink-500 text-transparent bg-clip-text shadow-lg ">Denim</span>
-            <span className="bg-gradient-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text shadow-lg">Loom</span>
+            {/* <span className="bg-gradient-to-r from-purple-700 to-pink-500 text-transparent bg-clip-text shadow-lg ">Denim</span>
+            <span className="bg-gradient-to-r from-blue-500 to-teal-400 text-transparent bg-clip-text shadow-lg">Loom</span> */}
+             <span className="text-4xl bg-white font-lobster text-transparent bg-clip-text">DenimLoom</span>
+            
           </Link>
 
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-full h-[1px] bg-slate-900 shadow-[0_-40px_80px_rgba(255,255,255,0.5)]"></div>

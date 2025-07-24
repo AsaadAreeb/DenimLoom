@@ -23,11 +23,13 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/:category" element={<ProductCategory />} />
+          {/* <Route path="/category/:category/product/:productId" element={<ProductDetail />} /> */}
+          <Route path="/products/:category/:productName/:productId" element={<ProductDetail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-          <Route path="/products/:category" element={<ProductCategory />} />
-          <Route path="/category/:category/product/:productId" element={<ProductDetail />} />
+
         </Routes>
       </main>
       <Footer />

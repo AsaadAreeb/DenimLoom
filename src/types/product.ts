@@ -7,4 +7,5 @@ export interface Product {
   images: string[];
   isNew?: boolean;
   category: string;
+  slug: string;
 }

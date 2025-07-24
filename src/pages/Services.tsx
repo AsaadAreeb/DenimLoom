@@ -98,7 +98,8 @@ const Services = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
+        // className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
+        className="relative py-20 bg-denim-gradient text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -106,7 +107,7 @@ const Services = () => {
             animate={{ y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <h1 className="text-4xl font-bold mb-6">Our Services</h1>
+            <h1 className="text-4xl font-lobster mb-6">Our Services</h1>
             <p className="text-xl max-w-2xl">
               Expertly crafted denim, manufactured to perfection and exported worldwide.
               From design to delivery, we bring your vision to life with quality and precision!
@@ -152,14 +153,14 @@ const Services = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold mb-12 text-center">Our Process</h2>
+            <h2 className="text-4xl font-lobster mb-12 text-center bg-denim-gradient bg-clip-text text-transparent">Our Process</h2>
 
             {/* Mobile: Process Steps as Buttons */}
             <div className="md:hidden flex justify-center mb-6 flex-wrap gap-2 sm:gap-4">
               {processSteps.map((step) => (
                 <button
                   key={step.id}
-                  className={`cursor-pointer px-3 py-2 rounded-md text-sm hover:bg-indigo-500 hover:scale-105 transition-all duration-300 ease-in-out transform ${selectedProcess === step.id
+                  className={`cursor-pointer px-3 py-2 rounded-md bg-denim-gradient text-sm hover:text-gray-300 hover:scale-105 transition-all duration-300 ease-in-out transform ${selectedProcess === step.id
                       ? 'bg-indigo-500 scale-105 text-white'
                       : 'bg-indigo-600 text-gray-200'
                     }`}
@@ -172,14 +173,14 @@ const Services = () => {
 
             <div className="flex flex-col md:flex-row">
               {/* Desktop: Sidebar */}
-              <div className="hidden md:block w-full md:w-1/5 bg-gradient-to-r from-indigo-600 to-indigo-600 text-black rounded-lg shadow-lg p-6 h-auto mb-8 md:mb-0">
-                <h3 className="text-xl font-semibold text-white mb-6">Process Steps</h3>
+              <div className="hidden md:block w-full md:w-1/5 bg-denim-gradients text-black rounded-lg shadow-lg p-6 h-auto mb-8 md:mb-0">
+                <h3 className="text-xl font-courgette text-white mb-6">Process Steps</h3>
                 <ul className="space-y-4">
                   {processSteps.map((step) => (
                     <li
                       key={step.id}
-                      className={`cursor-pointer p-3 rounded-md hover:bg-indigo-500 hover:scale-105 transition-all duration-300 ease-in-out transform ${selectedProcess === step.id
-                          ? 'bg-indigo-500 scale-105 text-white'
+                      className={`cursor-pointer p-3 rounded-md hover:bg-black hover:scale-105 transition-all duration-300 ease-in-out transform ${selectedProcess === step.id
+                          ? 'bg-black scale-105 text-white'
                           : 'text-gray-200'
                         }`}
                       onClick={() => handleProcessClick(step.id)}
@@ -198,7 +199,7 @@ const Services = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <h3 className="text-2xl font-bold mb-4">{processDetail.title}</h3>
+                    <h3 className="text-2xl font-lobster mb-4">{processDetail.title}</h3>
                     <p className="text-gray-600 mb-6">{processDetail.description}</p>
                     <img
                       src={processDetail.image}

@@ -6,6 +6,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '1',
       name: 'Skinny Jeans',
+      slug: 'skinny-jeans',
       description: 'Sleek, form-fitting denim that hugs your legs perfectly.',
       detailedDescription: `
     ✔ Ultra-slim fit that enhances your silhouette.<br>
@@ -33,6 +34,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '2',
       name: 'Straight Leg Jeans',
+      slug: 'straight-leg-jeans',
       description: 'Classic, timeless fit with a straight cut from hip to hem.',
       detailedDescription: `
       ✔ A versatile, balanced fit suitable for all body types.<br>
@@ -56,6 +58,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '3',
       name: 'Bootcut Jeans',
+      slug: 'bootcut-jeans',
       description: 'Slightly flared at the hem, perfect for boots and comfort.',
       detailedDescription: `
       ✔ Slight flare at the bottom for a stylish touch.<br>
@@ -78,6 +81,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '4',
       name: 'Relaxed Fit Jeans',
+      slug: 'relaxed-fit-jeans',
       description: 'Loose and comfortable, offering a laid-back and easy feel.',
       detailedDescription: `
       ✔ Extra room in the thighs and seat for all-day comfort.<br>
@@ -101,6 +105,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '5',
       name: 'Classic Denim Jackets',
+      slug: 'classic-denim-jackets',
       description: 'Timeless denim staple for effortless style and versatility.',
       detailedDescription: `
       ✔ A wardrobe essential that never goes out of style.<br>
@@ -121,6 +126,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '6',
       name: 'Denim Bomber Jackets',
+      slug: 'denim-bomber-jackets',
       description: 'Sporty meets denim in this cool, modern statement piece.',
       detailedDescription: `
       ✔ A fusion of sporty vibes and rugged denim charm.<br>
@@ -141,6 +147,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '7',
       name: 'Oversized Denim Jackets',
+      slug: 'oversized-denim-jackets',
       description: 'Relaxed, trendy fit for a bold and effortless look.',
       detailedDescription: `
       ✔ Loose and relaxed fit for an effortlessly cool aesthetic.<br>
@@ -161,6 +168,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '8',
       name: 'Trucker Jackets',
+      slug: 'trucker-jackets',
       description: 'Iconic rugged denim jacket with a structured, vintage appeal.',
       detailedDescription: `
       ✔ Structured fit with classic button-up front and chest pockets.<br>
@@ -181,6 +189,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '9',
       name: 'Button Down Shirts',
+      slug: 'button-down-shirts',
       description: 'The perfect mix of casual and polished!',
       detailedDescription: `
       ✔ A wardrobe essential for classic and modern styling.<br>
@@ -203,6 +212,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '10',
       name: 'Chambray Shirts',
+      slug: 'chambray-shirts',
       description: 'A softer, more laid-back take on denim!',
       detailedDescription: `
       ✔ Lightweight and breathable denim alternative.<br>
@@ -224,6 +234,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '11',
       name: 'A-line Skirts',
+      slug: 'a-line-skirts',
       description: "A must-have for effortless elegance!",
       detailedDescription: `
         ✔ Flattering denim skirt with a classic, structured silhouette.<br>
@@ -244,6 +255,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '12',
       name: 'Denim Maxi Skirts',
+      slug: 'denim-maxi-skirts',
       description: "Dress it up or keep it casual—either way, you're bound to steal the spotlight!",
       detailedDescription: `
       ✔ Full-length denim elegance with a sleek and sophisticated vibe.<br>
@@ -264,6 +276,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '13',
       name: 'Denim Midi Skirts',
+      slug: 'denim-midi-skirts',
       description: "For when you want a little more coverage without sacrificing style!",
       detailedDescription: `
       ✔ The perfect balance between classy and casual.<br>
@@ -284,6 +297,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '14',
       name: 'Denim Mini Skirts',
+      slug: 'denim-mini-skirts',
       description: "Flirty and fun, this denim mini skirt is a wardrobe essential!",
       detailedDescription: `
       ✔ Short, stylish, and perfect for showing off your legs.<br>
@@ -304,6 +318,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '15',
       name: 'Overalls and Dungarees',
+      slug: 'overalls-dungarees',
       description: "A denim classic that never fades!",
       detailedDescription: `
       ✔ Classic denim overalls with a relaxed, vintage feel.<br>
@@ -349,6 +364,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '17',
       name: 'Shirt Dresses',
+      slug: 'shirt-dresses',
       description: "Chic, comfortable, and endlessly versatile!",
       detailedDescription: `
       ✔ Buttoned-up denim charm with a structured yet relaxed feel.<br>
@@ -368,6 +384,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '18',
       name: 'Slip Dresses',
+      slug: 'slip-dresses',
       description: "Who says denim can’t be elegant?",
       detailedDescription: `
       ✔ Sleek, minimal, and ultra-modern with a denim twist.<br>
@@ -388,6 +405,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '19',
       name: 'Sundresses',
+      slug: 'sundresses',
       description: "Sunny days call for the perfect denim sundress!",
       detailedDescription: `
       ✔ Breezy denim design for warm-weather perfection.<br>
@@ -407,6 +425,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '20',
       name: 'Bermuda Shorts',
+      slug: 'bermuda-shorts',
       description: "Sophisticated meets casual!",
       detailedDescription: `
       ✔ Knee-length denim shorts with a sleek, polished fit.<br>
@@ -428,6 +447,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '21',
       name: 'Cargo Shorts',
+      slug: 'cargo-shorts',
       description: "Function meets fashion!",
       detailedDescription: `
       ✔ Rugged and practical with spacious utility pockets.<br>
@@ -450,6 +470,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '22',
       name: 'Cut-off Shorts',
+      slug: 'cut-off-shorts',
       description: "Nothing says carefree like a pair of cutoff denim shorts!",
       detailedDescription: `
       ✔ Raw, frayed hems for that effortlessly cool vibe.<br>
@@ -476,6 +497,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '23',
       name: 'High-waisted Shorts',
+      slug: 'high-waisted-shorts',
       description: "Retro charm meets modern style!",
       detailedDescription: `
       ✔ Flattering fit that accentuates the waist and elongates legs.<br>
@@ -507,6 +529,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '24',
       name: 'Denim Tote Bags',
+      slug: 'denim-tote-bags',
       description: "Spacious, stylish, and versatile—your perfect everyday denim tote bag!",
       detailedDescription: `
       ✔ Roomy & Practical – Large interior space to fit all your daily must-haves, from laptops to makeup pouches.<br>
@@ -527,6 +550,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '25',
       name: 'Overnight Totes',
+      slug: 'overnight-totes',
       description: "Travel in style with a spacious, trendy, and durable denim tote!",
       detailedDescription: `
       ✔ Spacious Interior – Large compartments to carry clothes, toiletries, and all your travel necessities.<br>
@@ -547,6 +571,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '26',
       name: 'Denim Backpacks',
+      slug: 'denim-backpacks',
       description: "Trendy, functional, and spacious—your go-to denim backpack for everyday!",
       detailedDescription: `
       ✔ Spacious & Organized – Multiple pockets and compartments to keep everything in place.<br>
@@ -567,6 +592,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '27',
       name: 'Hats and Caps',
+      slug: 'hats-caps',
       description: "Cool, comfy, and stylish—denim hats to complete any outfit!",
       detailedDescription: `
         ✔ Stylish Options – Choose from classic baseball caps, bucket hats, or trendy wide-brim styles.<br>
@@ -587,6 +613,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '28',
       name: 'Denim Belts',
+      slug: 'denim-belts',
       description: "Chic denim belts to add an effortless edge to any outfit!",
       detailedDescription: `
       ✔ Unique Denim Texture – A fresh take on the classic belt, giving a cool, edgy vibe.<br>
@@ -607,6 +634,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '29',
       name: 'Wallets and Pouches',
+      slug: 'wallets-pouches',
       description: "Compact, trendy, and durable—denim wallets and pouches for every occasion!",
       detailedDescription: `
         ✔ Compact & Convenient – Designed to fit easily into bags or pockets while holding all your essentials.<br>
@@ -628,6 +656,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '30',
       name: 'Denim Headbands',
+      slug: 'denim-handbands',
       description: "Effortless style meets everyday comfort—Denim headbands for a chic upgrade!",
       detailedDescription: `
       ✔ Trendy & Versatile – Perfect for casual outfits, gym wear, or an elevated street-style look.<br>
@@ -651,6 +680,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '31',
       name: 'High-top Sneakers',
+      slug: 'shirt-dresses',
       description: "Classic denim high-tops for effortless street style and all-day comfort!",
       detailedDescription: `
       ✔ Iconic High-Top Design – Adds a bold, retro-inspired touch to your everyday look.<br>
@@ -658,7 +688,7 @@ const allProducts: Record<string, Product[]> = {
       ✔ Cushioned Comfort – Padded insoles and ankle support for long-lasting wear.<br>
       ✔ Versatile Styling – Pairs effortlessly with jeans, joggers, skirts, and even dresses!<br><br>
       Classic meets cool in these denim high-top sneakers! Whether you're rocking street style or keeping it casual, these sneakers give you the perfect mix of comfort and attitude. Designed for all-day wear, they bring effortless style to any outfit.
-    `,
+    `,  
 
       image: '/footwear/Denim Sneakers/High-top Sneakers/High-top Sneakers 2.png',
       images: [
@@ -669,8 +699,9 @@ const allProducts: Record<string, Product[]> = {
       category: 'footwear'
     },
     {
-      id: '32',
+      id: '32', 
       name: 'Low-top Sneakers',
+      slug: 'low-top-sneakers',
       description: "Sleek denim low-tops that blend casual comfort with everyday versatility!",
       detailedDescription: `
       ✔ Minimalist & Trendy – A clean, modern look that elevates your casual style.<br>
@@ -692,6 +723,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '33',
       name: 'Running Sneakers',
+      slug: 'running-sneakers',
       description: "Stylish denim-inspired running shoes built for speed, comfort, and performance!",
       detailedDescription: `
       ✔ High-Performance Comfort – Lightweight and breathable, keeping your feet fresh mile after mile.<br>
@@ -712,6 +744,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '34',
       name: 'Ankle Boots',
+      slug: 'ankle-boots',
       description: "Trendy denim ankle boots that redefine cool with effortless versatility!",
       detailedDescription: `
         ✔ Chic & Versatile – Effortlessly transitions from casual to dressy looks.<br>
@@ -733,6 +766,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '35',
       name: 'Knee-high Boots',
+      slug: 'knee-high-boots',
       description: "Bold denim knee-high boots for a striking, fashion-forward statement!",
       detailedDescription: `
         ✔ Bold & Fashion-Forward – A standout piece that adds instant style to any look.<br>
@@ -752,10 +786,11 @@ const allProducts: Record<string, Product[]> = {
     },
 
   ],
-  'home-and-lifestyle': [
+  'lifestyle': [
     {
       id: '36',
       name: 'Denim Cushion Covers',
+      slug: 'denim-cushion-covers',
       description: "Soft, stylish, and timeless—denim cushions for a cozy, chic space!",
       detailedDescription: `
       ✔ Premium Denim Fabric – Soft, durable, and available in various washes and textures.<br>
@@ -775,6 +810,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '37',
       name: 'Denim Table Runners',
+      slug: 'denim-table-runners',
       description: "Rustic charm meets modern style—denim table runners for every occasion!",
       detailedDescription: `
       ✔ Chic & Trendy – Brings a rustic, industrial, or farmhouse touch to any dining setup.<br>
@@ -795,6 +831,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '38',
       name: 'Denim Aprons',
+      slug: 'denim-aprons',
       description: "Cook, craft, and create in style with durable denim aprons!",
       detailedDescription: `
       ✔ Durable & Functional – Heavy-duty denim fabric resists stains and provides long-lasting wear.<br>
@@ -815,6 +852,7 @@ const allProducts: Record<string, Product[]> = {
     {
       id: '39',
       name: 'Upcycled Denim Rugs',
+      slug: 'upcycled-denim-rugs',
       description: "Sustainable, stylish, and handcrafted—upcycled denim rugs with a story to tell!",
       detailedDescription: `
       ✔ Eco-Friendly & Handmade – Crafted from recycled denim, reducing waste and promoting sustainability.<br>
@@ -834,10 +872,11 @@ const allProducts: Record<string, Product[]> = {
     }
   ],
 
-  'Denim Premium Raw Cloth': [
+  'rawfabric': [
     {
       id: '40',
       name: 'Premium Organic Raw Cotton',
+      slug: 'premium-organic-raw-cotton',
       description: "Soft, breathable, and eco-friendly—experience the luxury of organic cotton!",
       detailedDescription: `
       ✔ 100% Organic & Chemical-Free – Grown without pesticides or harmful chemicals for a pure, natural feel.<br>
@@ -851,11 +890,12 @@ const allProducts: Record<string, Product[]> = {
       images: [
         '/Raw/Jeans raw 1.jpeg',
       ],
-      category: 'Denim Premium Raw Cloth'
+      category: 'rawfabric'
     },
     {
       id: '41',
       name: 'Premium Raw Denim',
+      slug: 'premium-raw-denim',
       description: "Authentic, rugged, and built to last—raw denim for true denim lovers!",
       detailedDescription: `
       ✔ Unwashed & Untreated – Pure denim in its rawest form, ready to mold to your lifestyle.<br>
@@ -869,7 +909,7 @@ const allProducts: Record<string, Product[]> = {
       images: [
         '/Raw/Organic Cotton Denim.jpeg',
       ],
-      category: 'Denim Premium Raw Cloth'
+      category: 'rawfabric'
     },
 
   ]

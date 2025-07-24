@@ -10,7 +10,8 @@ const About = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
+        // className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
+        className="relative py-20 bg-denim-gradient text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -18,10 +19,10 @@ const About = () => {
             animate={{ y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <h1 className="text-4xl font-bold mb-6">Our Story</h1>
+            <h1 className="text-4xl font-lobster mb-6">Our Story</h1>
             <p className="text-xl max-w-2xl">
-            Pioneering the denim industry with innovation, craftsmanship, and sustainability.
-Delivering premium quality denim, crafted with passion and built to last.
+            Pioneering the denim industry with innovation, craftsmanship, and sustainability. 
+            Delivering premium quality denim, crafted with passion and built to last.
             </p>
           </motion.div>
         </div>
@@ -38,22 +39,22 @@ Delivering premium quality denim, crafted with passion and built to last.
             className="grid grid-cols-1 md:grid-cols-3 gap-12"
           >
             <div className="text-center">
-              <Target className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
+              <Target className="w-12 h-12 text-blue-700 mx-auto mb-4" />
+              <h3 className="text-xl font-courgette mb-2">Our Mission</h3>
               <p className="text-gray-600">
                 To provide premium quality denim products while maintaining sustainable practices and fostering innovation.
               </p>
             </div>
             <div className="text-center">
-              <Users className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Our Team</h3>
+              <Users className="w-12 h-12 text-blue-700 mx-auto mb-4" />
+              <h3 className="text-xl font-courgette mb-2">Our Team</h3>
               <p className="text-gray-600">
                 A dedicated group of professionals committed to excellence in denim manufacturing and export.
               </p>
             </div>
             <div className="text-center">
-              <History className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Our Legacy</h3>
+              <History className="w-12 h-12 text-blue-700 mx-auto mb-4" />
+              <h3 className="text-xl font-courgette mb-2">Our Legacy</h3>
               <p className="text-gray-600">
                 Years of experience in crafting premium denim products for global markets.
               </p>
@@ -80,7 +81,7 @@ Delivering premium quality denim, crafted with passion and built to last.
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-6">Our Journey</h2>
+              <h2 className="text-4xl font-lobster mb-8 bg-denim-gradient bg-clip-text text-transparent mb-6">Our Journey</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
                   Starting as a small denim manufacturer, we've grown into a global export leader through dedication to quality and innovation.
@@ -109,7 +110,7 @@ Delivering premium quality denim, crafted with passion and built to last.
       {/* Reviews Section */}
       <section className="py-20 bg-gradient-to-r from-blue-100 to-indigo-100">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-    <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">What Our Clients Say</h2>
+    <h2 className="text-3xl font-lobster mb-8 bg-denim-gradient bg-clip-text text-transparent text-center mb-12">What Our Clients Say</h2>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -127,7 +128,7 @@ Delivering premium quality denim, crafted with passion and built to last.
         <p className="text-gray-600 italic mb-4">
           "Their commitment to quality and innovation has been unparalleled. Always a pleasure to work with."
         </p>
-        <h3 className="text-lg font-bold text-gray-800">- Quiksilver</h3>
+        <h3 className="text-lg font-courgette text-gray-800">- Quiksilver</h3>
       </motion.div>
 
       {/* Client Review 2 */}
@@ -141,7 +142,7 @@ Delivering premium quality denim, crafted with passion and built to last.
         <p className="text-gray-600 italic mb-4">
           "Exceptional craftsmanship and timely delivery. They set a benchmark for quality."
         </p>
-        <h3 className="text-lg font-bold text-gray-800">- Roxy</h3>
+        <h3 className="text-lg font-courgette text-gray-800">- Roxy</h3>
       </motion.div>
 
       {/* Client Review 3 */}
@@ -155,7 +156,7 @@ Delivering premium quality denim, crafted with passion and built to last.
         <p className="text-gray-600 italic mb-4">
           "Their dedication to sustainable practices aligns perfectly with our values. Highly recommended!"
         </p>
-        <h3 className="text-lg font-bold text-gray-800">- Fat Face</h3>
+        <h3 className="text-lg font-courgette text-gray-800">- Fat Face</h3>
       </motion.div>
 
       {/* Client Review 4 */}
@@ -169,7 +170,7 @@ Delivering premium quality denim, crafted with passion and built to last.
         <p className="text-gray-600 italic mb-4">
           "Consistently delivering high-quality denim products that exceed expectations."
         </p>
-        <h3 className="text-lg font-bold text-gray-800">- C&A</h3>
+        <h3 className="text-lg font-courgette text-gray-800">- C&A</h3>
       </motion.div>
     </motion.div>
   </div>

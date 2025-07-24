@@ -174,7 +174,8 @@ const PrivacyPolicy = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
+        // className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
+        className="relative py-20 bg-denim-gradient text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -182,7 +183,7 @@ const PrivacyPolicy = () => {
             animate={{ y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
+            <h1 className="text-4xl font-lobster mb-6">Privacy Policy</h1>
             <p className="text-xl max-w-2xl">
               Learn how we handle your personal information at Denim Loom.
             </p>

@@ -5,8 +5,8 @@ const mainProducts = [
   { id: 'apparel', title: 'Apparel', description: 'Denim that redefines style, comfort, and confidence!', image: '/apparel.jpg' },
   { id: 'accessories', title: 'Accessories', description: 'Bold denim accents for effortless everyday flair!', image: '/denim-acc-topimg.png' },
   { id: 'footwear', title: 'Footwear', description: 'Step into style with denim-inspired kicks!', image: '/footwear/Denim Boots/Ankle Boots/Ankle Boots 1.png' },
-  { id: 'home-and-lifestyle', title: 'Home and Lifestyle Products', description: 'Denim décor—where style meets everyday living!', image: '/denim-home-interior-trend.jpg' },
-  { id: 'Denim Premium Raw Cloth', title: 'Premium Raw Denim Fabric', description: 'Unprocessed denim—craft your timeless fashion story!', image: '/Organic Cotton Denim.jpeg' },
+  { id: 'lifestyle', title: 'Home and Lifestyle Products', description: 'Denim décor—where style meets everyday living!', image: '/denim-home-interior-trend.jpg' },
+  { id: 'rawfabric', title: 'Premium Raw Denim Fabric', description: 'Unprocessed denim—craft your timeless fashion story!', image: '/Organic Cotton Denim.jpeg' },
 ];
 
 const Products = () => {
@@ -22,7 +22,8 @@ const Products = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
+        // className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
+        className="relative py-20 bg-denim-gradient text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -30,7 +31,7 @@ const Products = () => {
             animate={{ y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <h1 className="text-4xl font-bold mb-6">Our Products</h1>
+            <h1 className="text-4xl font-lobster mb-6">Our Products</h1>
             <p className="text-xl max-w-2xl">Explore our exclusive denim collection—crafted for style, built for comfort.
               Elevate your wardrobe with premium jeans designed to stand out!</p>
           </motion.div>
@@ -68,7 +69,7 @@ const Products = () => {
 
                 {/* Content */}
                 <div className="p-8 flex-1 flex flex-col justify-center"> {/* Increased padding */}
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800 group-hover:text-indigo-600 transition-colors">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800 group-hover:text-blue-800 transition-colors">
                     {product.title}
                   </h3>
                   <p className="text-lg text-gray-600">{product.description}</p> {/* Larger text */}

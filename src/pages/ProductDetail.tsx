@@ -4,9 +4,17 @@ import { ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Product } from '../types/product';
 import { getProductById } from '../services/productService';
+import {getCategoryInfo} from '../utils/categories';
+
+
+
 
 const ProductDetail = () => {
-  const { productId } = useParams<{ productId: string }>();
+  const { productName, productId } = useParams<{
+    category: string;
+    productName: string;
+    productId: string;
+  }>();
   const navigate = useNavigate();
   const [product, setProduct] = useState<Product | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -14,9 +22,21 @@ const ProductDetail = () => {
   useEffect(() => {
     if (productId) {
       const result = getProductById(productId);
+      if (!result) {
+        setProduct(null);
+        return;
+      }
+      // Redirect if URL slug mismatches stored slug
+      if (result.slug !== productName) {
+        navigate(
+          `/products/${encodeURIComponent(result.category)}/${result.slug}/${result.id}`,
+          { replace: true }
+        );
+        return;
+      }
       setProduct(result);
     }
-  }, [productId]);
+  }, [productId, productName, navigate]);
 
   if (!product) {
     return (
@@ -33,7 +53,7 @@ const ProductDetail = () => {
       </div>
     );
   }
-
+  const { title: categoryTitle } = getCategoryInfo(product.category);
   const images = product.images.length ? product.images : [product.image];
 
   const prevImage = () =>
@@ -45,14 +65,14 @@ const ProductDetail = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Back to Category */}
-      <div className="bg-white shadow-sm">
+      <div className="bg-white">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center space-x-2">
           <ArrowLeft className="h-5 w-5 text-gray-600" />
             <Link
             to={`/products/${encodeURIComponent(product.category!)}`}
             className="text-gray-600 hover:text-indigo-600 transition-colors"
             >
-            Back to {product.category.charAt(0).toUpperCase() + product.category.slice(1)}
+            Back to {categoryTitle}
             </Link>
         </div>
       </div>
