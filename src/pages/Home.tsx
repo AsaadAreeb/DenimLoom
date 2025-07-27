@@ -86,7 +86,7 @@ const Home = () => {
           <h2 className="text-4xl font-lobster mb-8 bg-denim-gradient bg-clip-text text-transparent">Ready to Partner With Us?</h2>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-denim-gradient text-white hover:text-gray-200 rounded-lg font-semibold transition-colors duration-200"
+            className="inline-flex items-center px-8 py-4 bg-denim-gradient text-white hover:text-gray-300 rounded-lg font-semibold transition-colors duration-200"
           >
             Contact Us Today
           </a>

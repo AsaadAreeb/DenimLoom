@@ -11,11 +11,14 @@ import ProductCategory from './components/products/ProductCategory';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import ProductDetail from './pages/ProductDetail';
+import ScrollToTop from './components/ScrollToTop';
+
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50">
       <Navbar />
+      <ScrollToTop />
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
