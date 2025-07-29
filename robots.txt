@@ -1,4 +1,3 @@
-# Allow search engines to crawl
 User-agent: *
 Allow: /
 
@@ -9,7 +8,8 @@ Disallow: /api/
 Disallow: /checkout/
 Disallow: /cart/
 Disallow: /*.json$
-Disallow: /*.xml$
+Disallow: /*.xml$       # Block all XML files...
+Allow: /sitemap.xml     # ...but make exception for sitemap
 Disallow: /static/js/
 Disallow: /static/css/
 Disallow: /static/media/
