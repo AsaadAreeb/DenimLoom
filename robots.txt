@@ -8,7 +8,6 @@ Disallow: /api/
 Disallow: /checkout/
 Disallow: /cart/
 Disallow: /*.json$
-Disallow: /*.xml$       # Block all XML files...
 Allow: /sitemap.xml     # ...but make exception for sitemap
 Disallow: /static/js/
 Disallow: /static/css/
@@ -18,8 +17,8 @@ Disallow: /static/media/
 Allow: /products/apparel
 Allow: /products/accessories
 Allow: /products/footwear
-Allow: /products/home-and-lifestyle
-Allow: /products/custom-and-sustainable
+Allow: /products/lifestyle
+Allow: /products/rawfabric
 
 # Allow main navigation pages
 Allow: /about
