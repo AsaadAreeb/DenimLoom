@@ -12,6 +12,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import ProductDetail from './pages/ProductDetail';
 import ScrollToTop from './components/ScrollToTop';
+import FAQ from './pages/FAQ';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/faq" element={<FAQ />} />
 
         </Routes>
       </main>
