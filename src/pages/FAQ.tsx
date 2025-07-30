@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import React from "react";
 
 
 const faqs = [
@@ -7,7 +8,7 @@ const faqs = [
     answer: (
       <>
         We offer a variety of fabrics, including:
-        <ul className="list-disc list-inside mt-2">
+        <ul className="list-disc mt-2 pl-5">
           <li>98% Cotton + 2% Spandex</li>
           <li>100% Cotton</li>
           <li>Poly + Cotton + Spandex blends</li>
@@ -22,28 +23,30 @@ const faqs = [
     answer: (
       <>
         <p>Based on fabric weight:</p>
-        <table className="w-full text-left mt-2">
-          <thead>
-            <tr>
-              <th className="pb-1">Fabric (oz)</th>
-              <th className="pb-1">Cost (USD)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>9 - 12 oz</td>
-              <td>$8 - $10</td>
-            </tr>
-            <tr>
-              <td>12 - 14 oz</td>
-              <td>$11 - $12</td>
-            </tr>
-            <tr>
-              <td>14 - 15 oz</td>
-              <td>$13 - $15</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left mt-2 min-w-[300px]">
+            <thead>
+              <tr>
+                <th className="pb-1">Fabric (oz)</th>
+                <th className="pb-1">Cost (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9 - 12 oz</td>
+                <td>$8 - $10</td>
+              </tr>
+              <tr>
+                <td>12 - 14 oz</td>
+                <td>$11 - $12</td>
+              </tr>
+              <tr>
+                <td>14 - 15 oz</td>
+                <td>$13 - $15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p className="mt-2">Accessories: $2 (separate charge)</p>
         <p className="mt-2">Final pricing depends on selected fabric, shade, and finishing details.</p>
       </>
@@ -63,11 +66,13 @@ const faqs = [
     answer: (
       <>
         <p>Yes, custom branding is available on patches, tags, buttons, and more.</p>
-        <p className="mt-2">
-          Initial pricing:<br/>
-          • Fabric & Stitching: $8 - $10 (9 - 12 oz)<br/>
-          • Accessories: $1.50 – $2.50 depending on customization level
-        </p>
+        <div className="mt-2">
+          <p>Initial pricing:</p>
+          <ul className="list-disc pl-5 mt-1">
+            <li>Fabric & Stitching: $8 - $10 (9 - 12 oz)</li>
+            <li>Accessories: $1.50 – $2.50 depending on customization level</li>
+          </ul>
+        </div>
       </>
     ),
   },
@@ -84,7 +89,7 @@ const faqs = [
     answer: (
       <>
         <p>Yes, we handle full export and delivery management. Final costs vary based on packaging, fabric, and accessories.</p>
-        <ul className="list-disc list-inside mt-2 space-y-1">
+        <ul className="list-disc mt-2 pl-5 space-y-1">
           <li>
             Women’s jeans: ~3 pcs/kg &rarr; <span className="font-semibold">$6.00 per piece</span>
           </li>
@@ -137,7 +142,7 @@ const faqs = [
     answer: (
       <>
         <p>Options include:</p>
-        <ul className="list-disc list-inside mt-2">
+        <ul className="list-disc mt-2 pl-5">
           <li>Standard: $0.16 – $0.20</li>
           <li>Leather: $0.50 – $0.60</li>
         </ul>
@@ -166,7 +171,7 @@ const faqs = [
     answer: (
       <>
         <p>Our stitching unit is fully equipped with advanced tools, including:</p>
-        <ul className="list-disc list-inside mt-2">
+        <ul className="list-disc mt-2 pl-5">
           <li>Heat Press Machine</li>
           <li>Vinyl Cutter</li>
           <li>Rhinestone Applicator Tool</li>
@@ -184,7 +189,7 @@ const faqs = [
         <p>
           Materials are procured on demand for quality control and flexibility. We also stock essential embellishments, such as:
         </p>
-        <ul className="list-disc list-inside mt-2">
+        <ul className="list-disc mt-2 pl-5">
           <li>Rhinestones & Crystals</li>
           <li>Patches</li>
           <li>Beads</li>
@@ -212,7 +217,7 @@ const faqs = [
         <p>
           Please share any sample reference or specific design concept. We will then provide a detailed breakdown of:
         </p>
-        <ul className="list-disc list-inside mt-2">
+        <ul className="list-disc mt-2 pl-5">
           <li>Material usage</li>
           <li>Customization method</li>
           <li>Costing</li>
@@ -222,10 +227,12 @@ const faqs = [
   },
 ];
 
+
+
 const FAQ = () => {
   return (
     <div className="flex flex-col">
-
+      {/* Header Section - unchanged */}
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -244,6 +251,7 @@ const FAQ = () => {
         </div>
       </motion.section>
 
+      {/* FAQ Items Section - updated list styling */}
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {faqs.map((item, index) => (
@@ -255,22 +263,35 @@ const FAQ = () => {
               viewport={{ once: true }}
               className="bg-white rounded-2xl shadow-md p-4 sm:p-6 mb-6 hover:shadow-lg transition-shadow"
             >
-              <div className="flex items-center mb-4">
-                    <span className="text-indigo-600 font-bold text-sm sm:text-xl mr-3">
-                        {index + 1}.
-                    </span>
-                    <h3 className="text-sm sm:text-xl font-semibold leading-snug">
-                        {item.question}
-                    </h3>
-                </div>
-              {/* <div className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                {item.answer}
-              </div> */}
-              <div className="text-gray-700 text-sm sm:text-base leading-relaxed pl-4 sm:pl-6">
-                {item.answer}
+              <div className="flex mb-4">
+                <span className="text-indigo-600 font-bold text-sm sm:text-xl min-w-[28px] mr-2">
+                  {index + 1}.
+                </span>
+                <h3 className="text-sm sm:text-xl font-semibold leading-snug break-words">
+                  {item.question}
+                </h3>
+              </div>
+              
+              {/* Updated answer container with Privacy Policy-like list styling */}
+              <div className="text-gray-700 text-sm sm:text-base leading-relaxed pl-0 sm:pl-6 -ml-1 sm:ml-0 break-words">
+                {/* Modify the answer to use consistent list styling */}
+                {typeof item.answer === 'string' ? item.answer : (
+                  <>
+                    {React.Children.map(item.answer.props.children, (child) => {
+                      if (child.type === 'ul') {
+                        // Convert list-inside to standard list styling
+                        return React.cloneElement(child, {
+                          className: "list-disc mt-2 pl-6 sm:pl-8 space-y-1"
+                        });
+                      }
+                      return child;
+                    })}
+                  </>
+                )}
               </div>
             </motion.div>
           ))}
+          
           {/* Disclaimer Section */}
           <div className="text-center text-sm sm:text-lg text-gray-500 mt-6 sm:mt-8 italic">
             * Please note that prices are subject to change. Contact us to confirm current pricing,
