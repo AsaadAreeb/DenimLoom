@@ -44,7 +44,7 @@ export function getCategoryInfo(key: string): CategoryInfo {
 
 // Map of raw category keys → filter‑button labels
 export const FILTER_OPTIONS: Record<string, string[]> = {
-  apparel: ['All', 'Jeans', 'Jackets', 'Shirts', 'Skirts', 'Overalls', 'Dresses', 'Shorts'],
+  apparel: ['All', 'Jeans', 'Biker Jeans', 'Jackets', 'Shirts', 'Skirts', 'Overalls', 'Dresses', 'Shorts'],
   accessories: ['All', 'Tote', 'Backpacks', 'Hats', 'Belts', 'Pouches', 'Headbands'],
   footwear: ['All', 'Sneakers', 'Boots'],
   lifestyle: [],

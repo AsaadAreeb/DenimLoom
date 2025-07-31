@@ -519,7 +519,130 @@ const allProducts: Record<string, Product[]> = {
         '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 9.jpeg',
       ],
       category: 'apparel'
+    },
+    {
+      id: '42',
+      name: 'Streetwear Biker Jeans',
+      slug: 'streetwear-biker-jeans',
+      description: 'Bold and edgy biker jeans tailored for street-savvy men.',
+      detailedDescription: `
+        ✔ Black denim with ribbed knee panels and thigh zippers.<br>
+        ✔ Tapered silhouette designed for streetwear flair.<br>
+        ✔ Styled with leather jacket and boots for full impact.<br>
+        ✔ Ideal for confident, fashion-forward statements.<br><br>
+
+        Whether you're strolling the city or capturing looks on the block,<br>
+        these jeans are built for bold urban expressions.
+      `,
+      image: '/Apparel/Biker Jeans/Streetwear/Modern Streetwear 1.jpeg',
+      images: [
+        '/Apparel/Biker Jeans/Streetwear/Modern Streetwear 1.jpeg',
+        '/Apparel/Biker Jeans/Streetwear/Modern Streetwear 2.jpeg',
+        '/Apparel/Biker Jeans/Streetwear/Modern Streetwear 3.jpeg',
+        '/Apparel/Biker Jeans/Streetwear/Modern Streetwear 4.jpeg',
+      ],
+      category: 'apparel'
     }
+    ,
+        {
+      id: '43',
+      name: 'Slim Fit Biker Jeans',
+      slug: 'slim-fit-biker-jeans',
+      description: 'Form-fitting biker jeans for the modern woman on the go.',
+      detailedDescription: `
+        ✔ Grey skinny fit with ribbed knees and ankle zippers.<br>
+        ✔ Fashion-forward silhouette with bold streetwear appeal.<br>
+        ✔ Pairs perfectly with cropped tops and chunky boots.<br>
+        ✔ Great for sunny city walks or candid street style shoots.<br><br>
+
+        Designed for confident women who love edgy yet chic outfits,<br>
+        these biker jeans blend comfort, shape, and flair.
+      `,
+      image: '/Apparel/Biker Jeans/Slim Fit/Slim Fit Female 1.jpeg',
+      images: [
+        '/Apparel/Biker Jeans/Slim Fit/Slim Fit Female 1.jpeg',
+        '/Apparel/Biker Jeans/Slim Fit/Slim Fit Female 2.jpeg',
+        '/Apparel/Biker Jeans/Slim Fit/Slim Fit Female 3.jpeg',
+        '/Apparel/Biker Jeans/Slim Fit/Slim Fit Female 4.jpeg',
+      ],
+      category: 'apparel'
+    }
+    ,
+        {
+      id: '44',
+      name: 'Protective Biker Jeans',
+      slug: 'protective-motorcycle-biker-jeans',
+      description: 'Heavy-duty protection blended with modern moto style.',
+      detailedDescription: `
+        ✔ Reinforced with Kevlar lining and rugged stitching.<br>
+        ✔ Built-in armor-ready zones at knees and hips.<br>
+        ✔ Unisex cut—perfect fit for both men and women riders.<br>
+        ✔ Rugged terrain style paired with sport bike-ready toughness.<br><br>
+
+        Whether you're riding or showcasing biker fashion,<br>
+        these jeans are built for protection, durability, and attitude.
+      `,
+      image: '/Apparel/Biker Jeans/Protective/Protective Unisex 4.jpeg',
+      images: [
+        '/Apparel/Biker Jeans/Protective/Protective Unisex 1.jpeg',
+        '/Apparel/Biker Jeans/Protective/Protective Unisex 2.jpeg',
+        '/Apparel/Biker Jeans/Protective/Protective Unisex 3.jpeg',
+        '/Apparel/Biker Jeans/Protective/Protective Unisex 4.jpeg',
+        '/Apparel/Biker Jeans/Protective/Protective Unisex 5.jpeg',
+        '/Apparel/Biker Jeans/Protective/Protective Unisex 6.jpeg',
+      ],
+      category: 'apparel'
+    }
+    ,
+        {
+      id: '45',
+      name: 'Distressed Biker Jeans',
+      slug: 'distressed-biker-jeans',
+      description: 'Raw, rebellious jeans with standout distressed detailing.',
+      detailedDescription: `
+        ✔ Light blue wash with bold distressing and ribbed accents.<br>
+        ✔ Oversized streetwear look with a modern attitude.<br>
+        ✔ Perfect for pairing with graphic tees and sneakers.<br>
+        ✔ Designed to turn heads in urban settings.<br><br>
+
+        These jeans carry the spirit of rebellion and confidence—<br>
+        ideal for fashion-forward individuals seeking an unapologetic vibe.
+      `,
+      image: '/Apparel/Biker Jeans/Distressed/Distressed Bold 1.jpeg',
+      images: [
+        '/Apparel/Biker Jeans/Distressed/Distressed Bold 1.jpeg',
+        '/Apparel/Biker Jeans/Distressed/Distressed Bold 2.jpeg',
+        '/Apparel/Biker Jeans/Distressed/Distressed Bold 3.jpeg',
+        '/Apparel/Biker Jeans/Distressed/Distressed Bold 4.jpeg',
+        '/Apparel/Biker Jeans/Distressed/Distressed Bold 5.jpeg',
+        '/Apparel/Biker Jeans/Distressed/Distressed Bold 6.jpeg',
+      ],
+      category: 'apparel'
+    },
+    {
+      id: '46',
+      name: 'Clean Minimal Biker Jeans',
+      slug: 'clean-minimal-biker-jeans',
+      description: 'Refined biker jeans made for premium fashion catalogs.',
+      detailedDescription: `
+        ✔ Clean-cut silhouette in dark grey denim.<br>
+        ✔ Subtle ribbed detailing for a minimalistic vibe.<br>
+        ✔ Styled in professional studio lighting on a white background.<br>
+        ✔ Ideal for ecommerce, brand shoots, or lookbooks.<br><br>
+
+        These jeans combine sophistication and edge—<br>
+        perfect for curated collections and modern aesthetics.
+      `,
+      image: '/Apparel/Biker Jeans/Clean Minimal/Clean Minimal 1.jpeg',
+      images: [
+        '/Apparel/Biker Jeans/Clean Minimal/Clean Minimal 1.jpeg',
+        '/Apparel/Biker Jeans/Clean Minimal/Clean Minimal 2.jpeg',
+        '/Apparel/Biker Jeans/Clean Minimal/Clean Minimal 3.jpeg',
+        '/Apparel/Biker Jeans/Clean Minimal/Clean Minimal 4.jpeg',
+      ],
+      category: 'apparel'
+    },
+
   ],
 
 
