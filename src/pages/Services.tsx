@@ -8,6 +8,8 @@ import { Service } from '../types/service';
 import { services } from '../data/services';
 import ServiceCard from '../components/services/ServiceCard';
 import ServiceModal from '../components/services/ServiceModal';
+import { Helmet } from 'react-helmet-async';
+
 
 const serviceIcons = {
   manufacturing: Factory,
@@ -91,7 +93,37 @@ const Services = () => {
 
   const processDetail = processSteps.find((process) => process.id === selectedProcess);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://www.denimloom.com/services",
+    "name": "Our Services – Denim Loom",
+    "description": "Fabric manufacturing, dyeing, inspection, finishing and packaging services offered at Denim Loom.",
+    "provider": { "@id": "https://www.denimloom.com/#organization" },
+    "mainEntity": {
+      "@type": "OfferCatalog",
+      "name": "Denim Fabric Service Catalog",
+      "itemListElement": [
+        ...processSteps.map((step) => ({
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": `${step.title} on denim fabric`,
+            "description": step.description
+          }
+        }))
+      ]
+    }
+  };
+
   return (
+     <>
+      <Helmet>
+        <title>Services – Denim Loom</title>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
     <div className="overflow-hidden">
       {/* Hero Section */}
       <motion.section
@@ -216,6 +248,7 @@ const Services = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

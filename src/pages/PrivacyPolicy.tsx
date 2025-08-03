@@ -1,6 +1,34 @@
 import { motion } from "framer-motion";
+import { Helmet } from 'react-helmet-async';
 
-const PrivacyPolicy = () => (
+
+const PrivacyPolicy = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://www.denimloom.com/privacypolicy",
+    "name": "Privacy Policy – Denim Loom",
+    "description": "Learn how Denim Loom collects, uses, protects, and handles your personal data.",
+    "about": {
+      "@type": "Organization",
+      "@id": "https://www.denimloom.com/#organization"
+    },
+    "lastReviewed": "2025-06-14",
+    "reviewedBy": {
+      "@type": "Organization",
+      "@id": "https://www.denimloom.com/#organization"
+    },
+    "datePublished": "2025-01-01"
+  };
+
+  return(
+    <>
+      <Helmet>
+        <title>Privacy Policy – Denim Loom</title>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
   <div className="flex flex-col">
     {/* Header Section */}
     <motion.section
@@ -137,6 +165,8 @@ const PrivacyPolicy = () => (
       </div>
     </section>
   </div>
-);
+  </>
+  )
+};
 
 export default PrivacyPolicy;

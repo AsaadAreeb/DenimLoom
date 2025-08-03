@@ -1,5 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
+import ReactDOMServer from "react-dom/server";
 
 const faqs = [
   {
@@ -229,6 +231,19 @@ const faqs = [
 
 
 const FAQ = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "url": "https://www.denimloom.com/faq",
+    "mainEntity": faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      "name": question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": ReactDOMServer.renderToStaticMarkup(answer), // converts to allowed HTML
+      }
+    }))
+  };
   // Add type annotation for activeIndex state
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -238,6 +253,13 @@ const FAQ = () => {
   };
 
   return (
+    <>
+      <Helmet>
+        <title>FAQ – Denim Loom</title>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
     <div className="flex flex-col">
       {/* Header Section */}
       <motion.section
@@ -344,6 +366,7 @@ const FAQ = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

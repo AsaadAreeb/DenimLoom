@@ -1,8 +1,52 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useState } from "react"; // Import useState for handling state
+import { Helmet } from 'react-helmet-async';
+
 
 const Contact = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "url": "https://www.denimloom.com/contact",
+    "name": "Contact Us – Denim Loom",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.denimloom.com/contact"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://www.denimloom.com/#organization",
+      "name": "Denim Loom",
+      "url": "https://www.denimloom.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg",
+        "width": 240,
+        "height": 60
+      },
+      "telephone": "+92‑344‑0854334",
+      "email": "admin@denimloom.com",
+      "sameAs": [
+        "https://www.facebook.com/denimloom",
+        "https://www.linkedin.com/company/denim-loom/",
+        "https://www.instagram.com/denim_loom/"
+      ]
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+92‑344‑0854334",
+      "email": "admin@denimloom.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "149 Block E, First Floor",
+      "addressLocality": "Lahore",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    }
+  };
   const [statusMessage, setStatusMessage] = useState<string | null>(null); // State for handling messages
   const [statusType, setStatusType] = useState<'success' | 'error' | null>(null); // State for handling success/error type
 
@@ -42,6 +86,12 @@ const Contact = () => {
 
 
   return (
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
     <div className="overflow-hidden">
       <motion.section
         initial={{ opacity: 0 }}
@@ -226,6 +276,7 @@ const Contact = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

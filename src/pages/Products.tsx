@@ -1,5 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
+
+
 
 const mainProducts = [
   { id: 'apparel', title: 'Apparel', description: 'Denim that redefines style, comfort, and confidence!', image: '/apparel.jpg' },
@@ -16,7 +19,39 @@ const Products = () => {
     navigate(`/products/${categoryId}`);
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://www.denimloom.com/products",
+    "name": "Our Products – Denim Loom",
+    "description": "Browse Denim Loom’s core denim product categories: Apparel, Accessories, Footwear, Lifestyle & Raw Fabric.",
+    "provider": { "@id": "https://www.denimloom.com/#organization" },
+    "mainEntity": {
+      "@type": "OfferCatalog",
+      "name": "Denim Loom Product Categories",
+      "itemListElement": mainProducts.map((prod, idx) => ({
+        "@type": "Offer",
+        "position": idx + 1,
+        "url": `https://www.denimloom.com/products/${prod.id}`,
+        "itemOffered": {
+          "@type": "Product",
+          "name": prod.title,
+          "description": prod.description,
+          "image": `https://www.denimloom.com${prod.image}`,
+          "provider": { "@id": "https://www.denimloom.com/#organization" }
+        }
+      }))
+    }
+  };
+
   return (
+    <>
+      <Helmet>
+        <title>Our Products – Denim Loom</title>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
     <div>
       <motion.section
         initial={{ opacity: 0 }}
@@ -80,6 +115,7 @@ const Products = () => {
         </div>
       </motion.section>
     </div>
+    </>
   );
 };
 

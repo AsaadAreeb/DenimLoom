@@ -29,7 +29,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-courgette mb-4">Connect With Us</h4>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61571102117679" className="hover:text-indigo-200 transition-colors">
+              <a href="https://www.facebook.com/denimloom" className="hover:text-indigo-200 transition-colors">
                 <Facebook size={24} />
               </a>
               <a href="https://www.linkedin.com/company/denim-loom/about/" className="hover:text-indigo-200 transition-colors">
@@ -39,7 +39,7 @@ const Footer = () => {
                 <Instagram size={24} />
               </a>
               <a
-                href="mailto:sales@denimloom.com"
+                href="mailto:admin@denimloom.com"
                 className="hover:text-indigo-200 transition-colors"
               >
                 <Mail size={24} />

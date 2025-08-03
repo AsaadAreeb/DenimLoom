@@ -1,9 +1,81 @@
 
 import { motion } from 'framer-motion';
 import { Users, Target, History } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
+  const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://www.denimloom.com/about",
+  "headline": "Our Story – Denim Loom",
+  "description": "Learn about Denim Loom, a Pakistan‑based brand crafting premium sustainable denim with global reach.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Denim Loom",
+    "url": "https://www.denimloom.com",
+    "description": "Denim Loom is a Lahore‑based manufacturer and exporter of sustainable denim fabrics and apparel.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg",
+      "width": 240,
+      "height": 60
+    },
+    "foundingDate": "2024-12-01",
+    "foundingLocation": "Lahore, Punjab, Pakistan",
+    "sameAs": [
+      "https://www.facebook.com/denimloom",
+      "https://www.linkedin.com/company/denim-loom/",
+      "https://www.instagram.com/denim_loom/"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "telephone": "+92-344-0854334",
+        "email": "admin@denimloom.com"
+      }
+    ],
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Organization", "name": "Quiksilver" },
+        "reviewBody": "Their commitment to quality and innovation has been unparalleled.",
+        "datePublished": "2025-02-10",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Organization", "name": "Roxy" },
+        "reviewBody": "Exceptional craftsmanship and timely delivery.",
+        "datePublished": "2025-04-22",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5,
+          "bestRating": 5
+        }
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.9,
+      "reviewCount": 2
+    }
+  }
+};
+
   return (
+    <>
+    <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+    </Helmet>
+
     <div className="overflow-hidden">
       {/* Hero Section */}
       <motion.section
@@ -176,8 +248,8 @@ const About = () => {
   </div>
 </section>
 
-
     </div>
+        </>
   );
 };
 

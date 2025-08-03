@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Product } from '../types/product';
 import { getProductById } from '../services/productService';
 import {getCategoryInfo} from '../utils/categories';
-
+import { Helmet } from 'react-helmet-async';  
 
 
 
@@ -62,7 +62,38 @@ const ProductDetail = () => {
   const nextImage = () =>
     setCurrentImageIndex((i) => (i === images.length - 1 ? 0 : i + 1));
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.name,
+    "description": product.description,
+    "image": images,
+    "brand": {
+      "@type": "Brand",
+      "name": "Denim Loom"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "price": "Contact for quote",
+      "seller": {
+        "@type": "Organization",
+        "name": "Denim Loom",
+        "url": "https://www.denimloom.com"
+      }
+    },
+    "category": categoryTitle
+  };
+
   return (
+    <>
+    <Helmet>
+        <title>{product.name} - Denim Loom</title>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
     <div className="min-h-screen bg-gray-50">
       {/* Back to Category */}
       <div className="bg-white">
@@ -180,6 +211,7 @@ const ProductDetail = () => {
         </div>
       </motion.div>
     </div>
+    </>
   );
 };
 

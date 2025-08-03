@@ -1,8 +1,55 @@
 import { ArrowRight, Award, Globe, TrendingUp } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.denimloom.com/#website",
+        "url": "https://www.denimloom.com/",
+        "name": "Denim Loom",
+        "alternateName": "DenimLoom",
+        "description": "Premium denim exports from Pakistan with global quality manufacturing.",
+        "publisher": { "@id": "https://www.denimloom.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.denimloom.com/#organization",
+        "name": "Denim Loom",
+        "url": "https://www.denimloom.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg",
+          "width": 240,
+          "height": 60
+        },
+        "sameAs": [
+          "https://www.facebook.com/denimloom",
+          "https://www.linkedin.com/company/denim-loom/",
+          "https://www.instagram.com/denim_loom/"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "+92-344-0854334",
+            "email": "admin@denimloom.com"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
     <div className="overflow-hidden">
       {/* Hero Section */}
       <motion.section 
@@ -93,6 +140,7 @@ const Home = () => {
         </div>
       </motion.section>
     </div>
+    </>
   );
 };
 
