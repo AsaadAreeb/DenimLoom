@@ -9,12 +9,12 @@ const About = () => {
   "@type": "AboutPage",
   "url": "https://www.denimloom.com/about",
   "headline": "Our Story – Denim Loom",
-  "description": "Learn about Denim Loom, a Pakistan‑based brand crafting premium sustainable denim with global reach.",
+  "description": "Learn about Denim Loom, a Pakistan-based brand crafting premium sustainable denim with global reach.",
   "mainEntity": {
     "@type": "Organization",
     "name": "Denim Loom",
     "url": "https://www.denimloom.com",
-    "description": "Denim Loom is a Lahore‑based manufacturer and exporter of sustainable denim fabrics and apparel.",
+    "description": "Denim Loom is a Lahore-based manufacturer and exporter of sustainable denim fabrics and apparel.",
     "logo": {
       "@type": "ImageObject",
       "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg",

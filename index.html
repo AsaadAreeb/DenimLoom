@@ -2,7 +2,51 @@
 <html lang="en">
   
   <head>
+ <!-- 1) ManufacturingBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ManufacturingBusiness",
+    "name": "Denim Loom",
+    "description": "Denim Loom is a premier denim manufacturer in Lahore, Pakistan, offering custom denim fabrication, dyeing, finishing, and export services.",
+    "url": "https://www.denimloom.com",
+    "logo": "https://www.denimloom.com/blogs/denimloom_logo.jpg",
+    "telephone": "+92-344-0854334",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "149 Block E, First Floor, Nawab Town",
+      "addressLocality": "Lahore",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "areaServed": { "@type": "Country", "name": "Pakistan" },
+    "sameAs": [
+      "https://www.facebook.com/denimloom",
+      "https://www.linkedin.com/company/denim-loom",
+      "https://www.instagram.com/denim_loom"
+    ]
+  }
+  </script>
 
+  <!-- 2) WebSite + SearchAction Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.denimloom.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.denimloom.com/products/{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8N00GCLJB"></script>
@@ -32,7 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <link rel="manifest" href="/src/svg/favicon_io/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="DenimLoom manufactures premium denim jeans, jackets, and skirts at wholesale, offering competitive prices with low MOQs and flexible orders.">
+    <meta name="description" content="Denim Loom is Pakistan-based brand that manufactures premium denim jeans, jackets, and skirts at wholesale, offering competitive prices with low MOQs and flexible orders.">
     
     <meta name="author" content="DenimLoom">
     <title>Denim Loom - Premium Denim Manufacturing</title>

@@ -22,67 +22,68 @@ const serviceIcons = {
 
 const Services = () => {
   const processSteps = [
-    {
-      id: 'yarn-store',
-      title: 'Yarn Store',
-      description: 'We currently dye up to 2,000 kgs of yarn daily, employing advanced dyeing machines that ensure color consistency and precision. Our focus on accurate dyeing techniques guarantees a high-quality finish, meeting international environmental and safety standards. The facility is equipped with automated controls to minimize human error and improve throughput, ensuring the highest colorfastness and uniformity across batches.',
-      image: '/process_svg/yarnStore.png',
-    },
-    {
-      id: 'yarn-dyeing',
-      title: 'Yarn Dyeing',
-      description: 'Processes up to 2,000 kg of yarn daily using high-tech dyeing machines for color consistency and fastness. Automated controls minimize errors and optimize water and dye usage, reducing waste by 30%. The process adheres to OEKO-TEX standards, achieving 98% color matching accuracy. Eco-friendly techniques ensure compliance with environmental regulations while maintaining uniform quality across batches.',
-      image: '/process_svg/yarn_dyeing.png',
-    },
-    {
-      id: 'fabric-dyeing',
-      title: 'Fabric Dyeing',
-      description: 'Handles up to 10,000 meters of fabric daily, using jet and pad dyeing machines for even color distribution. Eco-friendly dyes and advanced monitoring ensure minimal water and chemical use, meeting REACH standards. Shrinkage is kept below 3%, and fabric color consistency is ensured. The process supports a variety of materials, including cotton, polyester, and blends, for versatile production.',
-      image: '/process_svg/fabric.jpeg',
-    },
-    {
-      id: 'knitting',
-      title: 'Knitting',
-      description: 'Produces 15,000 meters of fabric daily using circular and flat knitting machines. Automated systems ensure consistent gauge uniformity, with tolerances of ±2 mm. Capable of handling various yarn types, the process produces fabrics for garments, upholstery, and technical textiles. Advanced equipment minimizes defects, ensuring tensile strength and product durability.',
-      image: '/process_svg/knitting.jpeg',
-    },
-    {
-      id: 'cutting',
-      title: 'Cutting & Stitching',
-      description: 'Cuts up to 5,000 garments daily using CAD-guided machines with ±1 mm precision, reducing fabric waste by 15%. Stitching lines handle 3,500 garments per day, utilizing lockstitch, overlock, and flatlock systems for durability and flexibility. The process ensures consistent sizes, shapes, and stitching quality, meeting client specifications for bulk production.',
-      image: '/process_svg/cut&stic.jpeg',
-    },
-    {
-      id: 'swing-thread',
-      title: 'Sewing Thread',
-      description: 'Produces 1,500 thread cones daily, each weighing 1–2 kg. Threads are designed with 35 N/mm² tensile strength, ensuring durability during sewing. Over 500 color shades are available, matching fabric specifications. Automated machines guarantee uniform thickness and twist, minimizing thread breakage and enhancing performance for industrial and garment applications.',
-      image: '/process_svg/sweingthread.jpeg',
-    },
-    {
-      id: 'printing',
-      title: 'Printing',
-      description: 'Prints up to 8,000 meters of fabric daily using digital and rotary screen printing. Digital systems provide 600 DPI resolution for complex designs, while rotary systems handle high-volume orders efficiently. Eco-friendly inks reduce VOC emissions by 25%, ensuring compliance with environmental standards. The process delivers precise alignment and vibrant, durable prints for diverse applications.',
-      image: '/process_svg/printing.jpeg',
-    },
-    {
-      id: 'finishing',
-      title: 'Finishing',
-      description: 'Processes 12,000 meters of fabric or 6,000 garments daily, applying softening, anti-pilling, wrinkle-resistance, and waterproof finishes. Heat-setting ensures shrinkage control within ±1% tolerance, while advanced systems reduce energy consumption by 20%. The process enhances the product’s durability, comfort, and appearance, making it ready for retail or industrial use.',
-      image: '/process_svg/finishing.png',
-    },
-    {
-      id: 'quality-control',
-      title: 'Quality Control',
-      description: 'Conducts 100% inspection at all stages, testing for tensile strength, shrinkage, and colorfastness. Defect rates are kept below 1.5%, ensuring adherence to ISO and client standards. Automated and manual inspections maintain consistent quality, meeting international benchmarks for washing, rubbing, and light exposure. Only defect-free products are approved for shipment.',
-      image: '/process_svg/inspection.png',
-    },
-    {
-      id: 'warehouse-packing-shipping',
-      title: 'Warehouse Packing & Shipping',
-      description: 'Stores up to 20,000 garments or 50,000 meters of fabric in climate-controlled warehouses. Automated packing ensures 98% accuracy, offering custom solutions for bulk and retail orders. Dispatches up to 15 containers weekly, with deliveries completed within 2–10 business days globally. Efficient logistics ensure timely shipments while maintaining product integrity during transit.',
-      image: '/process_svg/warehouse.jpg',
-    }
-  ];
+  {
+    id: 'yarn-store',
+    title: 'Yarn Store',
+    description: 'As a leading denim manufacturer in Lahore, Pakistan, our yarn store dyes up to 2,000 kg of denim yarn daily using advanced machines for pinpoint color consistency. Our automated controls ensure the highest uniformity and colorfastness, meeting international OEKO-TEX and safety standards.',
+    image: '/process_svg/yarnStore.png',
+  },
+  {
+    id: 'yarn-dyeing',
+    title: 'Yarn Dyeing',
+    description: 'Our Lahore-based facility processes 2,000 kg of yarn per day—optimizing water and dye usage by 30%. As a top denim manufacturer in Pakistan, we adhere to OEKO-TEX standards and achieve 98% color-match accuracy with eco-friendly dye techniques.',
+    image: '/process_svg/yarn_dyeing.png',
+  },
+  {
+    id: 'fabric-dyeing',
+    title: 'Fabric Dyeing',
+    description: 'At our Pakistan denim manufacturing plant, we dye up to 10,000 m of fabric daily on jet and pad machines. We use eco-friendly dyes, maintain <3% shrinkage, meet REACH requirements, and ensure uniform color distribution across cotton, polyester, and blended fabrics.',
+    image: '/process_svg/fabric.jpeg',
+  },
+  {
+    id: 'knitting',
+    title: 'Knitting',
+    description: 'Our circular and flat knitting lines in Lahore produce 15,000 m of denim fabric each day. This leading denim manufacturer in Pakistan guarantees ±2 mm gauge uniformity and robust tensile strength for garments, upholstery, and technical textiles.',
+    image: '/process_svg/knitting.jpeg',
+  },
+  {
+    id: 'cutting',
+    title: 'Cutting & Stitching',
+    description: 'As one of Pakistan’s premier denim manufacturers, we cut 5,000 garments daily with CAD-guided precision (±1 mm), reducing waste by 15%. Our stitching lines deliver 3,500 lock-, over-, and flatlock-stitched garments per day, all in our Lahore factory.',
+    image: '/process_svg/cut&stic.jpeg',
+  },
+  {
+    id: 'swing-thread',
+    title: 'Sewing Thread',
+    description: 'Our Lahore plant spins 1,500 cones of sewing thread daily (1–2 kg each) with 35 N/mm² tensile strength. Over 500 shades ensure perfect denim matching—making us a top choice among denim manufacturers in Pakistan.',
+    image: '/process_svg/sweingthread.jpeg',
+  },
+  {
+    id: 'printing',
+    title: 'Printing',
+    description: 'At Denim Loom’s Lahore facility, we digitally and screen-print 8,000 m of denim daily at 600 DPI. Our eco-ink process cuts VOCs by 25% and guarantees sharp, fade-resistant prints for high-volume runs.',
+    image: '/process_svg/printing.jpeg',
+  },
+  {
+    id: 'finishing',
+    title: 'Finishing',
+    description: 'Our finishing line in Lahore treats 12,000 m of fabric or 6,000 garments each day with softening, anti-pilling, wrinkle-resistant, and waterproof finishes—delivering durable, retail-ready denim from Pakistan’s leading manufacturer.',
+    image: '/process_svg/finishing.png',
+  },
+  {
+    id: 'quality-control',
+    title: 'Quality Control',
+    description: 'As a top denim manufacturer in Pakistan, we conduct 100% inspections on tensile strength, shrinkage, and colorfastness. Our defect rate remains below 1.5%, ensuring only flawless denim leaves our Lahore factory.',
+    image: '/process_svg/inspection.png',
+  },
+  {
+    id: 'warehouse-packing-shipping',
+    title: 'Warehouse Packing & Shipping',
+    description: 'Our climate-controlled Lahore warehouse stores up to 50,000 m of denim or 20,000 garments. We dispatch 15+ containers weekly worldwide, offering custom packing solutions with 98% accuracy—solidifying our reputation in Pakistan’s denim exports.',
+    image: '/process_svg/warehouse.jpg',
+  }
+];
+
 
   const [selectedService, setSelectedService] = useState<Service | null>(null);
   const [selectedProcess, setSelectedProcess] = useState<string>(processSteps[0].id); // Initialize with the first process step
