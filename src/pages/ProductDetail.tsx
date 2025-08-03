@@ -63,28 +63,40 @@ const ProductDetail = () => {
     setCurrentImageIndex((i) => (i === images.length - 1 ? 0 : i + 1));
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": product.name,
-    "description": product.description,
-    "image": images,
-    "brand": {
-      "@type": "Brand",
-      "name": "Denim Loom"
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": product.name,
+  "description": product.description,
+  "image": images.map(img => `https://www.denimloom.com${img}`),
+  "brand": {
+    "@type": "Brand",
+    "name": "Denim Loom"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "price": "0",
+    "priceValidUntil": "2026-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@type": "Organization",
+      "name": "Denim Loom",
+      "url": "https://www.denimloom.com"
     },
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "price": "Contact for quote",
-      "seller": {
-        "@type": "Organization",
-        "name": "Denim Loom",
-        "url": "https://www.denimloom.com"
-      }
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "10.00",
+        "currency": "USD"
+      },
+
     },
-    "category": categoryTitle
-  };
+  },
+  "category": categoryTitle
+};
+
 
   return (
     <>

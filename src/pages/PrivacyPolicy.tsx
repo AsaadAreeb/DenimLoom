@@ -4,31 +4,32 @@ import { Helmet } from 'react-helmet-async';
 
 const PrivacyPolicy = () => {
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "url": "https://www.denimloom.com/privacypolicy",
-    "name": "Privacy Policy – Denim Loom",
-    "description": "Learn how Denim Loom collects, uses, protects, and handles your personal data.",
-    "isPartOf": {
-      "@type": "WebSite",
-      "@id": "https://www.denimloom.com/#website"
-    },
-    "mainEntity": {
-      "@type": "CreativeWork",
-      "headline": "Denim Loom Privacy Policy",
-      "datePublished": "2025-01-01",
-      "dateModified": "2025-06-14"
-    },
-    "about": {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://www.denimloom.com/privacypolicy",
+  "name": "Privacy Policy – Denim Loom",
+  "description": "Learn how Denim Loom collects, uses, protects, and handles your personal data.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.denimloom.com/#website"
+  },
+  "about": {
+    "@type": "Organization",
+    "@id": "https://www.denimloom.com/#organization"
+  },
+  "mainEntity": {
+    "@type": "CreativeWork",
+    "name": "Denim Loom Privacy Policy",
+    "headline": "Denim Loom Privacy Policy",
+    "datePublished": "2025-01-01",
+    "dateModified": "2025-06-14",
+    "publisher": {
       "@type": "Organization",
       "@id": "https://www.denimloom.com/#organization"
-    },
-    "reviewedBy": {
-      "@type": "Organization",
-      "@id": "https://www.denimloom.com/#organization"
-    },
-    "lastReviewed": "2025-06-14"
-  };
+    }
+  }
+};
+
 
   return(
     <>

@@ -95,25 +95,25 @@ const Services = () => {
   const processDetail = processSteps.find((process) => process.id === selectedProcess);
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "url": "https://www.denimloom.com/services",
-    "name": "Our Services – Denim Loom",
-    "description": "Fabric manufacturing, dyeing, inspection, finishing and packaging services offered at Denim Loom.",
-    "provider": { "@id": "https://www.denimloom.com/#organization" },
-    "mainEntity": {
-      "@type": "OfferCatalog",
-      "name": "Denim Fabric Service Catalog",
-      "itemListElement": processSteps.map((step) => ({
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "serviceType": `${step.title} on denim fabric`,
-            "description": step.description
-          }
-        }))
-    }
-  };
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://www.denimloom.com/services",
+  "name": "Our Services – Denim Loom",
+  "description": "Fabric manufacturing, dyeing, inspection, finishing and packaging services offered at Denim Loom.",
+  "provider": { "@id": "https://www.denimloom.com/#organization" },
+  "mainEntity": {
+    "@type": "OfferCatalog",
+    "name": "Denim Fabric Service Catalog",
+    "itemListElement": processSteps.map((step) => ({
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": step.title, // Required property added
+        "description": step.description
+      }
+    }))
+  }
+};
 
   return (
      <>

@@ -5,37 +5,14 @@ import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "url": "https://www.denimloom.com/about",
-  "headline": "Our Story – Denim Loom",
-  "description": "Learn about Denim Loom, a Pakistan-based brand crafting premium sustainable denim with global reach.",
-  "mainEntity": {
-    "@type": "Organization",
-    "name": "Denim Loom",
-    "url": "https://www.denimloom.com",
-    "description": "Denim Loom is a Lahore-based manufacturer and exporter of sustainable denim fabrics and apparel.",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg",
-      "width": 240,
-      "height": 60
-    },
-    "foundingDate": "2024-12-01",
-    "foundingLocation": "Lahore, Punjab, Pakistan",
-    "sameAs": [
-      "https://www.facebook.com/denimloom",
-      "https://www.linkedin.com/company/denim-loom/",
-      "https://www.instagram.com/denim_loom/"
-    ],
-    "contactPoint": [
-      {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "telephone": "+92-344-0854334",
-        "email": "admin@denimloom.com"
-      }
-    ],
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://www.denimloom.com/about#aboutpage",
+    "url": "https://www.denimloom.com/about",
+    "name": "Our Story – Denim Loom",
+    "description": "Learn about Denim Loom, a Pakistan-based brand crafting premium sustainable denim with global reach.",
+    "isPartOf": { "@id": "https://www.denimloom.com/#website" },
+    "about":    { "@id": "https://www.denimloom.com/#organization" },
     "review": [
       {
         "@type": "Review",
@@ -65,9 +42,7 @@ const About = () => {
       "ratingValue": 4.9,
       "reviewCount": 2
     }
-  }
-};
-
+  };
   return (
     <>
     <Helmet>
