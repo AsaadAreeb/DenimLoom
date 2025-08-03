@@ -15,8 +15,7 @@ const allProducts: Record<string, Product[]> = {
     ✔ Designed to sculpt your legs and flatter your figure effortlessly.<br><br>
     
     Turn heads and own the streets with these stylish skinny jeans!<br>
-    Whether you're pairing them with heels for a chic look or sneakers for casual vibes,<br>
-    they keep you comfortable and fashionable all day long.
+    Whether you're pairing them with heels for a chic look or sneakers for casual vibes, they keep you comfortable and fashionable all day long.
   `,
       image: '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 1.jpeg',
       images: [
@@ -531,8 +530,7 @@ const allProducts: Record<string, Product[]> = {
         ✔ Styled with leather jacket and boots for full impact.<br>
         ✔ Ideal for confident, fashion-forward statements.<br><br>
 
-        Whether you're strolling the city or capturing looks on the block,<br>
-        these jeans are built for bold urban expressions.
+        Whether you're strolling the city or capturing looks on the block, these jeans are built for bold urban expressions.
       `,
       image: '/Apparel/Biker Jeans/Streetwear/Modern Streetwear 1.jpeg',
       images: [
@@ -555,8 +553,7 @@ const allProducts: Record<string, Product[]> = {
         ✔ Pairs perfectly with cropped tops and chunky boots.<br>
         ✔ Great for sunny city walks or candid street style shoots.<br><br>
 
-        Designed for confident women who love edgy yet chic outfits,<br>
-        these biker jeans blend comfort, shape, and flair.
+        Designed for confident women who love edgy yet chic outfits, these biker jeans blend comfort, shape, and flair.
       `,
       image: '/Apparel/Biker Jeans/Slim Fit/Slim Fit Female 1.jpeg',
       images: [
@@ -579,8 +576,7 @@ const allProducts: Record<string, Product[]> = {
         ✔ Unisex cut—perfect fit for both men and women riders.<br>
         ✔ Rugged terrain style paired with sport bike-ready toughness.<br><br>
 
-        Whether you're riding or showcasing biker fashion,<br>
-        these jeans are built for protection, durability, and attitude.
+        Whether you're riding or showcasing biker fashion, these jeans are built for protection, durability, and attitude.
       `,
       image: '/Apparel/Biker Jeans/Protective/Protective Unisex 4.jpeg',
       images: [
@@ -605,8 +601,7 @@ const allProducts: Record<string, Product[]> = {
         ✔ Perfect for pairing with graphic tees and sneakers.<br>
         ✔ Designed to turn heads in urban settings.<br><br>
 
-        These jeans carry the spirit of rebellion and confidence—<br>
-        ideal for fashion-forward individuals seeking an unapologetic vibe.
+        These jeans carry the spirit of rebellion and confidence. Ideal for fashion-forward individuals seeking an unapologetic vibe.
       `,
       image: '/Apparel/Biker Jeans/Distressed/Distressed Bold 1.jpeg',
       images: [

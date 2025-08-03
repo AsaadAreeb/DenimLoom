@@ -29,7 +29,7 @@ Allow: /privacypolicy
 Allow: /blog
 
 # Add crawl delay
-Crawl-delay: 5
+
 
 # Reference to sitemap
 Sitemap: https://www.denimloom.com/sitemap.xml

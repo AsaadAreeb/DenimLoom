@@ -13,6 +13,7 @@ import BlogPost from './pages/BlogPost';
 import ProductDetail from './pages/ProductDetail';
 import ScrollToTop from './components/ScrollToTop';
 import FAQ from './pages/FAQ';
+import NotFound from './pages/NotFound'
 
 
 function App() {
@@ -28,13 +29,13 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:category" element={<ProductCategory />} />
-          {/* <Route path="/category/:category/product/:productId" element={<ProductDetail />} /> */}
           <Route path="/products/:category/:productName/:productId" element={<ProductDetail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/faq" element={<FAQ />} />
 
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
