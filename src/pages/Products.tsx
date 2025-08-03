@@ -43,8 +43,9 @@ const Products = () => {
           "@type": "Offer",
           "priceSpecification": {
             "@type": "PriceSpecification",
+            "price": 20.00,  
             "minPrice": 10.00,
-            "maxPrice": 20.00,
+            "maxPrice": 30.00,
             "priceCurrency": "USD"
           },
           "availability": "https://schema.org/PreOrder",
