@@ -103,8 +103,7 @@ const Services = () => {
     "mainEntity": {
       "@type": "OfferCatalog",
       "name": "Denim Fabric Service Catalog",
-      "itemListElement": [
-        ...processSteps.map((step) => ({
+      "itemListElement": processSteps.map((step) => ({
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
@@ -112,7 +111,6 @@ const Services = () => {
             "description": step.description
           }
         }))
-      ]
     }
   };
 

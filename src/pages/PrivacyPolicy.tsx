@@ -9,16 +9,25 @@ const PrivacyPolicy = () => {
     "url": "https://www.denimloom.com/privacypolicy",
     "name": "Privacy Policy – Denim Loom",
     "description": "Learn how Denim Loom collects, uses, protects, and handles your personal data.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://www.denimloom.com/#website"
+    },
+    "mainEntity": {
+      "@type": "CreativeWork",
+      "headline": "Denim Loom Privacy Policy",
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-06-14"
+    },
     "about": {
       "@type": "Organization",
       "@id": "https://www.denimloom.com/#organization"
     },
-    "lastReviewed": "2025-06-14",
     "reviewedBy": {
       "@type": "Organization",
       "@id": "https://www.denimloom.com/#organization"
     },
-    "datePublished": "2025-01-01"
+    "lastReviewed": "2025-06-14"
   };
 
   return(

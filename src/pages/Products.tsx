@@ -20,29 +20,42 @@ const Products = () => {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "url": "https://www.denimloom.com/products",
-    "name": "Our Products – Denim Loom",
-    "description": "Browse Denim Loom’s core denim product categories: Apparel, Accessories, Footwear, Lifestyle & Raw Fabric.",
-    "provider": { "@id": "https://www.denimloom.com/#organization" },
-    "mainEntity": {
-      "@type": "OfferCatalog",
-      "name": "Denim Loom Product Categories",
-      "itemListElement": mainProducts.map((prod, idx) => ({
-        "@type": "Offer",
-        "position": idx + 1,
-        "url": `https://www.denimloom.com/products/${prod.id}`,
-        "itemOffered": {
-          "@type": "Product",
-          "name": prod.title,
-          "description": prod.description,
-          "image": `https://www.denimloom.com${prod.image}`,
-          "provider": { "@id": "https://www.denimloom.com/#organization" }
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://www.denimloom.com/products",
+  "name": "Our Products – Denim Loom",
+  "description": "Browse Denim Loom’s core denim product categories: Apparel, Accessories, Footwear, Lifestyle & Raw Fabric.",
+  "provider": { "@id": "https://www.denimloom.com/#organization" },
+  "mainEntity": {
+    "@type": "OfferCatalog",
+    "name": "Denim Loom Product Categories",
+    "itemListElement": mainProducts.map((prod, idx) => ({
+      "@type": "Offer",
+      "position": idx + 1,
+      "url": `https://www.denimloom.com/products/${prod.id}`,
+      "itemOffered": {
+        "@type": "Product",
+        "name": prod.title,
+        "description": prod.description,
+        "image": `https://www.denimloom.com${prod.image}`,
+        "provider": { "@id": "https://www.denimloom.com/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 10.00,
+            "maxPrice": 20.00,
+            "priceCurrency": "USD"
+          },
+          "availability": "https://schema.org/PreOrder",
+          "url": "https://wa.me/923440854334?text=Interested"
         }
-      }))
-    }
-  };
+      }
+    }))
+  }
+};
+
+
 
   return (
     <>

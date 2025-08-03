@@ -232,18 +232,20 @@ const faqs = [
 
 const FAQ = () => {
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "url": "https://www.denimloom.com/faq",
-    "mainEntity": faqs.map(({ question, answer }) => ({
-      "@type": "Question",
-      "name": question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": ReactDOMServer.renderToStaticMarkup(answer), // converts to allowed HTML
-      }
-    }))
-  };
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://www.denimloom.com/faq",
+  "name": "Frequently Asked Questions – Denim Loom",
+  "description": "Answers to Denim Loom’s most commonly asked questions about our manufacturing, customization, and order process.",
+  "mainEntity": faqs.map(({ question, answer }) => ({
+    "@type": "Question",
+    "name": question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": ReactDOMServer.renderToStaticMarkup(answer)
+    }
+  }))
+};
   // Add type annotation for activeIndex state
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
