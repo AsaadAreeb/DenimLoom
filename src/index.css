@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 /* Custom styles for blog content */
+
+html {
+  scroll-behavior: smooth;
+}
+
 .prose {
   @apply text-gray-800;
 }
