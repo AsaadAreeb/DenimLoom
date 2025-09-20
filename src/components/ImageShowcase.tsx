@@ -12,6 +12,14 @@ const ShiftingRow = ({ images, interval = 3000 }: ShiftingRowProps) => {
   const [startIndex, setStartIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
 
+  // ✅ Preload images once
+  useEffect(() => {
+    images.forEach((img) => {
+      const preload = new Image();
+      preload.src = img.src;
+    });
+  }, [images]);
+
   // Responsive visibleCount based on screen width
   useEffect(() => {
     const updateVisibleCount = () => {
@@ -52,7 +60,9 @@ const ShiftingRow = ({ images, interval = 3000 }: ShiftingRowProps) => {
           <img
             src={img.src}
             alt={img.alt}
-            className="w-full h-full object-cover"
+            loading="eager" // ✅ force earlier load
+            className="w-full h-full object-cover opacity-0 transition-opacity duration-500"
+            onLoad={(e) => (e.currentTarget.style.opacity = "1")} // ✅ fade-in
           />
 
           {/* Overlay with text */}
