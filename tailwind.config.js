@@ -7,9 +7,18 @@ module.exports = {
         lobster: ['"Lobster"', 'cursive'],
         courgette: ['"Courgette"', 'cursive'],
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 20s linear infinite',
+      },
       backgroundImage: {
         // 'denim-gradient': 'linear-gradient(to right, #312e81, #6b21a8, #1e40af)', 
-        'denim-gradient': 'linear-gradient(to right, #0c2448ff, #1e40af, #312e81)',
+        'denim-gradient': 'linear-gradient(to right, #2563eb, #2563eb, #2563eb)',
         'denim-gradients': 'linear-gradient(to bottom, #0c2448ff, #1e40af, #312e81)',
         'denim-footer-gradient': 'linear-gradient(to right, #312e81, #6b21a8, #1e40af)',
          none: 'none',

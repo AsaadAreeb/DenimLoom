@@ -17,7 +17,7 @@ const allProducts: Record<string, Product[]> = {
     Turn heads and own the streets with these stylish skinny jeans!<br>
     Whether you're pairing them with heels for a chic look or sneakers for casual vibes, they keep you comfortable and fashionable all day long.
   `,
-      image: '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 1.jpeg',
+      image: '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 3.jpeg',
       images: [
         '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 1.jpeg',
         '/Apparel/Jeans/Skinny Jeans/Skinny Jeans 2.jpeg',
@@ -42,7 +42,7 @@ const allProducts: Record<string, Product[]> = {
       Classic never goes out of style! These straight-leg jeans bring the perfect mix of comfort and cool, making them your go-to denim for any occasion. Dress them up or down—you can’t go wrong!
     `,
 
-      image: '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 1.jpeg',
+      image: '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 4.jpeg',
       images: [
         '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 1.jpeg',
         '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 2.jpeg',
@@ -66,7 +66,7 @@ const allProducts: Record<string, Product[]> = {
       Give your outfit that effortlessly cool vibe with these bootcut jeans! The subtle flare adds just the right amount of drama, making them perfect for strutting in style—whether at a party or on a casual day out.
     `,
 
-      image: '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 4.jpeg',
+      image: '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 3.jpeg',
       images: [
         '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 1.jpeg',
         '/Apparel/Jeans/Bootcut Jeans/Bootcut Jeans 2.jpeg',
@@ -89,7 +89,7 @@ const allProducts: Record<string, Product[]> = {
       When comfort meets effortless style, you get these relaxed-fit jeans! Whether you’re chilling at home or out exploring the city, they let you move freely while keeping you looking effortlessly cool.
     `,
 
-      image: '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 1.jpeg',
+      image: '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 6.jpeg',
       images: [
         '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 1.jpeg',
         '/Apparel/Jeans/Relaxed Fit Jeans/Relaxed Fit Jeans 2.jpeg',
@@ -155,7 +155,7 @@ const allProducts: Record<string, Product[]> = {
       Go big or go home! This oversized denim jacket is all about bold, carefree fashion. Throw it on and instantly level up your street-style game—because comfy and stylish is the ultimate combo.
     `,
 
-      image: '/Apparel/Denim Jackets/Oversized Denim Jackets/Oversized Denim Jackets 2.jpeg',
+      image: '/Apparel/Denim Jackets/Oversized Denim Jackets/Oversized Denim Jackets 4.jpeg',
       images: [
         '/Apparel/Denim Jackets/Oversized Denim Jackets/Oversized Denim Jackets 1.jpeg',
         '/Apparel/Denim Jackets/Oversized Denim Jackets/Oversized Denim Jackets 2.jpeg',
@@ -176,7 +176,7 @@ const allProducts: Record<string, Product[]> = {
       An icon for a reason! The trucker jacket brings vintage charm with a tough, outdoorsy vibe. Whether you're hitting the road or just hitting the town, this denim essential has got your back.
     `,
 
-      image: '/Apparel/Denim Jackets/Trucker Jackets/Trucker Jackets 3.jpeg',
+      image: '/Apparel/Denim Jackets/Trucker Jackets/Trucker Jackets 2.jpeg',
       images: [
         '/Apparel/Denim Jackets/Trucker Jackets/Trucker Jackets 1.jpeg',
         '/Apparel/Denim Jackets/Trucker Jackets/Trucker Jackets 2.jpeg',
@@ -197,7 +197,7 @@ const allProducts: Record<string, Product[]> = {
       The perfect mix of casual and polished! This denim button-down is your go-to for an effortlessly stylish look—pair it with jeans for a denim-on-denim vibe or layer it over a dress for a relaxed touch.
     `,
 
-      image: '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 1.jpeg',
+      image: '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 5.jpeg',
       images: [
         '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 1.jpeg',
         '/Apparel/Denim Shirts/Button Down Shirts/Button Down Shirts 2.jpeg',
@@ -220,7 +220,7 @@ const allProducts: Record<string, Product[]> = {
       A softer, more laid-back take on denim! This chambray shirt is lightweight and versatile, making it the ideal piece for warm weather or easy layering in cooler months.
     `,
 
-      image: '/Apparel/Denim Shirts/Chambray Shirts/Chambray Shirts 2.jpeg',
+      image: '/Apparel/Denim Shirts/Chambray Shirts/Chambray Shirts 3.jpeg',
       images: [
         '/Apparel/Denim Shirts/Chambray Shirts/Chambray Shirts 1.jpeg',
         '/Apparel/Denim Shirts/Chambray Shirts/Chambray Shirts 2.jpeg',
@@ -242,7 +242,7 @@ const allProducts: Record<string, Product[]> = {
         A must-have for effortless elegance! Whether you're dressing it up with heels or keeping it casual with sneakers, this A-line denim skirt brings timeless charm and all-day comfort.
       `,
 
-      image: '/Apparel/Denim Skirts/A-line Skirt/A-line Skirts 4.jpeg',
+      image: '/Apparel/Denim Skirts/A-line Skirt/A-line Skirts 2.jpeg',
       images: [
         '/Apparel/Denim Skirts/A-line Skirt/A-line Skirts 1.jpeg',
         '/Apparel/Denim Skirts/A-line Skirt/A-line Skirts 2.jpeg',
@@ -263,7 +263,7 @@ const allProducts: Record<string, Product[]> = {
       Dress it up or keep it casual—either way, you're bound to steal the spotlight! Its long, dramatic silhouette blends vintage inspiration with modern trends, giving you endless outfit possibilities for any occasion.
     `,
 
-      image: '/Apparel/Denim Skirts/Denim Maxi Skirts/Denim Maxi Skirts 1.jpeg',
+      image: '/Apparel/Denim Skirts/Denim Maxi Skirts/Denim Maxi Skirts 3.jpeg',
       images: [
         '/Apparel/Denim Skirts/Denim Maxi Skirts/Denim Maxi Skirts 1.jpeg',
         '/Apparel/Denim Skirts/Denim Maxi Skirts/Denim Maxi Skirts 2.jpeg',
@@ -284,7 +284,7 @@ const allProducts: Record<string, Product[]> = {
       For when you want a little more coverage without sacrificing style! The denim midi skirt is effortlessly chic, pairing well with anything from sneakers to ankle boots.
     `,
 
-      image: '/Apparel/Denim Skirts/Denim Midi Skirts/Denim Midi Skirts 4.jpeg',
+      image: '/Apparel/Denim Skirts/Denim Midi Skirts/Denim Midi Skirts 3.jpeg',
       images: [
         '/Apparel/Denim Skirts/Denim Midi Skirts/Denim Midi Skirts 1.jpeg',
         '/Apparel/Denim Skirts/Denim Midi Skirts/Denim Midi Skirts 2.jpeg',
@@ -326,7 +326,7 @@ const allProducts: Record<string, Product[]> = {
       A denim classic that never fades! Whether you go for a laid-back vibe with sneakers or dress it up with heels, these overalls are your go-to for effortless cool.
     `,
 
-      image: '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 5.jpeg',
+      image: '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 4.jpeg',
       images: [
         '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 6.jpeg',
         '/Apparel/Overalls and Dungarees/Bib Overalls/Bib Overalls 7.jpeg',
@@ -371,7 +371,7 @@ const allProducts: Record<string, Product[]> = {
       ✔ Dress it up with boots or keep it casual with sneakers.<br><br>
       Chic, comfortable, and endlessly versatile! The denim shirt dress is perfect for a casual coffee run or a stylish day out—just cinch it at the waist for a flattering touch.
     `,
-      image: '/Apparel/Denim Dresses/Shirt Dresses/Shirt Dresses 1.jpeg',
+      image: '/Apparel/Denim Dresses/Shirt Dresses/Shirt Dresses 3.jpeg',
       images: [
         '/Apparel/Denim Dresses/Shirt Dresses/Shirt Dresses 1.jpeg',
         '/Apparel/Denim Dresses/Shirt Dresses/Shirt Dresses 2.jpeg',
@@ -412,7 +412,7 @@ const allProducts: Record<string, Product[]> = {
       ✔ Pairs beautifully with sandals, sneakers, or layered with a jacket.<br><br>
       Sunny days call for the perfect denim sundress! Whether you’re heading to the beach or brunch, this easygoing dress keeps you cool, stylish, and ready for anything.
     `,
-      image: '/Apparel/Denim Dresses/Sundresses/Sundresses 1.jpeg',
+      image: '/Apparel/Denim Dresses/Sundresses/Sundresses 2.jpeg',
       images: [
         '/Apparel/Denim Dresses/Sundresses/Sundresses 1.jpeg',
         '/Apparel/Denim Dresses/Sundresses/Sundresses 2.jpeg',
@@ -478,7 +478,7 @@ const allProducts: Record<string, Product[]> = {
       Nothing says carefree like a pair of cutoff denim shorts! Pair them with a tank top or an oversized button-down for the ultimate casual-chic outfit.
     `,
 
-      image: '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 6.jpeg',
+      image: '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 3.jpeg',
       images: [
         '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 1.jpeg',
         '/Apparel/Denim Shorts/Cut-off Shorts/Cut-off Shorts 2.jpeg',
@@ -505,7 +505,7 @@ const allProducts: Record<string, Product[]> = {
       Retro charm meets modern style! These high-waisted denim shorts are perfect for creating that effortlessly put-together look while staying super comfy.
     `,
 
-      image: '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 4.jpeg',
+      image: '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 9.jpeg',
       images: [
         '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 1.jpeg',
         '/Apparel/Denim Shorts/High-waisted Shorts/High-waisted Shorts 2.jpeg',
@@ -578,7 +578,7 @@ const allProducts: Record<string, Product[]> = {
 
         Whether you're riding or showcasing biker fashion, these jeans are built for protection, durability, and attitude.
       `,
-      image: '/Apparel/Biker Jeans/Protective/Protective Unisex 4.jpeg',
+      image: '/Apparel/Biker Jeans/Protective/Protective Unisex 2.jpeg',
       images: [
         '/Apparel/Biker Jeans/Protective/Protective Unisex 1.jpeg',
         '/Apparel/Biker Jeans/Protective/Protective Unisex 2.jpeg',

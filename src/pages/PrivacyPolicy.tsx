@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet } from 'react-helmet-async';
+import Footer from "../components/Footer";
+import Navbar from '../components/Navbar';
 
 
 const PrivacyPolicy = () => {
@@ -39,26 +41,45 @@ const PrivacyPolicy = () => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
+      <Navbar variant="hero" />
   <div className="flex flex-col">
-    {/* Header Section */}
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="py-16 sm:py-20 bg-denim-gradient text-white"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial={{ y: 50 }} animate={{ y: 0 }} transition={{ delay: 0.2, duration: 0.8 }}>
-          <h1 className="text-4xl font-lobster mb-6">Privacy Policy</h1>
-          <p className="text-xl max-w-2xl">
-            Learn how we handle your personal information at Denim Loom.
-          </p>
-        </motion.div>
-      </div>
-    </motion.section>
+    {/* Hero Section */}
+      <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="relative h-[70vh] flex items-center text-white pt-32"
+        >
+          {/* Background image */}
+          <div className="absolute inset-0">
+            <img
+              src="/hero/privacy_hero.jpeg"  // replace with your image path
+              alt="Privacy Policy Denim Loom"
+              className="w-full h-full object-cover"
+            />
+            {/* Dark overlay for readability */}
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
+
+          {/* Left-aligned text content */}
+            <div className="relative">
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.8 }}
+                className="max-w-xl text-left ml-3 md:ml-[200px]" 
+              >
+                <h1 className="text-4xl font-lobster mb-6">Privacy Policy</h1>
+                <p className="text-xl">
+                  Learn how we handle your personal information at Denim Loom.
+                </p>
+              </motion.div>
+            </div>
+
+        </motion.section>
 
     {/* Content Section */}
-    <section className="py-12 sm:py-16 bg-white">
+    <section className="py-12 sm:py-16 bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-gray-800">
         {/** Intro */}
         <motion.div
@@ -175,6 +196,7 @@ const PrivacyPolicy = () => {
       </div>
     </section>
   </div>
+  <Footer backgroundImage="/footer.jpeg" transparent />
   </>
   )
 };

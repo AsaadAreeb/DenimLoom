@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import ReactDOMServer from "react-dom/server";
+import Footer from "../components/Footer";
+import Navbar from '../components/Navbar';
 
 const faqs = [
   {
@@ -262,25 +264,42 @@ const FAQ = () => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
+      <Navbar variant="hero" />
     <div className="flex flex-col">
-      {/* Header Section */}
+      {/* Hero Section */}
       <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        className="py-16 sm:py-20 bg-denim-gradient text-white"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div initial={{ y: 50 }} animate={{ y: 0 }} transition={{ delay: 0.2, duration: 0.8 }}>
-            <h1 className="text-3xl sm:text-4xl font-lobster mb-2 sm:mb-4">
-              Frequently Asked Questions
-            </h1>
-            <p className="text-lg sm:text-xl">
-              Answers to our most commonly asked questions across products and customization.
-            </p>
-          </motion.div>
-        </div>
-      </motion.section>
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="relative h-[70vh] flex items-center text-white pt-32"
+        >
+          {/* Background image */}
+          <div className="absolute inset-0">
+            <img
+              src="/hero/FAQ_hero.jpeg"  // replace with your image path
+              alt="Frequently Asked Questions Denim Loom"
+              className="w-full h-full object-cover"
+            />
+            {/* Dark overlay for readability */}
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
+
+          {/* Left-aligned text content */}
+            <div className="relative">
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.8 }}
+                className="max-w-xl text-left ml-3 md:ml-[200px]" 
+              >
+                <h1 className="text-4xl font-lobster mb-6">Frequently Asked Questions</h1>
+                <p className="text-xl">
+                  Answers to our most commonly asked questions across products and customization.
+                </p>
+              </motion.div>
+            </div>
+
+        </motion.section>
 
       {/* FAQ Items Section */}
       <section className="py-12 sm:py-16 bg-gray-50">
@@ -368,6 +387,7 @@ const FAQ = () => {
         </div>
       </section>
     </div>
+    <Footer backgroundImage="/footer.jpeg" transparent />
     </>
   );
 };

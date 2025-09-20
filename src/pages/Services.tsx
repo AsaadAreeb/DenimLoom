@@ -1,15 +1,14 @@
 
-
-
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
+import Footer from "../components/Footer";
+import Navbar from '../components/Navbar';
 import { Package, Truck, Factory, Recycle, Shield, BarChart } from 'lucide-react';
 import { useState } from 'react';
 import { Service } from '../types/service';
 import { services } from '../data/services';
 import ServiceCard from '../components/services/ServiceCard';
 import ServiceModal from '../components/services/ServiceModal';
-import { Helmet } from 'react-helmet-async';
-
 
 const serviceIcons = {
   manufacturing: Factory,
@@ -21,7 +20,8 @@ const serviceIcons = {
 };
 
 const Services = () => {
-  const processSteps = [
+
+const processSteps = [
   {
     id: 'yarn-store',
     title: 'Yarn Store',
@@ -84,62 +84,71 @@ const Services = () => {
   }
 ];
 
-
   const [selectedService, setSelectedService] = useState<Service | null>(null);
-  const [selectedProcess, setSelectedProcess] = useState<string>(processSteps[0].id); // Initialize with the first process step
+  const [selectedProcess, setSelectedProcess] = useState<string>(processSteps[0].id);
 
-  const handleProcessClick = (processId: string) => {
-    setSelectedProcess(processId);
-  };
-
-  const processDetail = processSteps.find((process) => process.id === selectedProcess);
+  const handleProcessClick = (processId: string) => setSelectedProcess(processId);
+  const processDetail = processSteps.find((p) => p.id === selectedProcess);
 
   const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "url": "https://www.denimloom.com/services",
-  "name": "Our Services – Denim Loom",
-  "description": "Fabric manufacturing, dyeing, inspection, finishing and packaging services offered at Denim Loom.",
-  "provider": { "@id": "https://www.denimloom.com/#organization" },
-  "mainEntity": {
-    "@type": "OfferCatalog",
-    "name": "Denim Fabric Service Catalog",
-    "itemListElement": processSteps.map((step) => ({
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": step.title, // Required property added
-        "description": step.description
-      }
-    }))
-  }
-};
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://www.denimloom.com/services",
+    "name": "Our Services – Denim Loom",
+    "description": "Fabric manufacturing, dyeing, inspection, finishing and packaging services offered at Denim Loom.",
+    "provider": { "@id": "https://www.denimloom.com/#organization" },
+    "mainEntity": {
+      "@type": "OfferCatalog",
+      "name": "Denim Fabric Service Catalog",
+      "itemListElement": processSteps.map((step) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": step.title,
+          "description": step.description
+        }
+      }))
+    }
+  };
 
   return (
-     <>
+    <>
       <Helmet>
         <title>Services – Denim Loom</title>
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
-    <div className="overflow-hidden">
+
+      <Navbar variant="hero" />
+
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        // className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
-        className="relative py-20 bg-denim-gradient text-white"
+        className="relative h-[70vh] flex items-center text-white pt-32"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Background */}
+        <div className="absolute inset-0">
+          <img
+            src="/hero/services_hero.jpeg" // replace with your hero image
+            alt="Our Services"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        {/* Animated Text */}
+        <div className="relative">
           <motion.div
-            initial={{ y: 50 }}
-            animate={{ y: 0 }}
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
+            className="max-w-xl text-left ml-3 md:ml-[200px]"
           >
             <h1 className="text-4xl font-lobster mb-6">Our Services</h1>
-            <p className="text-xl max-w-2xl">
+            <p className="text-xl">
               Expertly crafted denim, manufactured to perfection and exported worldwide.
               From design to delivery, we bring your vision to life with quality and precision!
             </p>
@@ -169,13 +178,13 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Service Detail Modal */}
+      {/* Service Modal */}
       <ServiceModal
         service={selectedService}
         onClose={() => setSelectedService(null)}
       />
 
-      {/* Process Section with Sidebar */}
+      {/* Process Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -184,17 +193,14 @@ const Services = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-lobster mb-12 text-center bg-denim-gradient bg-clip-text text-transparent">Our Process</h2>
+            <h2 className="text-4xl font-lobster mb-8 text-black mb-8 text-center mb-12">Our Process</h2>
 
-            {/* Mobile: Process Steps as Buttons */}
+            {/* Mobile Buttons */}
             <div className="md:hidden flex justify-center mb-6 flex-wrap gap-2 sm:gap-4">
               {processSteps.map((step) => (
                 <button
                   key={step.id}
-                  className={`cursor-pointer px-3 py-2 rounded-md bg-denim-gradient text-sm hover:text-gray-300 hover:scale-105 transition-all duration-300 ease-in-out transform ${selectedProcess === step.id
-                      ? 'bg-indigo-500 scale-105 text-white'
-                      : 'bg-indigo-600 text-gray-200'
-                    }`}
+                  className={`cursor-pointer px-3 py-2 rounded-md bg-denim-gradient text-sm hover:text-gray-300 hover:scale-105 transition-all duration-300 transform ${selectedProcess === step.id ? 'bg-indigo-500 scale-105 text-white' : 'bg-indigo-600 text-gray-200'}`}
                   onClick={() => handleProcessClick(step.id)}
                 >
                   {step.title}
@@ -203,17 +209,14 @@ const Services = () => {
             </div>
 
             <div className="flex flex-col md:flex-row">
-              {/* Desktop: Sidebar */}
+              {/* Desktop Sidebar */}
               <div className="hidden md:block w-full md:w-1/5 bg-denim-gradients text-black rounded-lg shadow-lg p-6 h-auto mb-8 md:mb-0">
                 <h3 className="text-xl font-courgette text-white mb-6">Process Steps</h3>
                 <ul className="space-y-4">
                   {processSteps.map((step) => (
                     <li
                       key={step.id}
-                      className={`cursor-pointer p-3 rounded-md hover:bg-black hover:scale-105 transition-all duration-300 ease-in-out transform ${selectedProcess === step.id
-                          ? 'bg-black scale-105 text-white'
-                          : 'text-gray-200'
-                        }`}
+                      className={`cursor-pointer p-3 rounded-md hover:bg-black hover:scale-105 transition-all duration-300 ease-in-out transform ${selectedProcess === step.id ? 'bg-black scale-105 text-white' : 'text-gray-200'}`}
                       onClick={() => handleProcessClick(step.id)}
                     >
                       {step.title}
@@ -246,7 +249,8 @@ const Services = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+
+      <Footer backgroundImage="/footer.jpeg" transparent />
     </>
   );
 };

@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import { Users, Target, History } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import Navbar from '../components/Navbar';
+import Footer from "../components/Footer";
 
 const About = () => {
   const structuredData = {
@@ -76,29 +78,46 @@ const About = () => {
         </script>
     </Helmet>
 
+    <Navbar variant="hero" />
+
     <div className="overflow-hidden">
       {/* Hero Section */}
       <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        // className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
-        className="relative py-20 bg-denim-gradient text-white"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ y: 50 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            <h1 className="text-4xl font-lobster mb-6">Our Story</h1>
-            <p className="text-xl max-w-2xl">
-            Pioneering the denim industry with innovation, craftsmanship, and sustainability. 
-            Delivering premium quality denim, crafted with passion and built to last.
-            </p>
-          </motion.div>
-        </div>
-      </motion.section>
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="relative h-[70vh] flex items-center text-white pt-32"
+        >
+          {/* Background image */}
+          <div className="absolute inset-0">
+            <img
+              src="/hero/about_hero.jpeg"  // replace with your image path
+              alt="About Denim Loom"
+              className="w-full h-full object-cover"
+            />
+            {/* Dark overlay for readability */}
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
+
+          {/* Left-aligned text content */}
+            <div className="relative">
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.8 }}
+                className="max-w-xl text-left ml-3 md:ml-[200px]" 
+              >
+                <h1 className="text-4xl font-lobster mb-6">Our Story</h1>
+                <p className="text-xl">
+                  Pioneering the denim industry with innovation, craftsmanship, and sustainability.
+                  Delivering premium quality denim, crafted with passion and built to last.
+                </p>
+              </motion.div>
+            </div>
+
+        </motion.section>
+
+
 
       {/* Company Values */}
       <section className="py-20 bg-white">
@@ -111,21 +130,21 @@ const About = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-12"
           >
             <div className="text-center">
-              <Target className="w-12 h-12 text-blue-700 mx-auto mb-4" />
+              <Target className="w-12 h-12 text-blue-500 mx-auto mb-4" />
               <h3 className="text-xl font-courgette mb-2">Our Mission</h3>
               <p className="text-gray-600">
                 To provide premium quality denim products while maintaining sustainable practices and fostering innovation.
               </p>
             </div>
             <div className="text-center">
-              <Users className="w-12 h-12 text-blue-700 mx-auto mb-4" />
+              <Users className="w-12 h-12 text-blue-500 mx-auto mb-4" />
               <h3 className="text-xl font-courgette mb-2">Our Team</h3>
               <p className="text-gray-600">
                 A dedicated group of professionals committed to excellence in denim manufacturing and export.
               </p>
             </div>
             <div className="text-center">
-              <History className="w-12 h-12 text-blue-700 mx-auto mb-4" />
+              <History className="w-12 h-12 text-blue-500 mx-auto mb-4" />
               <h3 className="text-xl font-courgette mb-2">Our Legacy</h3>
               <p className="text-gray-600">
                 Years of experience in crafting premium denim products for global markets.
@@ -153,7 +172,7 @@ const About = () => {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-lobster mb-8 bg-denim-gradient bg-clip-text text-transparent mb-6">Our Journey</h2>
+              <h2 className="text-4xl font-lobster mb-8 text-black">Our Journey</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
                   Starting as a small denim manufacturer, we've grown into a global export leader through dedication to quality and innovation.
@@ -182,7 +201,7 @@ const About = () => {
       {/* Reviews Section */}
       <section className="py-20 bg-gradient-to-r from-blue-100 to-indigo-100">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-    <h2 className="text-3xl font-lobster mb-8 bg-denim-gradient bg-clip-text text-transparent text-center mb-12">What Our Clients Say</h2>
+    <h2 className="text-3xl font-lobster mb-8 text-black mb-8 text-center mb-12">What Our Clients Say</h2>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -249,6 +268,7 @@ const About = () => {
 </section>
 
     </div>
+    <Footer backgroundImage="/footer.jpeg" transparent />
         </>
   );
 };

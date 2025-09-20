@@ -1,101 +1,132 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { Calendar, Clock, User, Tag } from 'lucide-react';
+// import { Link } from 'react-router-dom';
+// import { Calendar, Clock, User, Tag } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
+import { Helmet } from 'react-helmet-async';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ReactDOMServer from 'react-dom/server';
+
+
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  url: "https://www.denimloom.com/blog",
+  name: "Denim Loom Blog",
+  description:
+    "Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog.",
+  blogPost: blogPosts.map((post) => ({
+    "@type": "BlogPosting",
+    headline: post.title,
+    author: {
+      "@type": "Organization",
+      name: post.author,
+    },
+    datePublished: post.publishDate,
+    image: post.image,
+    url: `https://www.denimloom.com/blog/${post.slug}`,
+    description: post.excerpt,
+    articleBody: ReactDOMServer.renderToStaticMarkup(
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+    ),
+  })),
+};
 
 const Blog = () => {
   return (
-    <div className="overflow-hidden">
-      {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        // className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
-        className="relative py-20 bg-denim-gradient text-white"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ y: 50 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            <h1 className="text-4xl font-bold mb-6">Denim Insights & Trends</h1>
-            <p className="text-xl max-w-2xl">
-              Discover the latest in denim fashion, manufacturing insights, and style guides from industry experts.
-            </p>
-          </motion.div>
-        </div>
-      </motion.section>
+    <>
+      <Helmet>
+        <title>Blog – Denim Loom</title>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+      <Navbar variant="hero" />
 
-      {/* Blog Posts Grid */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex flex-col">
+        {/* Hero Section */}
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="relative h-[70vh] flex items-center text-white pt-32"
+        >
+          {/* Background image */}
+          <div className="absolute inset-0">
+            <img
+              src="/hero/blog_hero.jpeg"
+              alt="Denim Loom Blog"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
+
+          {/* Left-aligned text content */}
+          <div className="relative">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
+              className="max-w-xl text-left ml-3 md:ml-[200px]"
+            >
+              <h1 className="text-4xl font-lobster mb-6">
+                Denim Insights & Trends
+              </h1>
+              <p className="text-xl">
+                Explore the latest in denim fashion, sustainability, and
+                manufacturing innovations.
+              </p>
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* Blog Grid */}
+        <section className="py-12 sm:py-16 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post, index) => (
-              <motion.article
+              <motion.a
                 key={post.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                href={`/blog/${post.slug}`}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition"
               >
-                <Link to={`/blog/${post.slug}`}>
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </Link>
-                
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    {post.tags.slice(0, 2).map((tag) => (
-                      <span
-                        key={tag}
-                        className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800"
-                      >
-                        <Tag className="w-3 h-3 mr-1" />
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <Link to={`/blog/${post.slug}`}>
-                    <h2 className="text-xl font-bold mb-3 text-gray-900 hover:text-indigo-600 transition-colors">
-                      {post.title}
-                    </h2>
-                  </Link>
-                  
-                  <p className="text-gray-600 mb-4 line-clamp-3">
+                {/* Blog Image */}
+                <div className="relative h-56 w-full overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                  />
+                </div>
+
+                {/* Blog Content */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-lg font-semibold mb-2 line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">
                     {post.excerpt}
                   </p>
-                  
-                  <div className="flex items-center justify-between text-sm text-gray-500">
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <User className="w-4 h-4 mr-1" />
-                        {post.author}
-                      </div>
-                      <div className="flex items-center">
-                        <Clock className="w-4 h-4 mr-1" />
-                        {post.readTime}
-                      </div>
-                    </div>
-                    <div className="flex items-center">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {new Date(post.publishDate).toLocaleDateString()}
-                    </div>
+                  <div className="flex items-center justify-between text-gray-500 text-xs mt-auto">
+                    <span>{post.author}</span>
+                    <span>{post.readTime}</span>
                   </div>
+                  <span className="text-xs text-gray-400 mt-2">
+                    {new Date(post.publishDate).toLocaleDateString()}
+                  </span>
                 </div>
-              </motion.article>
+              </motion.a>
             ))}
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+
+      <Footer backgroundImage="/footer.jpeg" transparent />
+    </>
   );
 };
 

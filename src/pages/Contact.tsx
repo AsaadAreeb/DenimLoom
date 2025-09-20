@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useState } from "react"; // Import useState for handling state
 import { Helmet } from 'react-helmet-async';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 const Contact = () => {
@@ -92,30 +94,44 @@ const Contact = () => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
+      <Navbar variant="hero" />
     <div className="overflow-hidden">
+        {/* Hero Section */}
       <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        // className="relative py-20 bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 text-white"
-        className="relative py-20 bg-denim-gradient text-white"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ y: 50 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            <h1 className="text-4xl font-lobster mb-6">Contact Us</h1>
-            <p className="text-xl max-w-2xl">
-              Get in touch with our team for inquiries about our products and
-              services.
-            </p>
-          </motion.div>
-        </div>
-      </motion.section>
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="relative h-[70vh] flex items-center text-white pt-32"
+        >
+          {/* Background image */}
+          <div className="absolute inset-0">
+            <img
+              src="/hero/contact_hero.jpeg"  // replace with your image path
+              alt="Contact Denim Loom"
+              className="w-full h-full object-cover"
+            />
+            {/* Dark overlay for readability */}
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
 
-      <section className="py-20 bg-white">
+          {/* Left-aligned text content */}
+            <div className="relative">
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.8 }}
+                className="max-w-xl text-left ml-3 md:ml-[200px]" 
+              >
+                <h1 className="text-4xl font-lobster mb-6">Contact Us</h1>
+                <p className="text-xl">
+                  Get in touch with our team for inquiries about our products and services.
+                </p>
+              </motion.div>
+            </div>
+
+        </motion.section>
+
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <motion.div
@@ -126,7 +142,7 @@ const Contact = () => {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-courgette mb-6 bg-denim-gradient bg-clip-text text-transparent">Get in Touch</h2>
+                <h2 className="text-3xl font-lobster mb-8 text-black">Get in Touch</h2>
                 <p className="text-gray-600 mb-8">
                   We're here to help and answer any questions you might have. We
                   look forward to hearing from you.
@@ -199,7 +215,9 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm 
+                              px-4 py-3 text-gray-900 text-base leading-6 
+                              focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
                 </div>
@@ -215,7 +233,9 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm 
+                              px-4 py-3 text-gray-900 text-base leading-6
+                              focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
                 </div>
@@ -231,7 +251,9 @@ const Contact = () => {
                     type="text"
                     id="subject"
                     name="subject"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm 
+                              px-4 py-3 text-gray-900 text-base leading-6
+                              focus:border-indigo-500 focus:ring-indigo-500"
                     required
                   />
                 </div>
@@ -246,18 +268,20 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    rows={4} // Fixed the rows type error
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                    rows={6}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm 
+                              px-4 py-3 text-gray-900 text-base leading-6
+                              focus:border-indigo-500 focus:ring-indigo-500 resize-none"
                     required
                   ></textarea>
                 </div>
 
                 <button
-                  type="submit"
-                  className="w-full bg-denim-gradient text-white py-3 px-6 rounded-lg font-semibold hover:text-gray-300 transition-colors duration-200"
-                >
-                  Send Message
-                </button>
+  type="submit"
+  className="w-full inline-flex items-center justify-center px-6 py-3 bg-white text-indigo-900 border-2 border-blue-600 rounded-lg font-bold hover:bg-denim-gradient hover:text-white hover:border-transparent transition-colors duration-200"
+>
+  Send Message
+</button>
               </form>
 
               {/* Conditional message display */}
@@ -276,7 +300,9 @@ const Contact = () => {
         </div>
       </section>
     </div>
+     <Footer backgroundImage="/footer.jpeg" transparent />
     </>
+    
   );
 };
 

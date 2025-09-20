@@ -3,6 +3,7 @@
 export interface CategoryInfo {
   title: string;
   description: string;
+  image?: string;
 }
 
 // Map of raw category keys → human‑friendly info
@@ -11,26 +12,32 @@ export const CATEGORY_INFO: Record<string, CategoryInfo> = {
     title: 'Denim Apparel',
     description:
       'Discover our premium collection of denim clothing, from classic jeans to stylish jackets.',
+    image: '/hero/apparel_hero.jpeg'
   },
   accessories: {
     title: 'Denim Accessories',
     description:
       'Complete your look with our range of denim accessories and lifestyle products.',
+    image: '/hero/accessories_hero.jpeg'
   },
   footwear: {
     title: 'Denim Footwear',
     description:
       'Step out in style with our denim-inspired footwear collection.',
+    image: '/hero/footwear_hero.jpeg'
   },
   lifestyle: {
     title: 'Home & Lifestyle',
     description:
       'Bring denim style into your living space with our home and lifestyle products.',
+    image: '/hero/lifestyle_hero.jpeg'
   },
   rawfabric: {
     title: 'Premium Raw Denim Fabric',
     description:
       'High-quality raw denim fabric for your manufacturing needs.',
+    image: '/hero/raw_hero.jpeg'
+    
   },
 };
 
