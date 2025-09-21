@@ -131,7 +131,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2024-12-10',
     readTime: '7 min read',
     tags: ['Sustainability', 'Manufacturing', 'Environment'],
-    image: '/blogs/denim-manufacturing.avif',
+    image: '/blogs/denim-manufacturing.jpg',
     slug: 'sustainable-denim-future-fashion'
   },
   {
@@ -233,7 +233,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2024-12-05',
     readTime: '6 min read',
     tags: ['Fashion Trends', 'Style Guide', '2025 Fashion'],
-    image: '/blogs/What-to-Expect-in-the-Coming-Year.avif',
+    image: '/blogs/What-to-Expect-in-the-Coming-Year.jpg',
     slug: 'denim-trends-2025'
   },
   {
@@ -375,7 +375,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2024-11-28',
     readTime: '8 min read',
     tags: ['Manufacturing', 'Process', 'Quality'],
-    image: '/blogs/denim-manufacturing.avif',
+    image: '/blogs/denim-manufacturing.jpg',
     slug: 'art-of-denim-manufacturing'
   },
   {
@@ -656,7 +656,7 @@ export const blogPosts: BlogPost[] = [
       'denim durability',
       'fabric comfort'
     ],
-    image: '/blogs/denim-weaves.webp',
+    image: '/blogs/denim-weaves.jpg',
     slug: 'understanding-denim-weaves'
   },
 
