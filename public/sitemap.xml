@@ -50,6 +50,13 @@
         <priority>0.7</priority>
     </url>
 
+    <url>
+        <loc>https://www.denimloom.com/faq</loc>
+        <lastmod>2025-8-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Product Category Pages -->
     <url>
         <loc>https://www.denimloom.com/products/apparel</loc>
@@ -57,6 +64,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    
 
     <url>
         <loc>https://www.denimloom.com/products/accessories</loc>
@@ -121,4 +129,69 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/evolution-of-denim</loc>
+        <lastmod>2025-6-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/sustainable-denim-eco-friendly-fabrics</loc>
+        <lastmod>2025-6-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/understanding-denim-weaves</loc>
+        <lastmod>2025-6-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/denims-role-in-workwear</loc>
+        <lastmod>2025-6-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/choosing-denim-manufacturer</loc>
+        <lastmod>2024-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/wholesale-denim-jackets</loc>
+        <lastmod>2024-12-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/organic-recycled-denim</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/raw-denim-jackets-guide</loc>
+        <lastmod>2025-9-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/baggy-jeans-2025-trend-guide</loc>
+        <lastmod>2025-9-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+
 </urlset>

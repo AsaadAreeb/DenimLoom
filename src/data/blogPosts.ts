@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2024-12-15',
     readTime: '5 min read',
     tags: ['Denim Care', 'Fashion Tips', 'Sustainability'],
-    image: 'https://images.unsplash.com/photo-1582418702059-97ebafb35d09?auto=format&fit=crop&q=80',
+    image: '/blogs/perfect-denim-fit.jpg',
     slug: 'ultimate-guide-denim-care'
   },
   {
@@ -131,7 +131,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2024-12-10',
     readTime: '7 min read',
     tags: ['Sustainability', 'Manufacturing', 'Environment'],
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80',
+    image: '/blogs/denim-manufacturing.avif',
     slug: 'sustainable-denim-future-fashion'
   },
   {
@@ -233,7 +233,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2024-12-05',
     readTime: '6 min read',
     tags: ['Fashion Trends', 'Style Guide', '2025 Fashion'],
-    image: 'https://images.unsplash.com/photo-1565084888279-aca607ecce0c?auto=format&fit=crop&q=80',
+    image: '/blogs/What-to-Expect-in-the-Coming-Year.avif',
     slug: 'denim-trends-2025'
   },
   {
@@ -375,7 +375,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2024-11-28',
     readTime: '8 min read',
     tags: ['Manufacturing', 'Process', 'Quality'],
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80',
+    image: '/blogs/denim-manufacturing.avif',
     slug: 'art-of-denim-manufacturing'
   },
   {
@@ -544,7 +544,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2024-11-20',
     readTime: '9 min read',
     tags: ['Fit Guide', 'Style Tips', 'Shopping Guide'],
-    image: 'https://images.unsplash.com/photo-1582418702059-97ebafb35d09?auto=format&fit=crop&q=80',
+    image: '/blogs/perfect-denim-fit.jpg',
     slug: 'finding-perfect-denim-fit'
   },
 
@@ -797,8 +797,188 @@ export const blogPosts: BlogPost[] = [
   tags: ['Sustainability', 'Fabric Trends', 'Eco-Friendly Fashion'],
   image: '/blogs/recycled_denim.jpg',
   slug: 'organic-recycled-denim'
-}
+},
 
+{
+  id: '13',
+  title: 'Raw Denim Jackets: The Ultimate Guide to a Personalized Masterpiece',
+  excerpt: 'What is raw denim? Discover the ultimate guide to raw, unwashed denim jackets. Learn how they develop unique fades, how to break them in, and why they’re the ultimate investment for denim purists.',
+  content: `
+    <p>In a world of pre-distressed, pre-faded fast fashion, there exists a different path. A path for purists, for those who see clothing not as a disposable item, but as a canvas. This path is paved with raw denim.</p>
 
+    <p>A raw denim jacket is more than a garment; it’s a project. It’s a blank slate of deep, dark indigo that you, and you alone, will transform into a one-of-a-kind work of art through the very act of living your life.</p>
 
+    <p>But what exactly makes it so special? Let’s dive into the world of unsanforized, selvedge, and unwashed denim.</p>
+
+    <h2>What is Raw Denim? The Unvarnished Truth</h2>
+    <p>Raw denim (also known as “dry” or “unwashed” denim) is fabric that has been dyed with indigo and woven on a shuttle loom, but has never been washed, distressed, or treated after the weaving process.</p>
+
+    <p>Unlike the soft, pre-faded jackets you find on most racks, a raw denim jacket is stiff, dark, and uniform in color. It lacks the artificial whiskers, sanding, and holes of its pre-washed counterparts. Its story is yet to be written.</p>
+
+    <h3>Key Characteristics:</h3>
+    <ul>
+      <li><strong>Deep, Uniform Indigo:</strong> A rich, dark blue color with no pre-existing fade patterns.</li>
+      <li><strong>Stiff & Crisp:</strong> The fabric is rigid at first, often standing up on its own.</li>
+      <li><strong>A Blank Canvas:</strong> It has no manufactured wear patterns. Every fade will be earned.</li>
+    </ul>
+
+    <h2>The Magic of Fading: Your Life, Woven Into Fabric</h2>
+    <p>The entire allure of raw denim lies in its transformation. As you wear the jacket, the indigo dye slowly wears off in areas of high stress and friction.</p>
+
+    <p>This creates unique, high-contrast fade patterns that are a direct map of your body and lifestyle:</p>
+    <ul>
+      <li><strong>Honeycombs:</strong> Crisp fading behind the knees, though in a jacket, this appears behind the elbows from bending your arms.</li>
+      <li><strong>Whiskers:</strong> Fading that radiates from the creases at the hips and around the waist.</li>
+      <li><strong>Wallet Fade:</strong> A distinct fade pattern on the back pocket from your wallet (though less common on jackets).</li>
+      <li><strong>Cuff Fades:</strong> From rolling up the sleeves day after day.</li>
+    </ul>
+
+    <p>This process, known as “earning your fades,” creates a jacket that is utterly unique to you. It’s a personal archive of your daily habits, making it irreplaceable.</p>
+
+    <h2>Raw Denim Lingo: Understanding Selvedge, Loomstate, and Unsanforized</h2>
+    <p>When you dive into raw denim, you’ll encounter specific terms:</p>
+    <ul>
+      <li><strong>Selvedge Denim:</strong> Short for “self-edged.” This refers to how the denim is woven on a traditional shuttle loom, creating a clean, finished edge on the fabric (often seen with a colored line, usually red). This edge is a mark of quality and is often featured on the inside of the jacket’s placket or on the cuffs when rolled up.</li>
+      <li><strong>Loomstate:</strong> Denim that is completely untouched after coming off the loom. It hasn’t been sanforized (pre-shrunk) or softened. It is the purest, most unpredictable form of raw denim.</li>
+      <li><strong>Unsanforized:</strong> This denim has not been pre-shrunk. It will shrink significantly (usually 1-2 sizes) after its first soak or wash. This is for advanced users who need to size up to account for shrinkage.</li>
+    </ul>
+
+    <h2>The Break-In Process: Patience is a Virtue</h2>
+    <p>Your new raw denim jacket will be stiff and uncomfortable. This is normal. The break-in process is a rite of passage.</p>
+    <ol>
+      <li><strong>Wear It, A Lot:</strong> The first step is simple: wear the jacket constantly. The fabric will slowly mold to your body’s shape and begin to soften at stress points.</li>
+      <li><strong>The First Soak (The “Initial Soak”):</strong> For unsanforized jackets, an initial soak is mandatory to shrink them to their intended size. For sanforized jackets, many purists recommend waiting at least 6 months before the first wash to set in deep, high-contrast fades.</li>
+      <li><strong>Embrace the Discomfort:</strong> The stiffness is temporary. Within a few weeks of consistent wear, it will begin to feel like a second skin.</li>
+    </ol>
+
+    <h2>How to Care for Your Raw Denim Jacket</h2>
+    <p>Proper care is crucial for achieving the best fades and longevity.</p>
+    <ul>
+      <li><strong>Wait to Wash:</strong> Avoid washing for as long as possible (at least 6 months, often a year or more). This allows sharp fade patterns to develop.</li>
+      <li><strong>Spot Clean:</strong> For small spills or dirt, use a damp cloth and a mild soap to spot clean. Air dry thoroughly.</li>
+      <li><strong>The First Wash:</strong> When it’s finally time, turn the jacket inside out and soak it in a tub of lukewarm water. Use a small amount of mild, dye-free detergent. Agitate gently by hand.</li>
+      <li><strong>Air Dry:</strong> Never, ever use a dryer. Hang the jacket to air dry, preferably outdoors in the shade. You may notice new creases and fades becoming more pronounced after this first wash.</li>
+    </ul>
+
+    <h2>Raw Denim Jacket FAQ</h2>
+    <p><strong>Q: Is a raw denim jacket worth the investment?</strong><br>
+    A: Absolutely. While the upfront cost is higher, the quality of materials and construction is superior. You are investing in a jacket that will last for decades and tell your unique story, making it infinitely more valuable than a pre-faded alternative.</p>
+
+    <p><strong>Q: Will the indigo dye bleed onto my clothes or furniture?</strong><br>
+    A: Yes, especially in the beginning. The excess indigo can transfer onto lighter-colored shirts, car seats, or sofas. This transfer, called “crocking,” lessens over time. Be mindful during the first few months.</p>
+
+    <p><strong>Q: How do I choose the right size?</strong><br>
+    A: For sanforized (pre-shrunk) denim, buy your true size. It will be snug at first but will mold to you. For unsanforized denim, you must size up to account for significant shrinkage after the first soak. Always check the brand’s specific sizing guide.</p>
+
+    <p><strong>Q: Can I ever get my jacket soft?</strong><br>
+    A: Yes. Through wear and eventual washes, the jacket will soften considerably while retaining its durable structure. The break-in is part of the journey.</p>
+
+    <h2>Conclusion: More Than a Jacket, A Legacy</h2>
+    <p>A raw denim jacket is not a purchase you make for today. It’s an investment in a future heirloom. It requires patience, commitment, and a willingness to embrace imperfection.</p>
+
+    <p>The subtle fades from your daily commute, the creases from leaning over your desk, the honeycombs from countless hours with your arms crossed—these become the chapters of your story, written in indigo.</p>
+  `,
+  author: 'DenimLoom Team',
+  publishDate: '2025-09-21',
+  readTime: '8 min read',
+  tags: ['Raw Denim', 'Selvedge', 'Menswear', 'Heritage Fashion'],
+  image: '/blogs/Raw-Denim-Jackets.jpeg',
+  slug: 'raw-denim-jackets-guide',
+},
+
+  {
+    id: '14',
+    title: 'Baggy Jeans: The Ultimate 2025 Denim Trend & Styling Guide',
+    excerpt: 'Baggy jeans are officially the uniform of 2025. This definitive guide covers why they’re trending, how to wear them without looking sloppy, body type fits, and the best brands to shop right now.',
+    content: `
+      <p>The fashion pendulum has swung decisively. Forget everything you knew about tight denim; baggy jeans are officially the uniform of 2025. More than just a Y2K nostalgia trip, this trend represents a cultural shift towards comfort, self-expression, and effortless cool. This isn’t just a trend; it’s a denim revolution. This definitive guide will show you why, how to wear them, and where to find your perfect pair.</p>
+
+      <h2>Why 2025 is the Year of the Baggy Jean</h2>
+      <p>The resurgence of baggy jeans is no accident. It’s a direct response to the “skinny jean fatigue” and a embrace of the relaxed, gender-fluid styles dominating runways from Balenciaga to Gucci. Driven by Gen Z and popularized by celebrities like Hailey Bieber and Timothée Chalamet, this trend is rooted in comfort, authenticity, and a powerful dose of 90s and Y2K nostalgia. It’s the look of choice for those who believe style shouldn’t come at the expense of comfort.</p>
+
+      <h2>Beyond Comfort: 5 Key Benefits You Need to Know</h2>
+      <p>Why should you make the switch? The benefits are clear:</p>
+      <ul>
+        <li>Unmatched Comfort: Made from softer, more pliable denim, they allow for complete freedom of movement.</li>
+        <li>Universal Flattery: Contrary to belief, the right baggy cut can elongate legs and balance proportions for almost every body type.</li>
+        <li>Style Versatility: Seamlessly transition from a grunge concert to a smart-casual office setting.</li>
+        <li>A Nod to Nostalgia: Tap into the iconic aesthetics of the 90s and early 2000s without looking like a costume.</li>
+        <li>A Unisex Staple: This is a truly inclusive trend, offering endless styling possibilities for everyone.</li>
+      </ul>
+
+      <h2>The Style Blueprint: How to Wear Baggy Jeans Without Looking Sloppy</h2>
+      <p>The number one fear? Looking drowned in fabric. The golden rule is balance.</p>
+      <ul>
+        <li>The Volume Equation: If your jeans are loose on the bottom, opt for a more fitted top (think crop tops, slim-fit tees, or tucked-in shirts).</li>
+        <li>The Right Rise is Key: High-waisted styles help define your silhouette and prevent a boxy look.</li>
+        <li>Mind the Length: Aim for a slight break on your shoes or a cuff that shows your ankle. Too long and they look messy.</li>
+        <li>Footwear Foundations: The wrong shoes can ruin the look. Chunky sneakers, platform shoes, and loafers are your best friends.</li>
+      </ul>
+
+      <h2>Outfit Formulas for Every Occasion (2025 Edition)</h2>
+      <p>Copy and paste these winning combinations:</p>
+      <ul>
+        <li>Effortless Errands: Light wash baggy jeans + a white tank top + a oversized blazer + classic New Balance sneakers.</li>
+        <li>The Y2K It-Girl: Dark wash, slightly distressed baggy jeans + a baby tee + a zip-up hoodie + platform Converse.</li>
+        <li>Elevated Smart Casual: Crisp black baggy jeans + a structured leather belt + a sleek turtleneck + polished loafers.</li>
+        <li>Night Out Edge: Low-rise, baggy cargos + a fitted, ribbed tank top + a moto jacket + heeled boots.</li>
+      </ul>
+
+      <h2>The Ultimate Body Type Guide: Finding Your Perfect Fit</h2>
+      <ul>
+        <li>For Petite Frames: Avoid overwhelming your frame. Choose a mid-rise jean with a straighter, less wide leg. A crisp cuff and platform shoes are essential for adding height.</li>
+        <li>For Curvy Figures: Embrace high-waisted styles to cinch your waist. Look for jeans with a slight taper or flair below the knee to create a balanced, hourglass silhouette.</li>
+        <li>For Tall & Athletic Builds: You can carry the most dramatic cuts. Embrace wide-leg cargos and ultra-long inseams that pool slightly over your shoes for maximum impact.</li>
+      </ul>
+
+      <h2>For the Guys: Mastering the Menswear Baggy Jeans</h2>
+      <p>The rules are similar but with a menswear twist. Pair baggy jeans with:</p>
+      <ul>
+        <li>A classic, fitted white tee and rugged work boots for a timeless look.</li>
+        <li>An oversized graphic hoodie and fresh, chunky basketball sneakers for streetwear cred.</li>
+        <li>A well-tailored button-down shirt and clean leather sneakers for a smart, modern outfit.</li>
+        <li>The “Canadian Tuxedo”: A baggy denim jacket in a contrasting wash.</li>
+      </ul>
+
+      <h2>The 2025 Denim Dictionary: Cuts, Washes, & Details</h2>
+      <p>Know your vocabulary before you shop:</p>
+      <ul>
+        <li>The Silhouette: Are you looking for a Relaxed Straight Leg, a 90s Baggy, or a JNCO-style Wide Leg?</li>
+        <li>The Wash: From classic indigo and faded light wash to jet black and acid-worn, the wash defines the vibe.</li>
+        <li>The Details: Distressing, raw hems, cargo pockets, and contrast stitching are key details to look for.</li>
+      </ul>
+
+      <h2>The Top 10 Baggy Jeans to Buy Now (Brand Breakdown)</h2>
+      <p>We’ve moved beyond a simple list. Here’s why you should consider these brands:</p>
+      <ul>
+        <li>Levi’s 569: The classic heritage fit. Unbeatable quality and a timeless straight-leg baggy cut.</li>
+        <li>ASOS DESIGN: Your go-to for trend-led, affordable options in a huge range of sizes and inseams.</li>
+        <li>Zara TRF: Perfect for fashion-forward, Y2K-specific cuts that won’t break the bank.</li>
+        <li>Urban Outfitters BDG: The vintage-inspired champion, offering great high-waisted options.</li>
+        <li>Carhartt WIP Double Knee: For the utility-focused, workwear-inspired aesthetic. Built to last.</li>
+        <li>& Other Stories: Elevated basics with a European flair, perfect for a smarter take on the trend.</li>
+        <li>Aritzia Denim Forum: The ultimate in curated, cool-girl denim with perfect washes and fits.</li>
+        <li>Weekday: Sustainable and stylish, offering minimalist Scandinavian takes on the baggy shape.</li>
+        <li>Nudie Jeans: A sustainable investment piece. Their loose fits are ethical and age beautifully.</li>
+        <li>Vintage Levi’s 550/560: The authentic option. Hunt thrift stores or Depop for the real deal.</li>
+      </ul>
+
+      <h2>Pro Stylist Secrets: Hacks to Make Your Jeans Look Expensive</h2>
+      <ul>
+        <li>Tailor Them: The #1 rule. A simple hem to get the perfect length is a game-changer.</li>
+        <li>The Belt Trick: A thick, quality leather belt defines your waist and adds a polished finish.</li>
+        <li>Fabric Matters: Look for denim with a bit of stretch and weight—it drapes better and looks more expensive than stiff, thin fabric.</li>
+        <li>Roll With Purpose: A intentional cuff can change the entire proportions of the jean.</li>
+      </ul>
+
+      <h2>Final Verdict: Are Baggy Jeans a Fad or a Future Classic?</h2>
+      <p>While the extreme “jorts” of the Y2K era might cycle out, the principles of comfort, self-expression, and relaxed silhouettes are here to stay. The modern baggy jean is a refined wardrobe workhorse. By investing in a well-fitting pair and styling them with intention, you’re not just chasing a trend—you’re investing in a piece of fashion history that will remain relevant for years to come.</p>
+    `,
+    author: 'DenimLoom Team',
+    publishDate: '2025-09-21',
+    readTime: '9 min read',
+    tags: ['Baggy Jeans', 'Y2K', 'Streetwear', 'Menswear', 'Womenswear'],
+    image: '/blogs/baggy-jeans-2025-trend-guide.jpeg',
+    slug: 'baggy-jeans-2025-trend-guide'
+  },
 ];
