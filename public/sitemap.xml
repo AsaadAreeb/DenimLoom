@@ -193,5 +193,33 @@
         <priority>0.7</priority>
     </url>
 
+    <url>
+        <loc>https://www.denimloom.com/blog/black-denim-jacket-2025-guide</loc>
+        <lastmod>2025-9-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/black-denim-shorts-guide</loc>
+        <lastmod>2025-9-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/dark-wash-denim-guide</loc>
+        <lastmod>2025-9-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/light-wash-denim-guide</loc>
+        <lastmod>2025-9-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 
 </urlset>
