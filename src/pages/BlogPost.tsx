@@ -27,29 +27,70 @@ const BlogPost = () => {
     );
   }
 
-  const structuredData = {
+  const postSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
-    "image": post.image,
+    "description": post.excerpt,
+    "image": `https://www.denimloom.com${post.image}`,
     "author": {
-      "@type": "Person",
-      "name": post.author
+      "@type": "Organization",
+      "name": "Denim Loom"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Denim Loom",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg"
+      }
     },
     "datePublished": post.publishDate,
     "dateModified": post.publishDate,
-    "description": post.excerpt,
+    "keywords": post.tags,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": `https://www.denimloom.com/blog/${post.slug}`
+    },
+    "isPartOf": {
+      "@type": "Blog",
+      "@id": "https://www.denimloom.com/blog"
     }
   };
 
   return (
     <>
       <Helmet>
+          {/* SEO Title + Description */}
+          <title>{post.title} – Denim Loom</title>
+          <meta name="description" content={post.excerpt} />
+          <link rel="canonical" href={`https://www.denimloom.com/blog/${post.slug}`} />
+
+          {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content={post.title} />
+          <meta property="og:description" content={post.excerpt} />
+          <meta property="og:image" content={`https://www.denimloom.com${post.image}`} />
+          <meta property="og:url" content={`https://www.denimloom.com/blog/${post.slug}`} />
+          <meta property="og:site_name" content="Denim Loom" />
+
+          {/* Twitter Card */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={post.title} />
+          <meta name="twitter:description" content={post.excerpt} />
+          <meta name="twitter:image" content={`https://www.denimloom.com${post.image}`} />
+
+          {/* Article-specific meta (optional, nice for news/blogs) */}
+          <meta property="article:author" content="Denim Loom" />
+          <meta property="article:published_time" content={post.publishDate} />
+          <meta property="article:modified_time" content={post.publishDate} />
+          {post.tags.map((tag) => (
+            <meta key={tag} property="article:tag" content={tag} />
+          ))}
+
+        {/* JSON-LD Schema */}
         <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+          {JSON.stringify(postSchema)}
         </script>
       </Helmet>
 

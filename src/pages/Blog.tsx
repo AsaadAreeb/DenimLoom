@@ -9,28 +9,55 @@ import ReactDOMServer from 'react-dom/server';
 
 
 
-const structuredData = {
+const blogSchema = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  url: "https://www.denimloom.com/blog",
-  name: "Denim Loom Blog",
-  description:
+  "@id": "https://www.denimloom.com/blog",
+  "url": "https://www.denimloom.com/blog",
+  "name": "Denim Loom Blog",
+  "description":
     "Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog.",
-  blogPost: blogPosts.map((post) => ({
+  "publisher": {
+    "@type": "Organization",
+    "name": "Denim Loom",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg"
+    }
+  },
+  "blogPost": blogPosts.map((post) => ({
     "@type": "BlogPosting",
-    headline: post.title,
-    author: {
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://www.denimloom.com${post.image}`,
+    "author": {
       "@type": "Organization",
-      name: post.author,
+      "name": "Denim Loom"
     },
-    datePublished: post.publishDate,
-    image: post.image,
-    url: `https://www.denimloom.com/blog/${post.slug}`,
-    description: post.excerpt,
-    articleBody: ReactDOMServer.renderToStaticMarkup(
+    "publisher": {
+      "@type": "Organization",
+      "name": "Denim Loom",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg"
+      }
+    },
+    "datePublished": post.publishDate,
+    "dateModified": post.publishDate,
+    "keywords": post.tags,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.denimloom.com/blog/${post.slug}`
+    },
+    "isPartOf": {
+      "@type": "Blog",
+      "@id": "https://www.denimloom.com/blog"
+    },
+    // Optional but nice → render HTML to plain string
+    "articleBody": ReactDOMServer.renderToStaticMarkup(
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    ),
-  })),
+    )
+  }))
 };
 
 const Blog = () => {
@@ -38,8 +65,41 @@ const Blog = () => {
     <>
       <Helmet>
         <title>Blog – Denim Loom</title>
+          {/* Core SEO */}
+          <title>Blog – Denim Loom</title>
+          <meta
+            name="description"
+            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog. Stay updated with the latest in denim fashion and innovation."
+          />
+          <link rel="canonical" href="https://www.denimloom.com/blog" />
+
+          {/* Open Graph (for Facebook, LinkedIn, WhatsApp, etc.) */}
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Denim Loom Blog – Denim Insights & Trends" />
+          <meta
+            property="og:description"
+            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog."
+          />
+          <meta property="og:image" content="https://www.denimloom.com/hero/blog_hero.jpeg" />
+          <meta property="og:url" content="https://www.denimloom.com/blog" />
+          <meta property="og:site_name" content="Denim Loom" />
+
+          {/* Twitter Card */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Denim Loom Blog – Denim Insights & Trends" />
+          <meta
+            name="twitter:description"
+            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog."
+          />
+          <meta name="twitter:image" content="https://www.denimloom.com/hero/blog_hero.jpeg" />
+
+          {/* Optional: keywords (not ranking factor, but can help contextually) */}
+          <meta
+            name="keywords"
+            content="denim blog, denim insights, sustainable denim, denim trends, denim fashion"
+          />
         <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+          {JSON.stringify(blogSchema)}
         </script>
       </Helmet>
       <Navbar variant="hero" />
