@@ -8,6 +8,7 @@ import { getProductsByCategory } from '../../services/productService';
 import { getCategoryInfo, getFiltersForCategory } from '../../utils/categories';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import { Helmet } from 'react-helmet-async';
 
 const ProductCategory = () => {
   const { category } = useParams<{ category: string }>();
@@ -31,6 +32,43 @@ const ProductCategory = () => {
     );
   };
 
+  const title = `${categoryInfo.title} - Jeans, Jackets, Shirts, Skirts, Biker Jeans, Shorts, Dresses & Fabric | Wholesale & OEM | Denim Loom`;
+  const description = `${categoryInfo.title} collection - ${categoryInfo.description}. Wholesale denim manufacturing, OEM jeans, jackets, shirts, skirts, and lifestyle denim with low MOQs.`;
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "url": `https://www.denimloom.com/products/${category}`,
+    "name": title,
+    "description": description,
+    "provider": { "@id": "https://www.denimloom.com/#organization" },
+    "mainEntity": {
+      "@type": "OfferCatalog",
+      "name": `${categoryInfo.title} Collection`,
+      "itemListElement": products.map((prod, idx) => ({
+        "@type": "Offer",
+        "position": idx + 1,
+        "url": `https://www.denimloom.com/products/${prod.category}/${prod.slug}/${prod.id}`,
+        "itemOffered": {
+          "@type": "Product",
+          "name": prod.name,
+          "description": prod.description,
+          "image": `https://www.denimloom.com${prod.image}`,
+          "brand": {
+            "@type": "Brand",
+            "name": "Denim Loom",
+            "logo": "https://www.denimloom.com/blogs/denimloom_logo.jpg"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://wa.me/923440854334?text=Interested+in+" + encodeURIComponent(prod.name)
+          }
+        }
+      }))
+    }};
+
   const filteredProducts =
     activeFilter === 'All' || filterOptions.length === 0
       ? products
@@ -40,6 +78,22 @@ const ProductCategory = () => {
 
   return (
     <>
+    <Helmet>
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={`https://www.denimloom.com/products/${category}`} />
+  <meta property="og:image" content={categoryInfo.image || "..."} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <link rel="canonical" href={`https://www.denimloom.com/products/${category}`} />
+  <script type="application/ld+json">
+    {JSON.stringify(structuredData)}
+  </script>
+</Helmet>
       {/* Navbar */}
       <Navbar variant="hero" />
 

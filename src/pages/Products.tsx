@@ -24,8 +24,8 @@ const Products = () => {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "url": "https://www.denimloom.com/products",
-  "name": "Our Products – Denim Loom",
-  "description": "Browse Denim Loom’s core denim product categories: Apparel, Accessories, Footwear, Lifestyle & Raw Fabric.",
+  "name": "Denim Products - Jeans, Jackets, Shirts, Skirts, Biker Jeans, Shorts, Dresses & Fabric | Wholesale & OEM | Denim Loom",
+  "description": "Explore Denim Loom's denim apparel & fabric offerings — custom jeans, biker jeans, jackets, shirts, skirts, dresses, shorts, selvedge and raw denim. Wholesale pricing & low MOQs available.",
   "provider": { "@id": "https://www.denimloom.com/#organization" },
   "mainEntity": {
     "@type": "OfferCatalog",
@@ -62,7 +62,12 @@ const Products = () => {
   return (
     <>
       <Helmet>
-        <title>Our Products – Denim Loom</title>
+      <title>Denim Products - Jeans, Jackets & Fabric | Wholesale & OEM | Denim Loom</title>
+      <meta
+        name="description"
+        content="Explore Denim Loom's denim apparel & fabric offerings — custom jeans, biker jeans, jackets, shirts, skirts, dresses, shorts, selvedge and raw denim. Wholesale pricing & low MOQs available."
+      />
+      <link rel="canonical" href="https://www.denimloom.com/products" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

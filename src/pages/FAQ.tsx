@@ -15,7 +15,7 @@ const faqs = [
           <li>98% Cotton + 2% Spandex</li>
           <li>100% Cotton</li>
           <li>Poly + Cotton + Spandex blends</li>
-          <li>Special cool fabrics (premium brands like Levi’s)</li>
+          <li>Special cool fabrics (premium brands like Levi's)</li>
         </ul>
         <p className="mt-2">Composition and shades can be customized as per your requirements.</p>
       </>
@@ -237,8 +237,8 @@ const FAQ = () => {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "url": "https://www.denimloom.com/faq",
-  "name": "Frequently Asked Questions – Denim Loom",
-  "description": "Answers to Denim Loom’s most commonly asked questions about our manufacturing, customization, and order process.",
+  "name": "FAQ - MOQ, Pricing, Samples & Shipping | Denim Loom",
+  "description": "Answers to common sourcing questions: MOQ, pricing, sample policy and lead times for denim manufacturing and wholesale orders.",
   "mainEntity": faqs.map(({ question, answer }) => ({
     "@type": "Question",
     "name": question,
@@ -259,7 +259,12 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ – Denim Loom</title>
+        <title>FAQ - MOQ, Pricing, Samples & Shipping | Denim Loom</title>
+      <meta
+        name="description"
+        content="Answers to common sourcing questions: MOQ, pricing, sample policy and lead times for denim manufacturing and wholesale orders."
+      />
+      <link rel="canonical" href="https://www.denimloom.com/faq" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

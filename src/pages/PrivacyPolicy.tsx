@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "url": "https://www.denimloom.com/privacypolicy",
-  "name": "Privacy Policy – Denim Loom",
+  "name": "Privacy Policy - Denim Loom",
   "description": "Learn how Denim Loom collects, uses, protects, and handles your personal data.",
   "isPartOf": {
     "@type": "WebSite",
@@ -29,18 +29,59 @@ const PrivacyPolicy = () => {
       "@type": "Organization",
       "@id": "https://www.denimloom.com/#organization"
     }
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.denimloom.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacy Policy",
+        "item": "https://www.denimloom.com/privacypolicy"
+      }
+    ]
   }
 };
+
 
 
   return(
     <>
       <Helmet>
-        <title>Privacy Policy – Denim Loom</title>
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+  <title>Privacy Policy - Denim Loom</title>
+  <meta
+    name="description"
+    content="Read Denim Loom's Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website or contact us."
+  />
+  <meta property="og:title" content="Privacy Policy - Denim Loom" />
+  <meta
+    property="og:description"
+    content="Learn how Denim Loom protects your privacy and handles your personal data responsibly in compliance with data protection standards."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.denimloom.com/privacypolicy" />
+  <meta
+    property="og:image"
+    content="https://www.denimloom.com/blogs/denimloom_logo.jpg"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy Policy - Denim Loom" />
+  <meta
+    name="twitter:description"
+    content="Understand Denim Loom's data protection practices and your privacy rights."
+  />
+  <link rel="canonical" href="https://www.denimloom.com/privacypolicy" />
+  <script type="application/ld+json">
+    {JSON.stringify(structuredData)}
+  </script>
+</Helmet>
+
       <Navbar variant="hero" />
   <div className="flex flex-col">
     {/* Hero Section */}

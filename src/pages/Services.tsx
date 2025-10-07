@@ -94,8 +94,8 @@ const processSteps = [
     "@context": "https://schema.org",
     "@type": "WebPage",
     "url": "https://www.denimloom.com/services",
-    "name": "Our Services – Denim Loom",
-    "description": "Fabric manufacturing, dyeing, inspection, finishing and packaging services offered at Denim Loom.",
+    "name": "Services - OEM Denim Manufacturing, Sampling & Custom Washes | Denim Loom",
+    "description": "Full-service denim manufacturing: prototyping, sampling, custom washes, private-label production and export-ready bulk manufacturing.",
     "provider": { "@id": "https://www.denimloom.com/#organization" },
     "mainEntity": {
       "@type": "OfferCatalog",
@@ -114,7 +114,12 @@ const processSteps = [
   return (
     <>
       <Helmet>
-        <title>Services – Denim Loom</title>
+      <title>Services - OEM Denim Manufacturing, Sampling & Custom Washes | Denim Loom</title>
+      <meta
+        name="description"
+        content="Full-service denim manufacturing: prototyping, sampling, custom washes, private-label production and export-ready bulk manufacturing."
+      />
+      <link rel="canonical" href="https://www.denimloom.com/services" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

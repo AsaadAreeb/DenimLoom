@@ -72,35 +72,80 @@ const ProductDetail = () => {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    description: product.description,
-    image: images.map((img) => `https://www.denimloom.com${img}`),
-    brand: { "@type": "Brand", name: "Denim Loom" },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      price: "0",
-      priceValidUntil: "2026-12-31",
-      itemCondition: "https://schema.org/NewCondition",
-      seller: {
-        "@type": "Organization",
-        name: "Denim Loom",
-        url: "https://www.denimloom.com",
-      },
+  "@type": "Product",
+  "name": product.name,
+  "description": product.description,
+  "category": categoryTitle,
+  "image": images.map((img) => `https://www.denimloom.com${img}`),
+
+  "brand": {
+    "@type": "Brand",
+    "name": "Denim Loom",
+    "logo": "https://www.denimloom.com/blogs/denimloom_logo.jpg"
+  },
+
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Denim Loom",
+    "url": "https://www.denimloom.com",
+    "logo": "https://www.denimloom.com/blogs/denimloom_logo.jpg"
+  },
+
+  "offers": {
+    "@type": "Offer",
+    "url": `https://wa.me/923440854334?text=Interested+in+${encodeURIComponent(product.name)}`,
+    "priceCurrency": "USD",
+    "price": "10.00", // you can make this dynamic later
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@type": "Organization",
+      "name": "Denim Loom",
+      "url": "https://www.denimloom.com"
     },
-    category: categoryTitle,
+  }
+  
   };
 
   return (
     <>
       <Helmet>
-        <title>{product.name} - Denim Loom</title>
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+  <title>{`${product.name} | ${categoryTitle} | Denim Loom`}</title>
+  <meta
+    name="description"
+    content={product.description}
+  />
+  <meta property="og:type" content="product" />
+  <meta property="og:title" content={`${product.name} | Denim Loom`} />
+  <meta property="og:description" content={product.description} />
+  <meta
+    property="og:image"
+    content={`https://www.denimloom.com${images[0]}`}
+  />
+  <meta
+    property="og:url"
+    content={`https://www.denimloom.com/products/${product.category}/${product.slug}/${product.id}`}
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={`${product.name} | Denim Loom`} />
+  <meta
+    name="twitter:description"
+    content={product.description}
+  />
+  <meta
+    name="twitter:image"
+    content={`https://www.denimloom.com${images[0]}`}
+  />
+  <link
+    rel="canonical"
+    href={`https://www.denimloom.com/products/${product.category}/${product.slug}/${product.id}`}
+  />
+  <script type="application/ld+json">
+    {JSON.stringify(structuredData)}
+  </script>
+</Helmet>
+
 
       {/* Navbar */}
       <Navbar variant="hero" />

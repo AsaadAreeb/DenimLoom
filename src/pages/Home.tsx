@@ -17,7 +17,7 @@ const Home = () => {
         "url": "https://www.denimloom.com/",
         "name": "Denim Loom",
         "alternateName": "DenimLoom",
-        "description": "Premium denim exports from Pakistan with global quality manufacturing.",
+        "description": "Premium denim manufacturer in Pakistan offering OEM, private-label jeans & jackets with low MOQs and competitive pricing. Request samples & lead times today.",
         "publisher": { "@id": "https://www.denimloom.com/#organization" }
       },
       {
@@ -51,6 +51,12 @@ const Home = () => {
   return (
     <>
       <Helmet>
+      <title>Denim Manufacturer in Pakistan - OEM & Low MOQ Denim Factory | Denim Loom</title>
+      <meta
+        name="description"
+        content="Premium denim manufacturer in Pakistan offering OEM, private-label jeans & jackets with low MOQs and competitive pricing. Request samples & lead times today."
+      />
+      <link rel="canonical" href="https://www.denimloom.com/" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

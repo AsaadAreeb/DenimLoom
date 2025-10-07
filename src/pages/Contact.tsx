@@ -11,7 +11,7 @@ const Contact = () => {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "url": "https://www.denimloom.com/contact",
-    "name": "Contact Us – Denim Loom",
+    "name": "Contact Denim Loom - Request Samples & Get a Quote | Denim Manufacturer",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.denimloom.com/contact"
@@ -27,7 +27,7 @@ const Contact = () => {
         "width": 240,
         "height": 60
       },
-      "telephone": "+92‑344‑0854334",
+      "telephone": "+92-344-0854334",
       "email": "admin@denimloom.com",
       "sameAs": [
         "https://www.facebook.com/denimloom",
@@ -38,7 +38,7 @@ const Contact = () => {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
-      "telephone": "+92‑344‑0854334",
+      "telephone": "+92-344-0854334",
       "email": "admin@denimloom.com"
     },
     "address": {
@@ -90,6 +90,12 @@ const Contact = () => {
   return (
     <>
       <Helmet>
+      <title>Contact Denim Loom - Request Samples & Get a Quote | Denim Manufacturer</title>
+      <meta
+        name="description"
+        content="Contact DenimLoom to request samples, MOQ details and pricing for OEM denim manufacturing. Fast replies for brand inquiries."
+      />
+      <link rel="canonical" href="https://www.denimloom.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

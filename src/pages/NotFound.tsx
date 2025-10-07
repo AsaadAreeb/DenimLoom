@@ -33,7 +33,7 @@ const NotFound = () => {
             Oops! Page Not Found
           </p>
           <p className="text-gray-300 mb-8">
-            The page you’re looking for doesn’t exist or has been moved.
+            The page you're looking for doesn't exist or has been moved.
           </p>
           <Link
             to="/"

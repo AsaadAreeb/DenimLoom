@@ -10,13 +10,13 @@ const About = () => {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "url": "https://www.denimloom.com/about",
-  "headline": "Our Story – Denim Loom",
-  "description": "Learn about Denim Loom, a Pakistan‑based brand crafting premium sustainable denim with global reach.",
+  "headline": "About Denim Loom - Experienced Denim Manufacturer & Exporter from Pakistan",
+  "description": "Learn about Denim Loom's manufacturing expertise, export experience, and sustainable production practices. Trusted by emerging brands for OEM denim.",
   "mainEntity": {
     "@type": "Organization",
     "name": "Denim Loom",
     "url": "https://www.denimloom.com",
-    "description": "Denim Loom is a Lahore‑based manufacturer and exporter of sustainable denim fabrics and apparel.",
+    "description": "Premium denim manufacturer in Pakistan offering OEM, private-label jeans & jackets with low MOQs and competitive pricing. Request samples & lead times today.Denim Loom is a Lahore-based manufacturer and exporter of sustainable denim fabrics and apparel.",
     "logo": {
       "@type": "ImageObject",
       "url": "https://www.denimloom.com/blogs/denimloom_logo.jpg",
@@ -73,6 +73,12 @@ const About = () => {
   return (
     <>
     <Helmet>
+      <title>About Denim Loom - Experienced Denim Manufacturer & Exporter from Pakistan</title>
+      <meta
+        name="description"
+        content="Learn about Denim Loom's manufacturing expertise, export experience, and sustainable production practices. Trusted by emerging brands for OEM denim."
+      />
+      <link rel="canonical" href="https://www.denimloom.com/about" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

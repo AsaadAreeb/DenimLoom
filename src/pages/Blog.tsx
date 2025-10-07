@@ -16,7 +16,7 @@ const blogSchema = {
   "url": "https://www.denimloom.com/blog",
   "name": "Denim Loom Blog",
   "description":
-    "Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog.",
+    "Explore denim insights, sustainability tips, and fashion trends from Denim Loom's blog.",
   "publisher": {
     "@type": "Organization",
     "name": "Denim Loom",
@@ -64,21 +64,19 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Blog – Denim Loom</title>
-          {/* Core SEO */}
-          <title>Blog – Denim Loom</title>
+        <title>Blogs - Denim Loom</title>
           <meta
             name="description"
-            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog. Stay updated with the latest in denim fashion and innovation."
+            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom's blog. Stay updated with the latest in denim fashion and innovation."
           />
           <link rel="canonical" href="https://www.denimloom.com/blog" />
 
           {/* Open Graph (for Facebook, LinkedIn, WhatsApp, etc.) */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Denim Loom Blog – Denim Insights & Trends" />
+          <meta property="og:title" content="Denim Loom Blog - Denim Insights & Trends" />
           <meta
             property="og:description"
-            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog."
+            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom's blog."
           />
           <meta property="og:image" content="https://www.denimloom.com/hero/blog_hero.jpeg" />
           <meta property="og:url" content="https://www.denimloom.com/blog" />
@@ -86,10 +84,10 @@ const Blog = () => {
 
           {/* Twitter Card */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Denim Loom Blog – Denim Insights & Trends" />
+          <meta name="twitter:title" content="Denim Loom Blog - Denim Insights & Trends" />
           <meta
             name="twitter:description"
-            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom’s blog."
+            content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom's blog."
           />
           <meta name="twitter:image" content="https://www.denimloom.com/hero/blog_hero.jpeg" />
 

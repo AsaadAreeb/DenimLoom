@@ -62,7 +62,7 @@ const BlogPost = () => {
     <>
       <Helmet>
           {/* SEO Title + Description */}
-          <title>{post.title} – Denim Loom</title>
+          <title>{post.title} - Denim Loom</title>
           <meta name="description" content={post.excerpt} />
           <link rel="canonical" href={`https://www.denimloom.com/blog/${post.slug}`} />
 
