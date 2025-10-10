@@ -51,7 +51,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-      <title>Denim Manufacturer in Pakistan - OEM & Low MOQ Denim Factory | Denim Loom</title>
+      <title>Denim Manufacturer - OEM & Low MOQ Denim Factory | Denim Loom</title>
       <meta
         name="description"
         content="Premium denim manufacturer in Pakistan offering OEM, private-label jeans & jackets with low MOQs and competitive pricing. Request samples & lead times today."

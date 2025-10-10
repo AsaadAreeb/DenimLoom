@@ -42,15 +42,15 @@ const allProducts: Record<string, Product[]> = {
       Classic never goes out of style! These straight-leg jeans bring the perfect mix of comfort and cool, making them your go-to denim for any occasion. Dress them up or down—you can’t go wrong!
     `,
 
-      image: '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 4.jpeg',
+      image: '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 3.jpg',
       images: [
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 1.jpeg',
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 2.jpeg',
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 3.jpeg',
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 4.jpeg',
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 5.jpeg',
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 6.jpeg',
-        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 7.jpeg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 1.jpg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 2.jpg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 3.jpg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 4.jpg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 5.jpg',
+        '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 6.jpg',
+        // '/Apparel/Jeans/Straight Leg Jeans/Straight Leg Jeans 7.jpeg',
       ],
       category: 'apparel'
     },
@@ -229,6 +229,86 @@ const allProducts: Record<string, Product[]> = {
       ],
       category: 'apparel'
     },
+    {
+  id: '47',
+  name: 'Classic Denim Crop Top',
+  slug: 'classic-denim-crop-top',
+  description: "Timeless denim crop top with classic fit and versatile styling options.",
+  detailedDescription: `
+    ✔ Classic Fit – Comfortable, slightly relaxed fit that flatters all body types.<br>
+    ✔ Available in Multiple Sizes – XS to XL with custom sizing available.<br>
+    ✔ Bulk Order Discounts – Competitive pricing for wholesale quantities.<br><br>
+    The perfect staple piece for any modern wardrobe—combining comfort with undeniable style!
+  `,
+  image: '/Apparel/Denim Shirts/Croptop Shirts/2.jpg',
+  images: [
+    '/Apparel/Denim Shirts/Croptop Shirts/1.jpg',
+    '/Apparel/Denim Shirts/Croptop Shirts/2.jpg',
+    '/Apparel/Denim Shirts/Croptop Shirts/3.jpg',
+    '/Apparel/Denim Shirts/Croptop Shirts/6.jpg',
+
+  ],
+  category: 'apparel'
+},
+{
+  id: '48',
+  name: 'Designer Crop Top Shirt',
+  slug: 'designer-cropped-denim-shirt',
+  description: "Elevated crop top with designer details and premium finishing.",
+  detailedDescription: `
+    ✔ Unique Embellishments – Optional embroidery, patches, or custom hardware.<br>
+    ✔ Custom Length Options – Choose your perfect crop length.<br>
+    ✔ Private Label Available – Perfect for boutique and brand partnerships.<br><br>
+    For those who demand the extraordinary—this designer crop top delivers exceptional quality and style!
+  `,
+  image: '/Apparel/Denim Shirts/Croptop Shirts/4.jpg',
+  images: [
+    '/Apparel/Denim Shirts/Croptop Shirts/4.jpg',
+    '/Apparel/Denim Shirts/Croptop Shirts/5.jpg',
+    '/Apparel/Denim Shirts/Croptop Shirts/7.jpg',
+  ],
+  category: 'apparel'
+},
+
+{
+  id: '49',
+  name: 'Moss Baggy Jeans',
+  slug: 'moss-baggy-jeans',
+  description: "Comfortable, trendy, and effortlessly cool—baggy jeans with a relaxed fit for modern street style!",
+  detailedDescription: `
+    ✔ Relaxed Fit – Comfortable loose fit that allows freedom of movement while maintaining style.<br>
+    ✔ Premium Denim Fabric – High-quality moss denim with excellent durability and comfort.<br>
+    ✔ Multiple Wash Options – Available in various denim washes to match your style preference.<br>
+  `,
+  image: '/Apparel/Jeans/Moss Baggy Jeans/MOSS BAGGY 1.png',
+  images: [
+    '/Apparel/Jeans/Moss Baggy Jeans/MOSS BAGGY 1.png',
+    '/Apparel/Jeans/Moss Baggy Jeans/MOSS BAGGY 2.png',
+    '/Apparel/Jeans/Moss Baggy Jeans/MOSS BAGGY 3.png',
+  ],
+  category: 'apparel'
+},
+ {
+    id: '50',
+    name: 'Classic Baggy Jeans',
+    slug: 'classic-baggy-jeans',
+    description: "Classic baggy jeans offering ultimate comfort and timeless style for everyday wear.",
+    detailedDescription: `
+      ✔ Comfortable through hips and thighs with straight leg opening.<br>
+      ✔ Reinforced stitching at stress points for longevity.<br>
+      ✔ Comprehensive size range with custom sizing options.<br><br>
+      The perfect foundation for any casual wardrobe—comfortable, versatile, and always stylish!
+    `,
+    image: '/Apparel/Jeans/Baggy Jeans/baggy1.jpg',
+    images: [
+      '/Apparel/Jeans/Baggy Jeans/baggy1.jpg',
+      '/Apparel/Jeans/Baggy Jeans/baggy2.jpg',
+      '/Apparel/Jeans/Baggy Jeans/baggy3.jpg',
+      '/Apparel/Jeans/Baggy Jeans/baggy4.jpg',
+      '/Apparel/Jeans/Baggy Jeans/baggy5.jpg',
+    ],
+    category: 'apparel'
+  },
 
     {
       id: '11',
@@ -637,6 +717,7 @@ const allProducts: Record<string, Product[]> = {
       ],
       category: 'apparel'
     },
+    
 
   ],
 
@@ -1029,6 +1110,7 @@ const allProducts: Record<string, Product[]> = {
       ],
       category: 'rawfabric'
     },
+    
 
   ]
 };
