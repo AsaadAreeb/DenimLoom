@@ -94,7 +94,7 @@ const processSteps = [
     "@context": "https://schema.org",
     "@type": "WebPage",
     "url": "https://www.denimloom.com/services",
-    "name": "Services - OEM Denim Manufacturing, Sampling & Custom Washes | Denim Loom",
+    "name": "Services - Denim Manufacturing & Custom Washes | Denim Loom",
     "description": "Full-service denim manufacturing: prototyping, sampling, custom washes, private-label production and export-ready bulk manufacturing.",
     "provider": { "@id": "https://www.denimloom.com/#organization" },
     "mainEntity": {
@@ -114,7 +114,7 @@ const processSteps = [
   return (
     <>
       <Helmet>
-      <title>Services - OEM Denim Manufacturing, Sampling & Custom Washes | Denim Loom</title>
+      <title>Services - Denim Manufacturing & Custom Washes | Denim Loom</title>
       <meta
         name="description"
         content="Full-service denim manufacturing: prototyping, sampling, custom washes, private-label production and export-ready bulk manufacturing."
@@ -198,7 +198,7 @@ const processSteps = [
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-lobster mb-8 text-black mb-8 text-center mb-12">Our Process</h2>
+            <h1 className="text-4xl font-lobster mb-8 text-black mb-8 text-center mb-12">Our Process</h1>
 
             {/* Mobile Buttons */}
             <div className="md:hidden flex justify-center mb-6 flex-wrap gap-2 sm:gap-4">
@@ -216,7 +216,7 @@ const processSteps = [
             <div className="flex flex-col md:flex-row">
               {/* Desktop Sidebar */}
               <div className="hidden md:block w-full md:w-1/5 bg-denim-gradients text-black rounded-lg shadow-lg p-6 h-auto mb-8 md:mb-0">
-                <h3 className="text-xl font-courgette text-white mb-6">Process Steps</h3>
+                <h2 className="text-xl font-courgette text-white mb-6">Process Steps</h2>
                 <ul className="space-y-4">
                   {processSteps.map((step) => (
                     <li

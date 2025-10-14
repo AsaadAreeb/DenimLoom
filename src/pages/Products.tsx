@@ -24,8 +24,8 @@ const Products = () => {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "url": "https://www.denimloom.com/products",
-  "name": "Denim Products - Jeans, Jackets, Shirts, Skirts, Biker Jeans, Shorts, Dresses & Fabric | Wholesale & OEM | Denim Loom",
-  "description": "Explore Denim Loom's denim apparel & fabric offerings — custom jeans, biker jeans, jackets, shirts, skirts, dresses, shorts, selvedge and raw denim. Wholesale pricing & low MOQs available.",
+  "name": "Denim Products - Apparel & Fabric | Wholesale | Denim Loom",
+  "description": "Explore Denim Loom's denim apparel & fabric offerings: custom jeans, biker jeans, jackets, shirts, skirts, dresses, shorts, selvedge and raw denim.",
   "provider": { "@id": "https://www.denimloom.com/#organization" },
   "mainEntity": {
     "@type": "OfferCatalog",
@@ -62,10 +62,10 @@ const Products = () => {
   return (
     <>
       <Helmet>
-      <title>Denim Products - Jeans, Jackets & Fabric | Wholesale & OEM | Denim Loom</title>
+      <title>Denim Products - Apparel & Fabric | Wholesale | Denim Loom</title>
       <meta
         name="description"
-        content="Explore Denim Loom's denim apparel & fabric offerings — custom jeans, biker jeans, jackets, shirts, skirts, dresses, shorts, selvedge and raw denim. Wholesale pricing & low MOQs available."
+        content="Explore Denim Loom's denim apparel & fabric offerings: custom jeans, biker jeans, jackets, shirts, skirts, dresses, shorts, selvedge and raw denim"
       />
       <link rel="canonical" href="https://www.denimloom.com/products" />
         <script type="application/ld+json">
@@ -139,9 +139,9 @@ const Products = () => {
 
           {/* Content */}
           <div className="p-8 flex-1 flex flex-col justify-center">
-            <h3 className="text-2xl font-bold mb-3 text-gray-800 group-hover:text-blue-800 transition-colors">
+            <h2 className="text-2xl font-bold mb-3 text-gray-800 group-hover:text-blue-800 transition-colors">
               {product.title}
-            </h3>
+            </h2>
             <p className="text-lg text-gray-600">{product.description}</p>
           </div>
         </motion.div>

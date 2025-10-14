@@ -64,7 +64,7 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Blogs - Denim Loom</title>
+        <title>Blogs - Insights, Tips, and Fashion Trends | Denim Loom</title>
           <meta
             name="description"
             content="Explore denim insights, sustainability tips, and fashion trends from Denim Loom's blog. Stay updated with the latest in denim fashion and innovation."
@@ -163,9 +163,9 @@ const Blog = () => {
 
                 {/* Blog Content */}
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-semibold mb-2 line-clamp-2">
+                  <h2 className="text-lg font-semibold mb-2 line-clamp-2">
                     {post.title}
-                  </h3>
+                  </h2>
                   <p className="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">
                     {post.excerpt}
                   </p>

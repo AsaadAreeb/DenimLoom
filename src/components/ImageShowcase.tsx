@@ -369,9 +369,9 @@ const ShiftingRow = ({ images, interval = 3000 }: ShiftingRowProps) => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-center pb-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-white text-2xl font-bold">
+                <h2 className="text-white text-2xl font-bold text-center">
                   {img.label || img.alt}
-                </span>
+                </h2>
               </div>
             </Link>
           </div>

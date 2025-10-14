@@ -11,7 +11,7 @@ const ServiceCard = ({ service, Icon, onLearnMore }: ServiceCardProps) => {
   return (
     <div className="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow duration-300">
       <Icon className="w-12 h-12 text-blue-500 mb-4" />
-      <h3 className="text-xl font-courgette mb-2">{service.title}</h3>
+      <h2 className="text-xl font-courgette mb-2">{service.title}</h2>
       <p className="text-gray-600 mb-4">{service.description}</p>
       <button
         onClick={() => onLearnMore(service)}
