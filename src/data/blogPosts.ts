@@ -1363,7 +1363,7 @@ export const blogPosts: BlogPost[] = [
 }
 ,
 {
-  id: '19',
+  id: '20',
   title: 'Denim Skirts for Women: Find Your Perfect Fit & Style',
   excerpt: 'Discover the perfect denim skirt for your style! Our guide covers the best fits (A-line, pencil, slip), how to style them for any season, and flattering tips for every body type. Shop the latest trend now.',
   content: `
@@ -1460,7 +1460,7 @@ export const blogPosts: BlogPost[] = [
 }
 ,
 {
-  id: '20',
+  id: '21',
   title: 'The Complete Story of Denim: From Cotton Fields to Global Fashion Icons',
   excerpt: 'Explore the journey of denim — from its humble beginnings in the cotton fields to becoming a global fashion icon. Discover how jeans are made, what drives their cost, and how Denim Loom Private Limited is reshaping the denim industry through sustainable global partnerships.',
   content: `
@@ -1562,7 +1562,7 @@ export const blogPosts: BlogPost[] = [
 }
 ,
 {
-  id: '21',
+  id: '22',
   title: 'The Complete Guide to Biker Jeans: Safety, Style, and Innovation by Denim Loom Private Limited',
   excerpt: 'Discover what makes biker jeans essential for modern riders — from their protective design to CE-certified armor and premium denim construction. Learn how Denim Loom Private Limited is manufacturing high-quality biker jeans that meet international safety standards for riders in the USA, UK, and New Zealand.',
   content: `

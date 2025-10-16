@@ -221,5 +221,32 @@
         <priority>0.7</priority>
     </url>
 
+    <url>
+        <loc>https://www.denimloom.com/blog/denim-dress-guide</loc>
+        <lastmod>2025-09-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/denim-skirt-guide</loc>
+        <lastmod>2025-09-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/the-complete-story-of-denim</loc>
+        <lastmod>2025-10-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.denimloom.com/blog/the-complete-guide-to-biker-jeans</loc>
+        <lastmod>2025-10-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
 </urlset>
