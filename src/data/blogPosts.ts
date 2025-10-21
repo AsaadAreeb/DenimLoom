@@ -1651,7 +1651,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>The Evolution of the Denim Dress: From Workwear to Runway</h2>
       
-      <img src="/blogs/2_23.webp" alt="Denim fashion evolution timeline" />
+      <img src="/blogs/2_23.jpg" alt="Denim fashion evolution timeline" />
 
       <p>Denim began as a symbol of resilience — a durable material for laborers. But by the 1970s and 80s, it had evolved into a canvas for self-expression. Denim dresses emerged as a fashion statement during the <strong>80s power-dressing era</strong>, were reimagined in the <strong>90s grunge scene</strong>, and saw iconic moments in the <strong>early 2000s Y2K aesthetic</strong> (yes, that unforgettable denim look from pop culture).</p>
       
@@ -1745,7 +1745,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Denim Dresses by Age and Lifestyle</h2>
       
-      <img src="/blogs/7_23.webp" alt="Family in denim dresses" />
+      <img src="/blogs/7_23.jpg" alt="Family in denim dresses" />
 
       <p>From infants to adults, denim dresses suit every stage of life.</p>
       <ul>
@@ -1812,7 +1812,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>What's Next for Denim Dresses: The 2025–2026 Forecast</h2>
       
-      <img src="/blogs/10_23.webp" alt="Denim trends moodboard" style="height:750px; width:700px;object-fit:cover;"/>
+      <img src="/blogs/10_23.jpg" alt="Denim trends moodboard" style="height:750px; width:700px;object-fit:cover;"/>
 
       <p>Fashion analysts predict denim will stay at the forefront of wearable fashion, but evolve in how it's made and styled:</p>
       <ul>
