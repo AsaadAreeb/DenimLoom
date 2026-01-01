@@ -20,6 +20,9 @@ import MarqueeStrip from "../components/MarqueeStrip";
 import ImageShowcase from "../components/ImageShowcase";
 import Footer from "../components/Footer";
 import NewsletterPopup from "../components/NewsletterPopup";
+import { Link } from "react-router-dom";
+
+
 
 const Home = () => {
   const structuredData = {
@@ -156,12 +159,12 @@ const Home = () => {
                 Denim Loom is a trusted name in denim manufacturing and denim jeans production; offering sustainable denim manufacturing solutions for global brands and startups.
               </p>
 
-              <a
-                href="/products"
-                className="inline-flex items-center px-6 py-3 bg-white text-indigo-900 rounded-lg font-bold hover:bg-denim-gradient hover:text-white transition-colors duration-200"
-              >
-                Get Your Samples Now <ArrowRight className="ml-2" />
-              </a>
+              <Link
+                  to="/products"
+                  className="inline-flex items-center px-6 py-3 bg-white text-indigo-900 rounded-lg font-bold hover:bg-denim-gradient hover:text-white transition-colors duration-200"
+                >
+                  Get Your Samples Now <ArrowRight className="ml-2" />
+                </Link>
             </motion.div>
           </div>
         </motion.section>
@@ -268,12 +271,12 @@ const Home = () => {
             <h1 className="text-4xl font-lobster mb-8 text-black">
               Ready to Start Your Denim Manufacturing Partnership?
             </h1>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center px-6 py-3 bg-white text-indigo-900 border-2 border-blue-600 rounded-lg font-bold hover:bg-denim-gradient hover:text-white hover:border-transparent transition-colors duration-200"
             >
               Contact Us Today <ArrowRight className="ml-2" />
-            </a>
+            </Link>
           </div>
         </motion.section>
       </div>

@@ -1,5 +1,6 @@
 
 import { Facebook, Instagram, Mail, LinkedinIcon } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 interface FooterProps {
   backgroundImage?: string;
@@ -43,24 +44,24 @@ const Footer: React.FC<FooterProps> = ({ backgroundImage, transparent }) => {
             <h4 className="text-lg font-courgette mb-4">Quick Links</h4>
             <ul className="space-y-2 text-indigo-200">
               <li>
-                <a href="/products" className="hover:text-white transition-colors">
+                <Link to="/products" className="hover:text-white transition-colors">
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-white transition-colors">
+                <Link to="/about" className="hover:text-white transition-colors">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-white transition-colors">
+                <Link to="/services" className="hover:text-white transition-colors">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-white transition-colors">
+                <Link to="/contact" className="hover:text-white transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -70,19 +71,19 @@ const Footer: React.FC<FooterProps> = ({ backgroundImage, transparent }) => {
             <h4 className="text-lg font-courgette mb-4">Customer Care</h4>
             <ul className="space-y-2 text-indigo-200">
               <li>
-                <a href="/blog" className="hover:text-white transition-colors">
+                <Link to="/blog" className="hover:text-white transition-colors">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/faq" className="hover:text-white transition-colors">
+                <Link to="/faq" className="hover:text-white transition-colors">
                   FAQs
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacypolicy" className="hover:text-white transition-colors">
+                <Link to="/privacypolicy" className="hover:text-white transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               
               

@@ -1,0 +1,5 @@
+# Force www (SEO canonical)
+https://denimloom.com/*   https://www.denimloom.com/:splat   301!
+
+# React SPA routing (DO NOT REMOVE)
+ /*    /index.html   200
